@@ -4,6 +4,7 @@
     background-size: cover;
     line-height: 1.5;
     object-fit: cover;
+    padding: 238px 0;
     width: 100%;
 
     &-content {
@@ -21,7 +22,7 @@
         display: flex;
         justify-content: space-evenly;
         margin: 0 auto;
-        padding: 200px 195px 238px 148px;
+        padding: 0 195px 0 148px;
         width: 100%;
 
         // @include media-breakpoint-down(lg) {
@@ -115,9 +116,11 @@
     }
 
     @media ($xxl) {
+        padding: 160px 0 80px 0;
+
         &-content {
             justify-content: initial;
-            padding: 160px 0 80px 0;
+            padding: 0;
         }
 
         &-container {
