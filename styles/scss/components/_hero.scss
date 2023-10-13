@@ -1,0 +1,132 @@
+.Hero {
+    background-image: url("https://foodingly.netlify.app/assets/img/banner/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5;
+    object-fit: cover;
+    width: 100%;
+
+    &-content {
+        // align-items: center;
+        // display: flex;
+        // justify-content: space-between;
+        // justify-content: space-evenly;
+        // margin: 0 auto;
+        // padding-bottom: 238px;
+        // padding-top: 200px;
+        // width: 1416px;
+        // width: 100%;
+
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        padding: 200px 195px 238px 148px;
+        width: 100%;
+
+        // @include media-breakpoint-down(lg) {
+        //     align-items: flex-start;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     padding: 60px 35px 40px;
+        //     width: 100%;
+        // }
+
+        // @include media-breakpoint-down(sm) {
+        //     padding: 50px 12px 50px;
+        // }
+    }
+
+    &-title {
+        color: $black-color;
+        display: block;
+        font-family: $font-options;
+        font-size: 83px;
+        font-weight: 600;
+        line-height: 90px;
+        margin-bottom: 0;
+        max-width: 700px;
+        padding-bottom: 20px;
+
+        // @include media-breakpoint-down(lg) {
+        //     font-size: 55px;
+        //     line-height: 75px;
+        // }
+        // @include media-breakpoint-down(sm) {
+        //     font-size: 45px;
+        //     line-height: 50px;
+        //     width: 370px;
+        // }
+    }
+
+    &-text {
+        color: $black-color;
+        font-family: $font-secundary;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        width: 100%;
+
+        &:last-child {
+            padding-bottom: 0;
+            width: 625px;
+
+            // @include media-breakpoint-down(lg) {
+            //     width: 685px;
+            // }
+        }
+
+        @include media-breakpoint-down(lg) {
+            &:last-child {
+                margin-bottom: 30px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 15px;
+            &:last-child {
+                font-size: 14px;
+                margin-bottom: 0;
+                width: 351px;
+            }
+        }
+    }
+
+    &-image {
+        position: relative;
+        text-align: right;
+
+        // @include media-breakpoint-down(lg) {
+        //     height: 348px;
+        //     width: 348px;
+        // }
+
+        // @include media-breakpoint-down(sm) {
+        //     display: none;
+        // }
+    }
+
+    &-banner {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    @media ($xxl) {
+        &-content {
+            justify-content: initial;
+            padding: 160px 0 80px 0;
+        }
+
+        &-container {
+            padding: 0 10px;
+        }
+
+        &-title {
+            font-size: 65px;
+            line-height: 75px;
+        }
+    }
+}

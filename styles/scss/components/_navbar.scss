@@ -1,0 +1,51 @@
+.Navbar {
+    &-top {
+        background-color: $LawnGreen;
+        border-bottom: 1px solid $GhostWhite;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        margin-bottom: 0;
+
+        padding: 0;
+    }
+
+    &-icons {
+        color: $white;
+        padding-left: 5px;
+    }
+
+    &-contact {
+        color: $white;
+        font-size: 14px;
+        margin-left: 25px;
+        &:hover {
+            color: $black;
+        }
+    }
+
+    &-options {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        justify-content: flex-end;
+        margin-bottom: 0;
+        padding: 0;
+        text-align: end;
+    }
+
+    &-account {
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        &:hover {
+            color: $black;
+        }
+    }
+}
