@@ -50,10 +50,10 @@ const TopBar = () => {
         <div className="col-lg-6 col-md-6">
           <ul className="Navbar-options">
             <li>
-              <Dropdown items={languajeOptions} />
+              <Dropdown items={languajeOptions} route="#" />
             </li>
             <li>
-              <Dropdown items={currencyType} />
+              <Dropdown items={currencyType} route="#" />
             </li>
             <li>
               <Link className="Navbar-account" href={routes.costumerDashboard}>
