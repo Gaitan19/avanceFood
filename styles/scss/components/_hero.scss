@@ -22,7 +22,8 @@
         display: flex;
         justify-content: space-evenly;
         margin: 0 auto;
-        padding: 0 195px 0 148px;
+        // padding: 0 195px 0 148px;
+        padding: 0 110px 0 298px;
         width: 100%;
 
         // @include media-breakpoint-down(lg) {
@@ -70,29 +71,29 @@
         padding-bottom: 20px;
         width: 100%;
 
-        &:last-child {
-            padding-bottom: 0;
-            width: 625px;
+        // &:last-child {
+        // padding-bottom: 0;
+        // width: 625px;
 
-            // @include media-breakpoint-down(lg) {
-            //     width: 685px;
-            // }
-        }
+        // @include media-breakpoint-down(lg) {
+        //     width: 685px;
+        // }
+        // }
 
-        @include media-breakpoint-down(lg) {
-            &:last-child {
-                margin-bottom: 30px;
-            }
-        }
+        // @include media-breakpoint-down(lg) {
+        //     &:last-child {
+        //         margin-bottom: 30px;
+        //     }
+        // }
 
-        @include media-breakpoint-down(sm) {
-            padding-bottom: 15px;
-            &:last-child {
-                font-size: 14px;
-                margin-bottom: 0;
-                width: 351px;
-            }
-        }
+        // @include media-breakpoint-down(sm) {
+        //     padding-bottom: 15px;
+        //     &:last-child {
+        //         font-size: 14px;
+        //         margin-bottom: 0;
+        //         width: 351px;
+        //     }
+        // }
     }
 
     &-image {
@@ -130,6 +131,45 @@
         &-title {
             font-size: 65px;
             line-height: 75px;
+        }
+
+        &-image {
+            padding-top: 30px;
+            width: 70%;
+        }
+    }
+
+    @media ($md) {
+        padding: 150px 0 0 0;
+
+        &-content {
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 0 1.74rem;
+        }
+
+        &-title {
+            font-size: 52px;
+        }
+        &-image {
+            padding: 30px 0;
+            width: 60%;
+        }
+    }
+
+    @media ($mobileL) {
+        padding: 30px 0 50px 0;
+        &-content {
+            padding: 0 1.7rem;
+        }
+
+        &-title {
+            font-size: 45px;
+            line-height: 75px;
+        }
+
+        &-image {
+            display: none;
         }
     }
 }

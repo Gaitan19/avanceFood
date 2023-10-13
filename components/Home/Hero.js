@@ -16,7 +16,13 @@ const Hero = () => {
         </div>
         <div className="col-lg-6">
           <div className="Hero-image">
-            <Image width={611} height={611} alt="banner" src="/bg1.png"></Image>
+            <Image
+              width={611}
+              height={611}
+              alt="banner"
+              src="/bg1.png"
+              className="Hero-banner"
+            ></Image>
           </div>
         </div>
       </div>
