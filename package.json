@@ -9,6 +9,7 @@
     "watch-scss": "node-sass --source-map ./styles/css --watch ./styles/scss -o ./styles/css"
   },
   "dependencies": {
+    "@brainhubeu/react-carousel": "^2.0.4",
     "@coreui/coreui": "^5.0.0-alpha.2",
     "@coreui/react": "^5.0.0-alpha.3",
     "axios": "^1.4.0",
