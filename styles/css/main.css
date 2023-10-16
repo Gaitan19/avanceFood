@@ -9323,8 +9323,108 @@ h1, .h1, h2, .h2, h3, .h3 {
   box-shadow: none;
   outline: 0; }
 
-.Home {
-  width: 100%; }
+.Reservation {
+  align-items: center;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 100px; }
+  @media (max-width: 575.98px) {
+    .Reservation {
+      padding: 60px 0; } }
+  .Reservation-content {
+    margin: 0 auto;
+    max-width: 1416px;
+    width: 100%; }
+    @media (max-width: 991.98px) {
+      .Reservation-content {
+        width: 720px; } }
+    @media (max-width: 575.98px) {
+      .Reservation-content {
+        width: 360px; } }
+  .Reservation-text {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 55px;
+    text-align: center; }
+    .Reservation-text::after {
+      background: #80c100;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 50%;
+      margin-top: 15px;
+      position: absolute;
+      transform: translate(-50%, 50%);
+      width: 200px; }
+      @media (max-width: 991.98px) {
+        .Reservation-text::after {
+          margin-top: 11px; } }
+    @media (max-width: 575.98px) {
+      .Reservation-text {
+        font-size: 26px;
+        margin-bottom: 51px; }
+        .Reservation-text::after {
+          margin-top: 11px; } }
+  .Reservation-title {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center; }
+  .Reservation-carousel {
+    width: 80%; }
+  .Reservation-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.08);
+    height: 360px;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    transition: 0.4s all ease-in-out;
+    width: 324px; }
+    .Reservation-card:hover {
+      background-color: #80c100;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      transform: translateY(-10px); }
+      .Reservation-card:hover .Reservation-cardTitle,
+      .Reservation-card:hover .Reservation-cardText {
+        color: #ffffff; }
+  .Reservation-cardIcon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    margin-bottom: 25px;
+    object-fit: cover;
+    width: 40px; }
+  .Reservation-cardTitle {
+    color: #198754;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    width: 200px; }
+  .Reservation-cardText {
+    color: #818090;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 25px; }
+  .Reservation-cardImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 50%; }
 
 .Button {
   width: 100%; }
@@ -9344,46 +9444,43 @@ h1, .h1, h2, .h2, h3, .h3 {
     line-height: 1.5;
     padding: 7px 10px; }
 
-.Navbar-top {
-  background-color: #80c100;
-  border-bottom: 1px solid #ffffff3d;
-  padding-bottom: 10px;
-  padding-top: 10px; }
-
-.Navbar-list {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  margin-bottom: 0;
-  padding: 0; }
-
-.Navbar-icons {
-  color: #ffffff;
-  padding-left: 5px; }
-
-.Navbar-contact {
-  color: #ffffff;
-  font-size: 14px;
-  margin-left: 25px; }
-  .Navbar-contact:hover {
-    color: #000; }
-
-.Navbar-options {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  justify-content: flex-end;
-  margin-bottom: 0;
-  padding: 0;
-  text-align: end; }
-
-.Navbar-account {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 500; }
-  .Navbar-account:hover {
-    color: #000; }
+.Navbar {
+  display: none; }
+  .Navbar-top {
+    background-color: #80c100;
+    border-bottom: 1px solid #ffffff3d;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+  .Navbar-list {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin-bottom: 0;
+    padding: 0; }
+  .Navbar-icons {
+    color: #ffffff;
+    padding-left: 5px; }
+  .Navbar-contact {
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 25px; }
+    .Navbar-contact:hover {
+      color: #000; }
+  .Navbar-options {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: end; }
+  .Navbar-account {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500; }
+    .Navbar-account:hover {
+      color: #000; }
 
 .Dropdown {
   display: flex;
