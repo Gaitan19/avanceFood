@@ -2,7 +2,7 @@ const routes = {
   home: '/',
   costumerDashboard: '/dashboard',
   aboutUs: '/aboutUs',
-  contact: '/contac',
+  contact: '/contact',
 };
 
 export default routes;

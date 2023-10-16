@@ -4,8 +4,8 @@ import { responsiveCarousel } from '@/constants/responsiveCarousel';
 
 const ButtonGroup = ({ goToSlide }) => {
   return (
-    <div className="carousel-button-group">
-      <button onClick={() => goToSlide(0)}> Go to any slide </button>
+    <div className="Button-carousel-container">
+      <button className="Button-carousel" onClick={() => goToSlide(0)} />
     </div>
   );
 };

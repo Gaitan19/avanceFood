@@ -9323,15 +9323,16 @@ h1, .h1, h2, .h2, h3, .h3 {
   box-shadow: none;
   outline: 0; }
 
+.btn.show {
+  background-color: transparent;
+  color: #000; }
+
 .Reservation {
   align-items: center;
   background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
   padding: 80px 0 100px; }
-  @media (max-width: 575.98px) {
-    .Reservation {
-      padding: 60px 0; } }
   .Reservation-content {
     margin: 0 auto;
     max-width: 1416px;
@@ -9360,15 +9361,6 @@ h1, .h1, h2, .h2, h3, .h3 {
       position: absolute;
       transform: translate(-50%, 50%);
       width: 200px; }
-      @media (max-width: 991.98px) {
-        .Reservation-text::after {
-          margin-top: 11px; } }
-    @media (max-width: 575.98px) {
-      .Reservation-text {
-        font-size: 26px;
-        margin-bottom: 51px; }
-        .Reservation-text::after {
-          margin-top: 11px; } }
   .Reservation-title {
     color: #2b2540;
     font-family: inherit;
@@ -9393,10 +9385,10 @@ h1, .h1, h2, .h2, h3, .h3 {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       transform: translateY(-10px); }
-      .Reservation-card:hover .Reservation-cardTitle,
-      .Reservation-card:hover .Reservation-cardText {
+      .Reservation-card:hover .Reservation-card-title,
+      .Reservation-card:hover .Reservation-card-text {
         color: #ffffff; }
-  .Reservation-cardIcon {
+  .Reservation-card-icon {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9404,7 +9396,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin-bottom: 25px;
     object-fit: cover;
     width: 40px; }
-  .Reservation-cardTitle {
+  .Reservation-card-title {
     color: #198754;
     font-family: inherit;
     font-size: 24px;
@@ -9412,19 +9404,34 @@ h1, .h1, h2, .h2, h3, .h3 {
     line-height: 1.2;
     margin-bottom: 18px;
     width: 200px; }
-  .Reservation-cardText {
+  .Reservation-card-text {
     color: #818090;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 25px; }
-  .Reservation-cardImage {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .Reservation-card-image {
     height: 100px;
     width: 50%; }
+  @media ((max-width: 1440px)) {
+    .Reservation-carousel {
+      padding-left: 15px;
+      width: 100%; } }
+  @media ((max-width: 1400px)) {
+    .Reservation-carousel {
+      padding-left: 0;
+      width: 79%; } }
+  @media ((max-width: 1024px)) {
+    .Reservation-card {
+      height: 362px;
+      width: 93%; }
+    .Reservation-carousel {
+      padding-left: 15px;
+      width: 100%; } }
+  @media ((max-width: 576px)) {
+    .Reservation-carousel {
+      width: 90%; } }
 
 .Button {
   width: 100%; }
@@ -9443,6 +9450,18 @@ h1, .h1, h2, .h2, h3, .h3 {
     font-weight: 400;
     line-height: 1.5;
     padding: 7px 10px; }
+  .Button-carousel {
+    background: #869791;
+    border: none;
+    border-radius: 30px;
+    height: 5px;
+    padding: 5px;
+    width: 20px; }
+    .Button-carousel-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 22px; }
 
 .Navbar {
   display: none; }
@@ -9487,9 +9506,9 @@ h1, .h1, h2, .h2, h3, .h3 {
   gap: 5px; }
   .Dropdown-toggle {
     align-items: center;
-    background-color: transparent !important;
+    background-color: transparent;
     border: none;
-    color: #ffffff !important;
+    color: #ffffff;
     display: flex;
     flex-direction: row;
     font-family: inherit;
@@ -9500,15 +9519,16 @@ h1, .h1, h2, .h2, h3, .h3 {
     padding: 0;
     padding-right: 15px; }
     .Dropdown-toggle:hover {
-      color: #000 !important; }
+      background-color: transparent;
+      color: #000; }
   .Dropdown-menu {
     background-color: #ffffff;
     border: 0;
     border-radius: 5px;
     box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-    margin-top: 5px !important;
+    margin-top: 5px;
     padding: 0;
-    transform: translate(-80px, 25px) !important;
+    transform: translate(-80px, 25px);
     z-index: 9999; }
   .Dropdown-options {
     border-bottom: 1px solid #eee;
@@ -9516,7 +9536,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     padding: 10px 20px; }
     .Dropdown-options:hover {
       background-color: #e9ecef;
-      color: #000 !important; }
+      color: #000; }
 
 .Menu {
   justify-content: space-between; }
@@ -9548,11 +9568,14 @@ h1, .h1, h2, .h2, h3, .h3 {
     padding-right: 0;
     padding-top: 0px; }
   .Menu-dropdown {
-    color: #000 !important;
+    color: #000;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin-right: 15px; }
+    .Menu-dropdown:hover {
+      background-color: transparent;
+      color: #000; }
   .Menu-tools {
     align-items: center;
     display: flex;
@@ -9573,7 +9596,8 @@ h1, .h1, h2, .h2, h3, .h3 {
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
-    padding: 0 110px 0 298px;
+    margin-top: 20px;
+    padding: 0 255px 0 192px;
     width: 100%; }
   .Hero-title {
     color: #2b2540;
@@ -9600,7 +9624,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   .Hero-banner {
     height: auto;
     max-width: 100%;
-    width: 100%; }
+    width: 80%; }
   @media ((max-width: 1440px)) {
     .Hero {
       padding: 160px 0 80px 0; }
@@ -9615,18 +9639,20 @@ h1, .h1, h2, .h2, h3, .h3 {
       .Hero-image {
         padding-top: 30px;
         width: 70%; } }
-  @media ((max-width: 768px)) {
+  @media ((max-width: 991px)) {
     .Hero {
       padding: 150px 0 0 0; }
       .Hero-content {
         align-items: flex-start;
         flex-direction: column;
-        padding: 0 1.74rem; }
+        padding: 0 5.74rem; }
       .Hero-title {
         font-size: 52px; }
       .Hero-image {
         padding: 30px 0;
-        width: 60%; } }
+        width: 60%; }
+      .Hero-banner {
+        width: 100%; } }
   @media ((max-width: 576px)) {
     .Hero {
       padding: 30px 0 50px 0; }

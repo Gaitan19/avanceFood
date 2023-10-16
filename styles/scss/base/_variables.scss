@@ -12,14 +12,23 @@ $WhiteSmoke: #eee;
 $AliceBlue: #e9ecef;
 $Gainsboro: #e5e5e5;
 $shadow-offer: 6px 8px 20px rgba(0, 0, 0, 0.08);
+$LightSlateGray: #869791;
 
 //medias
 $xxl: (
     max-width: 1440px,
 );
 
+$xl: (
+    max-width: 1400px,
+);
+
+$laptod: (
+    max-width: 1024px,
+);
+
 $md: (
-    max-width: 768px,
+    max-width: 991px,
 );
 $mobileL: (
     max-width: 576px,

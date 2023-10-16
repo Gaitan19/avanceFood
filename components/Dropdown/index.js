@@ -6,6 +6,7 @@ import {
   CDropdownToggle,
 } from '@coreui/react';
 import { useState } from 'react';
+import { v4 } from 'uuid';
 import routes from '@/constants/routes';
 
 const Dropdown = (props) => {
@@ -31,11 +32,11 @@ const Dropdown = (props) => {
 
   const renderDropdown = () => {
     if (!isMenu) {
-      return items.map((item, index) => {
+      return items.map((item) => {
         return (
           <CDropdownItem
             className={`${customClass}-options`}
-            key={index}
+            key={v4()}
             onClick={handleOptions}
             href={route}
           >
@@ -45,11 +46,11 @@ const Dropdown = (props) => {
       });
     }
 
-    return menuOptions.map((menuOption, index) => {
+    return menuOptions.map((menuOption) => {
       return (
         <CDropdownItem
           className={`${customClass}-options ${modifiedClass}-option`}
-          key={index}
+          key={v4()}
           href={menuOption.route}
         >
           {menuOption.text}

@@ -35,11 +35,16 @@
     }
 
     &-dropdown {
-        color: $black !important;
+        color: $black;
         font-family: $font-secondary;
         font-size: 16px;
         font-weight: 600;
         margin-right: 15px;
+
+        &:hover {
+            background-color: $transparent;
+            color: $black;
+        }
     }
 
     &-tools {

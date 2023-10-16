@@ -1,3 +1,5 @@
+import routes from '../routes';
+
 export const menuOptions = {
   foodMenu: [
     {
@@ -105,3 +107,32 @@ export const menuOptions = {
     },
   ],
 };
+
+export const mainMenuOptions = [
+  {
+    text: 'Home',
+    route: routes.home,
+  },
+
+  {
+    text: 'About us',
+    route: routes.aboutUs,
+  },
+
+  {
+    text: 'Food Menu',
+    menuOptions: menuOptions.foodMenu,
+  },
+  {
+    text: 'Blog',
+    menuOptions: menuOptions.blogMenu,
+  },
+  {
+    text: 'Pages',
+    menuOptions: menuOptions.pagesMenu,
+  },
+  {
+    text: 'Contact',
+    route: routes.contact,
+  },
+];

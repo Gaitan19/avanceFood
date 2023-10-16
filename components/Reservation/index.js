@@ -11,17 +11,12 @@ const Reservation = () => {
   return (
     <div className="Reservation">
       <div className="Reservation-content">
-        <h3 className="Reservation-title">
-          <span>Our Reservation</span>
-        </h3>
-        <h2 className="Reservation-text">
-          <span>What we offer</span>
-        </h2>
+        <h3 className="Reservation-title">Our Reservation</h3>
+        <h2 className="Reservation-text">What we offer</h2>
       </div>
       <MultiCarousel customClass="Reservation-carousel">
         {renderOffers()}
       </MultiCarousel>
-      {/* <div className="Container"></div> */}
     </div>
   );
 };

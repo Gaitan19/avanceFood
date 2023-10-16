@@ -4,9 +4,9 @@
 
     &-toggle {
         align-items: center;
-        background-color: $transparent !important;
+        background-color: $transparent;
         border: none;
-        color: $white !important;
+        color: $white;
         display: flex;
         flex-direction: row;
         font-family: $font-options;
@@ -18,7 +18,9 @@
         padding-right: 15px;
 
         &:hover {
-            color: $black !important;
+            background-color: $transparent;
+
+            color: $black;
         }
     }
     &-menu {
@@ -26,9 +28,9 @@
         border: 0;
         border-radius: 5px;
         box-shadow: 0 0 1.25rem $SlateGray;
-        margin-top: 5px !important;
+        margin-top: 5px;
         padding: 0;
-        transform: translate(-80px, 25px) !important;
+        transform: translate(-80px, 25px);
         z-index: 9999;
     }
 
@@ -39,7 +41,7 @@
 
         &:hover {
             background-color: $AliceBlue;
-            color: $black !important;
+            color: $black;
         }
     }
 }
