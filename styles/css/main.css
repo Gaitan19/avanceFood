@@ -9542,6 +9542,97 @@ h1, .h1, h2, .h2, h3, .h3 {
       line-height: 26px;
       margin-bottom: 26px; } }
 
+.Chefs {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  max-width: 100%; }
+  @media (max-width: 991.98px) {
+    .Chefs {
+      gap: 28px; } }
+  .Chefs-card {
+    background-color: #ffffff;
+    border: 5px solid #ffffff;
+    box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.1);
+    height: 350.81px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 336px; }
+    .Chefs-card:hover .Chefs-info {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: 0.4s all ease-in-out; }
+    @media (max-width: 991.98px) {
+      .Chefs-card {
+        margin-bottom: 0; } }
+    @media (max-width: 575.98px) {
+      .Chefs-card {
+        height: 354.41px;
+        margin-bottom: 10px;
+        width: 365px; } }
+  .Chefs-image {
+    background-position: center center;
+    height: 100%;
+    width: 100%; }
+  .Chefs-info {
+    background-color: #ffffff;
+    bottom: 0;
+    box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.1);
+    height: 85px;
+    max-width: 100%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transform: translateY(80px);
+    transition: 0.4s all ease-in-out;
+    width: 100%; }
+  .Chefs-socialList {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 8px; }
+  .Chefs-link {
+    background-color: #ffffff;
+    border-radius: 100%;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+    position: relative;
+    top: -15px;
+    transition: background-color 0.3s ease-in-out;
+    width: 30px; }
+    .Chefs-link:hover {
+      background-color: #80c100; }
+      .Chefs-link:hover .Chefs-icon {
+        color: #ffffff; }
+  .Chefs-icon {
+    box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.1);
+    color: #80c100;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out; }
+  .Chefs-name {
+    bottom: 14px;
+    color: #80c100;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0;
+    position: relative; }
+  .Chefs-profession {
+    bottom: 10px;
+    color: #818090;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    position: relative; }
+
 .Button {
   width: 100%; }
   .Button-tools {
