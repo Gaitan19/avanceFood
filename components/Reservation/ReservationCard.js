@@ -20,17 +20,19 @@ const ReservationCard = (props) => {
         height={100}
         src={image}
         className="Reservation-card-image"
+        priority
       />
     </article>
   );
 };
 
 ReservationCard.propTypes = {
-  offer: Proptypes.object,
-};
-
-ReservationCard.defaultProps = {
-  offer: {},
+  offer: Proptypes.shape({
+    title: Proptypes.string.isRequired,
+    image: Proptypes.string.isRequired,
+    text: Proptypes.string.isRequired,
+    icon: Proptypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ReservationCard;
