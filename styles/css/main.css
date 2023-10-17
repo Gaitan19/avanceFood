@@ -9598,10 +9598,11 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin-bottom: 8px; }
   .Chefs-link {
     background-color: #ffffff;
-    border-radius: 100%;
+    border-radius: 50%;
     height: 30px;
     line-height: 30px;
     list-style: none;
+    padding: 5px;
     position: relative;
     top: -15px;
     transition: background-color 0.3s ease-in-out;
@@ -9613,7 +9614,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   .Chefs-icon {
     box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.1);
     color: #80c100;
-    font-size: 16px;
+    font-size: 18px;
     transition: color 0.3s ease-in-out; }
   .Chefs-name {
     bottom: 14px;

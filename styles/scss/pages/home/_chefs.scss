@@ -75,10 +75,11 @@
 
     &-link {
         background-color: $white;
-        border-radius: 100%;
+        border-radius: 50%;
         height: 30px;
         line-height: 30px;
         list-style: none;
+        padding: 5px;
         position: relative;
         top: -15px;
         transition: background-color 0.3s ease-in-out;
@@ -95,7 +96,7 @@
     &-icon {
         box-shadow: $shadow;
         color: $LawnGreen;
-        font-size: 16px;
+        font-size: 18px;
         transition: color 0.3s ease-in-out;
     }
 
