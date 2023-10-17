@@ -1,4 +1,5 @@
 import Reservation from '../Reservation';
+import DinnerToday from './DinnerToday';
 import Hero from './Hero';
 import SpecialOffer from './SpecialOffer';
 
@@ -12,7 +13,15 @@ const Home = () => {
             laboris. Duis veniam officia culpa sunt deserunt nisi"
       />
       <Reservation />
-      <SpecialOffer></SpecialOffer>
+      <SpecialOffer
+        title="Special Offers"
+        text="Preferred Food, Drinks, Juice 30% Off Friday Only"
+      />
+      <DinnerToday
+        title="Do You Have Any Dinner Plan Today? Reserve Your Tbale"
+        text="Ut voluptate cupidatat aute et culpa sit sint occaecat ut dolor
+            demon consequat eu in id. Eu ex ea commodo."
+      />
     </>
   );
 };
