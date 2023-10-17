@@ -1,5 +1,6 @@
 import Reservation from '../Reservation';
 import Hero from './Hero';
+import SpecialOffer from './SpecialOffer';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
             laboris. Duis veniam officia culpa sunt deserunt nisi"
       />
       <Reservation />
+      <SpecialOffer></SpecialOffer>
     </>
   );
 };

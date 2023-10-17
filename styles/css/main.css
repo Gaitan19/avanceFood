@@ -9433,6 +9433,43 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Reservation-carousel {
       width: 90%; } }
 
+.Special {
+  background-image: url("https://foodingly.netlify.app/assets/img/common/counter_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+  object-fit: cover;
+  width: 100%; }
+  .Special-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 80px 0;
+    width: 1420px; }
+  .Special-text {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 53px;
+    font-weight: 500;
+    line-height: 80px;
+    margin-bottom: 45px;
+    text-align: center;
+    width: 750px; }
+  .Special-title {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center; }
+  .Special-image {
+    background-image: url("https://foodingly.netlify.app/assets/img/promotion/promo-1.png");
+    height: 321px;
+    width: 546px; }
+
 .Button {
   width: 100%; }
   .Button-tools {
@@ -9462,6 +9499,43 @@ h1, .h1, h2, .h2, h3, .h3 {
       flex-direction: row;
       justify-content: center;
       margin-top: 22px; }
+  .Button-fill {
+    background-color: #80c100;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 12px 35px;
+    position: relative;
+    transition: background-color 0.3s; }
+    .Button-fill::before {
+      background-color: #2b2540;
+      border-radius: 50% 50% 0 0;
+      bottom: 0;
+      color: #ffffff;
+      content: "";
+      height: 0;
+      left: 0;
+      position: absolute;
+      transition: height 0.3s;
+      width: 100%; }
+    .Button-fill:hover {
+      background-color: #2b2540;
+      color: #ffffff; }
+    .Button-fill:hover::before {
+      height: 100%; }
+    @media (max-width: 991.98px) {
+      .Button-fill {
+        font-size: 15px;
+        padding: 12px 20px; } }
+    .Button-fill-text {
+      color: #ffffff;
+      position: relative; }
 
 .Navbar {
   display: none; }
