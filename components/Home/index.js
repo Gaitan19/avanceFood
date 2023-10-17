@@ -1,4 +1,5 @@
 import Reservation from '../Reservation';
+import Chefs from './Chefs';
 import DinnerToday from './DinnerToday';
 import Hero from './Hero';
 import SpecialOffer from './SpecialOffer';
@@ -22,6 +23,7 @@ const Home = () => {
         text="Ut voluptate cupidatat aute et culpa sit sint occaecat ut dolor
             demon consequat eu in id. Eu ex ea commodo."
       />
+      <Chefs />
     </>
   );
 };
