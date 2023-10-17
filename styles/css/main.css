@@ -9549,9 +9549,6 @@ h1, .h1, h2, .h2, h3, .h3 {
   gap: 24px;
   justify-content: center;
   max-width: 100%; }
-  @media (max-width: 991.98px) {
-    .Chefs {
-      gap: 28px; } }
   .Chefs-card {
     background-color: #ffffff;
     border: 5px solid #ffffff;
@@ -9566,14 +9563,6 @@ h1, .h1, h2, .h2, h3, .h3 {
       opacity: 1;
       transform: translateY(0px);
       transition: 0.4s all ease-in-out; }
-    @media (max-width: 991.98px) {
-      .Chefs-card {
-        margin-bottom: 0; } }
-    @media (max-width: 575.98px) {
-      .Chefs-card {
-        height: 354.41px;
-        margin-bottom: 10px;
-        width: 365px; } }
   .Chefs-image {
     background-position: center center;
     height: 100%;
@@ -9633,6 +9622,16 @@ h1, .h1, h2, .h2, h3, .h3 {
     font-weight: 500;
     line-height: 28px;
     position: relative; }
+  @media (max-width: 991.98px) {
+    .Chefs {
+      gap: 28px; }
+      .Chefs-cards {
+        margin-bottom: 0; } }
+  @media (max-width: 575.98px) {
+    .Chefs-cards {
+      height: 354.41px;
+      margin-bottom: 10px;
+      width: 365px; } }
 
 .Button {
   width: 100%; }

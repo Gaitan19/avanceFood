@@ -4,12 +4,7 @@
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
-    // height: 380.81px;
     max-width: 100%;
-
-    @include media-breakpoint-down(lg) {
-        gap: 28px;
-    }
 
     &-card {
         background-color: $white;
@@ -20,7 +15,6 @@
         overflow: hidden;
         position: relative;
         text-align: center;
-        // transition:  ease-in-out 3s;
         width: 336px;
 
         &:hover {
@@ -29,16 +23,6 @@
                 transform: translateY(0px);
                 transition: 0.4s all ease-in-out;
             }
-        }
-
-        @include media-breakpoint-down(lg) {
-            margin-bottom: 0;
-        }
-
-        @include media-breakpoint-down(sm) {
-            height: 354.41px;
-            margin-bottom: 10px;
-            width: 365px;
         }
     }
 
@@ -60,9 +44,6 @@
         transform: translateY(80px);
         transition: 0.4s all ease-in-out;
         width: 100%;
-
-        @include media-breakpoint-down(lg) {
-        }
     }
 
     &-socialList {
@@ -119,5 +100,21 @@
         font-weight: 500;
         line-height: 28px;
         position: relative;
+    }
+
+    @include media-breakpoint-down(lg) {
+        gap: 28px;
+
+        &-cards {
+            margin-bottom: 0;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-cards {
+            height: 354.41px;
+            margin-bottom: 10px;
+            width: 365px;
+        }
     }
 }
