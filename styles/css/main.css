@@ -9337,12 +9337,6 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin: 0 auto;
     max-width: 1416px;
     width: 100%; }
-    @media (max-width: 991.98px) {
-      .Reservation-content {
-        width: 720px; } }
-    @media (max-width: 575.98px) {
-      .Reservation-content {
-        width: 360px; } }
   .Reservation-text {
     color: #2b2540;
     font-family: inherit;
@@ -9438,8 +9432,8 @@ h1, .h1, h2, .h2, h3, .h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 480px;
   object-fit: cover;
+  padding: 80px 0;
   width: 100%; }
   .Special-content {
     align-items: center;
@@ -9447,8 +9441,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding: 80px 0;
-    width: 1420px; }
+    width: 100%; }
   .Special-text {
     color: #2b2540;
     font-family: inherit;
@@ -9456,19 +9449,33 @@ h1, .h1, h2, .h2, h3, .h3 {
     font-weight: 500;
     line-height: 80px;
     margin-bottom: 45px;
-    text-align: center;
-    width: 750px; }
+    text-align: center; }
   .Special-title {
     color: #2b2540;
     font-family: inherit;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: center; }
   .Special-image {
     background-image: url("https://foodingly.netlify.app/assets/img/promotion/promo-1.png");
     height: 321px;
     width: 546px; }
+  @media ((max-width: 1440px)) {
+    .Special-text {
+      font-size: 30px;
+      line-height: 50px;
+      margin-bottom: 30px;
+      margin-right: 35px;
+      padding-top: 10px; } }
+  @media ((max-width: 1400px)) {
+    .Special-content {
+      width: 50%; } }
+  @media ((max-width: 991px)) {
+    .Special-content {
+      width: 100%; }
+    .Special-text {
+      margin-right: 0px; } }
 
 .Button {
   width: 100%; }
