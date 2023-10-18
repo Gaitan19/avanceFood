@@ -13,7 +13,6 @@ const Chefs = () => {
         <h3 className="Reservation-title">Meet Our Chefs</h3>
         <h2 className="Reservation-text">Our Experienced chefs</h2>
         <div className="Chefs">{renderChefs()}</div>
-        {/* <div className="Chefs"></div> */}
       </div>
     </div>
   );
