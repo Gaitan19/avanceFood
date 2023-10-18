@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
-    max-width: 100%;
 
     &-card {
         background-color: $white;
@@ -102,16 +101,25 @@
         position: relative;
     }
 
+    @media ($laptod) {
+        &-card {
+            height: 255px;
+            width: 216px;
+        }
+    }
+
     @include media-breakpoint-down(lg) {
         gap: 28px;
 
-        &-cards {
+        &-card {
+            height: 340px;
             margin-bottom: 0;
+            width: 326px;
         }
     }
 
     @include media-breakpoint-down(sm) {
-        &-cards {
+        &-card {
             height: 354.41px;
             margin-bottom: 10px;
             width: 365px;

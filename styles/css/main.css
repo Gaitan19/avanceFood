@@ -9547,8 +9547,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;
-  max-width: 100%; }
+  justify-content: center; }
   .Chefs-card {
     background-color: #ffffff;
     border: 5px solid #ffffff;
@@ -9622,13 +9621,19 @@ h1, .h1, h2, .h2, h3, .h3 {
     font-weight: 500;
     line-height: 28px;
     position: relative; }
+  @media ((max-width: 1024px)) {
+    .Chefs-card {
+      height: 255px;
+      width: 216px; } }
   @media (max-width: 991.98px) {
     .Chefs {
       gap: 28px; }
-      .Chefs-cards {
-        margin-bottom: 0; } }
+      .Chefs-card {
+        height: 340px;
+        margin-bottom: 0;
+        width: 326px; } }
   @media (max-width: 575.98px) {
-    .Chefs-cards {
+    .Chefs-card {
       height: 354.41px;
       margin-bottom: 10px;
       width: 365px; } }
