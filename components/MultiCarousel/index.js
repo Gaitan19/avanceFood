@@ -19,7 +19,7 @@ const MultiCarousel = (props) => {
         responsive={responsive}
         swipeable
         infinite
-        // autoPlay
+        autoPlay
         autoPlaySpeed={speed}
         transitionDuration={600}
         removeArrowOnDeviceType={[

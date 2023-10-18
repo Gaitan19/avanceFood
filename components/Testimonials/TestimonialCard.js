@@ -9,7 +9,7 @@ const TestimonialCard = (props) => {
   const renderStar = () => {
     return [0, 1, 2, 3, 4].map(() => {
       return (
-        <li key={v4()} className="Testimonials-cardIcon">
+        <li key={v4()} className="Testimonials-card-icon">
           <FaStar />
         </li>
       );
@@ -18,22 +18,22 @@ const TestimonialCard = (props) => {
 
   return (
     <article className="Testimonials-card">
-      <div className="Testimonials-cardHeader">
-        <p className="Testimonials-cardDate">{date}</p>
-        <div className="Testimonials-cardRating">
-          <p className="Testimonials-cardRatingText">Excellent</p>
-          <ul className="Testimonials-cardStars">{renderStar()}</ul>
+      <div className="Testimonials-card-header">
+        <p className="Testimonials-card-date">{date}</p>
+        <div className="Testimonials-card-rating">
+          <p className="Testimonials-card-excellent">Excellent</p>
+          <ul className="Testimonials-card-stars">{renderStar()}</ul>
         </div>
       </div>
-      <div className="Testimonials-cardBody">
+      <div className="Testimonials-card-body">
         <div
-          className="Testimonials-cardImage"
+          className="Testimonials-card-image"
           style={{ backgroundImage: `url(${image})` }}
         />
-        <h3 className="Testimonials-cardName">
+        <h3 className="Testimonials-card-name">
           <span>{name}</span>
         </h3>
-        <p className="Testimonials-cardText">“{text}”</p>
+        <p className="Testimonials-card-text">“{text}”</p>
       </div>
     </article>
   );

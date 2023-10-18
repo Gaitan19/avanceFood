@@ -9,15 +9,6 @@
         margin: 0 auto;
         max-width: 1416px;
         width: 100%;
-
-        @include media-breakpoint-down(lg) {
-            width: 700px;
-        }
-
-        @include media-breakpoint-down(sm) {
-            padding: 40px 0 60px;
-            width: 355px;
-        }
     }
 
     &-title {
@@ -49,10 +40,6 @@
             transform: translate(-50%, 50%);
             width: 200px;
         }
-
-        @include media-breakpoint-down(sm) {
-            font-size: 26px;
-        }
     }
 
     &-carousel {
@@ -64,92 +51,138 @@
     &-card {
         background-color: $white;
         border-radius: 12px;
-        height: 317.19px;
+        height: 300px;
         margin-bottom: 30px;
         margin-right: 10px;
         max-width: 465.33px;
-        padding: 65px 20px 20px;
+        padding: 45px 20px 20px;
 
-        @include media-breakpoint-down(lg) {
+        &-header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-date {
+            color: $black-color;
+            font-family: $font-options;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        &-excellent {
+            color: $black-color;
+            font-family: $font-options;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 3.5px;
+            text-align: center;
+        }
+        &-stars {
+            display: flex;
+        }
+
+        &-icon {
+            color: $LawnGreen;
+            font-size: 14px;
+            list-style: none;
+            padding: 0 2px;
+        }
+
+        &-image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 100%;
+            height: 70px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            object-fit: cover;
+            width: 70px;
+        }
+
+        &-body {
+            bottom: 25%;
+            // margin-top: -95px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        &-name {
+            color: $black-color;
+            font-family: $font-options;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        &-text {
+            color: $paragraph-color;
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-card {
+            height: 401.19px;
+            padding: 65px 20px 0px;
+
+            &-text {
+                padding: 0 30px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            width: 700px;
+        }
+
+        &-card {
             height: 373.19px;
             width: 340px;
         }
-        @include media-breakpoint-down(sm) {
-            height: 368.38px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-content {
+            padding: 40px 16px 60px;
             width: 100%;
         }
-    }
 
-    &-cardHeader {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &-cardDate {
-        color: $black-color;
-        font-family: $font-options;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.2;
-    }
-
-    &-cardRatingText {
-        color: $black-color;
-        font-family: $font-options;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.2;
-        margin-bottom: 3.5px;
-        text-align: center;
-    }
-
-    &-cardStars {
-        display: flex;
-    }
-
-    &-cardIcon {
-        color: $LawnGreen;
-        font-size: 14px;
-        list-style: none;
-        padding: 0 2px;
-    }
-
-    &-cardImage {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 100%;
-        height: 70px;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        object-fit: cover;
-        width: 70px;
-    }
-
-    &-cardBody {
-        margin-top: -95px;
-
-        @include media-breakpoint-down(sm) {
-            margin-top: -80px;
+        &-text {
+            font-size: 26px;
         }
-    }
 
-    &-cardName {
-        color: $black-color;
-        font-family: $font-options;
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 15px;
-        text-align: center;
-    }
+        &-card {
+            height: 312.38px;
+            margin-right: 10px;
+            padding-top: 25px;
+            width: 98%;
 
-    &-cardText {
-        color: $paragraph-color;
-        font-family: $font-secondary;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px;
-        text-align: center;
+            &-header {
+                margin-top: 20px;
+            }
+
+            // &-body {
+            //     display: flex;
+            //     flex-direction: column;
+            //     position: relative;
+            //     top: 10%;
+            // }
+
+            &-text {
+                padding: 0;
+                text-align: center;
+            }
+        }
     }
 }
