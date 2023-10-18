@@ -9,7 +9,7 @@ import { v4 } from 'uuid';
 import Link from 'next/link';
 import routes from '@/constants/routes';
 
-const ChefsCards = (props) => {
+const ChefsCard = (props) => {
   const { chefInformation } = props;
 
   const { image, name, title } = chefInformation;
@@ -40,29 +40,7 @@ const ChefsCards = (props) => {
         className="Chefs-image"
       />
       <div className="Chefs-info">
-        <ul className="Chefs-socialList">
-          {/* <li className="Chefs-link">
-            <a href="" className="Chefs-icon">
-              <Icon className="fa-brands fa-facebook-f" />
-            </a>
-          </li>
-          <li className="Chefs-link">
-            <a href="" className="Chefs-icon">
-              <Icon className="fa-brands fa-twitter" />
-            </a>
-          </li>
-          <li className="Chefs-link">
-            <a href="" className="Chefs-icon">
-              <Icon className="fa-brands fa-instagram" />
-            </a>
-          </li>
-          <li className="Chefs-link">
-            <a href="" className="Chefs-icon">
-              <Icon className="fa-brands fa-linkedin-in" />
-            </a>
-          </li> */}
-          {renderIconList()}
-        </ul>
+        <ul className="Chefs-icons">{renderIconList()}</ul>
         <h3 className="Chefs-name">{name}</h3>
         <p className="Chefs-profession">{title}</p>
       </div>
@@ -70,7 +48,7 @@ const ChefsCards = (props) => {
   );
 };
 
-ChefsCards.propTypes = {
+ChefsCard.propTypes = {
   chefInformation: PropTypes.shape({
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -78,4 +56,4 @@ ChefsCards.propTypes = {
   }).isRequired,
 };
 
-export default ChefsCards;
+export default ChefsCard;

@@ -1,10 +1,14 @@
+import { v4 } from 'uuid';
+import { chefList } from '@/constants/chefsList';
 import Reservation from '../Reservation';
-import Chefs from './Chefs';
-import DinnerToday from './DinnerToday';
+import ChefsCard from './ChefsCard';
 import Hero from './Hero';
-import SpecialOffer from './SpecialOffer';
+import TextButton from './TextButton';
 
 const Home = () => {
+  const renderChefs = () =>
+    chefList.map((chef) => <ChefsCard chefInformation={chef} key={v4()} />);
+
   return (
     <>
       <Hero
@@ -14,16 +18,41 @@ const Home = () => {
             laboris. Duis veniam officia culpa sunt deserunt nisi"
       />
       <Reservation />
-      <SpecialOffer
+      <TextButton
+        customClass="Special"
         title="Special Offers"
+        buttonText="Buy Now"
         text="Preferred Food, Drinks, Juice 30% Off Friday Only"
+        hasFillButton
       />
-      <DinnerToday
+      <TextButton
+        customClass="Dinner"
         title="Do You Have Any Dinner Plan Today? Reserve Your Tbale"
+        buttonText="Buy Now"
+        text="Ut voluptate cupidatat aute et culpa sit sint occaecat ut dolor
+        demon consequat eu in id. Eu ex ea commodo."
+        hasImage
+        hasFillButton
+      />
+      <TextButton
+        customClass="Reservation"
+        text="Our Experienced chefs"
+        title="Meet Our Chefs"
+      >
+        <div className="Chefs">{renderChefs()}</div>
+      </TextButton>
+      <TextButton
+        customClass="App"
+        title="Never Feel Hungry! Download Our Mobile App & Enjoy Delicious Food"
         text="Ut voluptate cupidatat aute et culpa sit sint occaecat ut dolor
             demon consequat eu in id. Eu ex ea commodo."
-      />
-      <Chefs />
+        hasImage
+      >
+        <div className="App-buttons">
+          <div className="App-store" />
+          <div className="App-google" />
+        </div>
+      </TextButton>
     </>
   );
 };

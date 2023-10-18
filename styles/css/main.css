@@ -9578,7 +9578,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     transform: translateY(80px);
     transition: 0.4s all ease-in-out;
     width: 100%; }
-  .Chefs-socialList {
+  .Chefs-icons {
     align-items: center;
     display: flex;
     gap: 10px;
@@ -9637,6 +9637,99 @@ h1, .h1, h2, .h2, h3, .h3 {
       height: 354.41px;
       margin-bottom: 10px;
       width: 365px; } }
+
+.App {
+  background-color: #ffffff; }
+  .App-content {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 1416px;
+    padding: 80px 80px; }
+  .App-info {
+    padding-top: 50px;
+    width: 720px; }
+  .App-title {
+    font-family: inherit;
+    font-size: 53px;
+    font-weight: 500;
+    line-height: 80px;
+    margin-bottom: 20px;
+    max-width: 665px; }
+  .App-text {
+    color: #818090;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 35px;
+    max-width: 696px; }
+  .App-image {
+    background-image: url("https://foodingly.netlify.app/assets/img/promotion/app.png");
+    height: 556px;
+    width: 446px; }
+  .App-buttons {
+    align-items: center;
+    display: flex;
+    gap: 22px;
+    justify-content: flex-start; }
+  .App-store {
+    background-image: url("https://foodingly.netlify.app/assets/img/promotion/apple-store-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    height: 58px;
+    width: 167px; }
+  .App-google {
+    background-image: url("https://foodingly.netlify.app/assets/img/promotion/google-play-store-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55px;
+    width: 159px; }
+  @media ((max-width: 1024px)) {
+    .App-content {
+      padding: 80px 80px; }
+    .App-info {
+      width: 50%; }
+    .App-title {
+      font-size: 41px;
+      line-height: 60px; }
+    .App-image {
+      width: 50%; } }
+  @media (max-width: 991.98px) {
+    .App-info {
+      width: 100%; }
+    .App-content {
+      justify-content: center;
+      padding: 80px;
+      width: 100%; }
+    .App-title {
+      font-size: 41px;
+      line-height: 60px; }
+    .App-image {
+      display: none; } }
+  @media (max-width: 575.98px) {
+    .App-content {
+      padding: 40px; }
+    .App-info {
+      padding-top: 0;
+      width: 100%; }
+    .App-title {
+      font-size: 24px;
+      line-height: 40px; }
+    .App-text {
+      font-size: 14px;
+      line-height: 28px;
+      margin-bottom: 30px; }
+    .App-appleButton {
+      height: 37.36px;
+      width: 107.59px; }
+    .App-googleButton {
+      height: 37.36px;
+      width: 107.59px; } }
 
 .Button {
   width: 100%; }
