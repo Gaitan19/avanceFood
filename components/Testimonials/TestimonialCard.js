@@ -30,9 +30,7 @@ const TestimonialCard = (props) => {
           className="Testimonials-card-image"
           style={{ backgroundImage: `url(${image})` }}
         />
-        <h3 className="Testimonials-card-name">
-          <span>{name}</span>
-        </h3>
+        <h3 className="Testimonials-card-name">{name}</h3>
         <p className="Testimonials-card-text">“{text}”</p>
       </div>
     </article>
