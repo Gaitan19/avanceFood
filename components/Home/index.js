@@ -4,6 +4,7 @@ import Reservation from '../Reservation';
 import ChefsCard from './ChefsCard';
 import Hero from './Hero';
 import TextButton from './TextButton';
+import Testimonials from '../Testimonials';
 
 const Home = () => {
   const renderChefs = () =>
@@ -53,6 +54,7 @@ const Home = () => {
           <div className="App-google" />
         </div>
       </TextButton>
+      <Testimonials />
     </>
   );
 };

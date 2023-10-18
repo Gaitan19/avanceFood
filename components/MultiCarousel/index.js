@@ -11,15 +11,15 @@ const ButtonGroup = ({ goToSlide }) => {
 };
 
 const MultiCarousel = (props) => {
-  const { children, customClass, speed } = props;
+  const { children, customClass, speed, responsive } = props;
 
   return (
     <div className={customClass}>
       <Carousel
-        responsive={responsiveCarousel}
+        responsive={responsive}
         swipeable
         infinite
-        autoPlay
+        // autoPlay
         autoPlaySpeed={speed}
         transitionDuration={600}
         removeArrowOnDeviceType={[
@@ -41,12 +41,14 @@ MultiCarousel.propTypes = {
   children: PropTypes.node,
   customClass: PropTypes.string,
   speed: PropTypes.number,
+  responsive: PropTypes.object,
 };
 
 MultiCarousel.defaultProps = {
   children: <></>,
   customClass: '',
   speed: 6000,
+  responsive: responsiveCarousel,
 };
 
 export default MultiCarousel;
