@@ -10,16 +10,6 @@
         margin: 0 auto;
         max-width: 1440px;
         padding: 80px 0 100px;
-
-        // @include media-breakpoint-down(lg) {
-        //     padding: 70px 0;
-        //     width: 720px;
-        // }
-
-        // @include media-breakpoint-down(sm) {
-        //     padding: 40px 0;
-        //     width: 360px;
-        // }
     }
 
     &-title {
@@ -29,8 +19,6 @@
         font-weight: 300;
         margin-bottom: 20px;
         text-align: center;
-
-        // @extend .arrows;
     }
 
     &-text {
@@ -53,10 +41,6 @@
             transform: translate(-50%, 50%);
             width: 200px;
         }
-
-        // @include media-breakpoint-down(sm) {
-        // font-size: 26px;
-        // }
     }
 
     &-cards {
@@ -66,15 +50,6 @@
         gap: 23px;
         justify-content: center;
         width: 100%;
-
-        // @include media-breakpoint-down(lg) {
-        //     justify-content: flex-start;
-        //     width: 698px;
-        // }
-        // @include media-breakpoint-down(sm) {
-        //     justify-content: center;
-        //     width: 100%;
-        // }
     }
 
     &-card {
@@ -113,10 +88,6 @@
 
         &-info {
             padding: 35px 20px 15px;
-
-            // @include media-breakpoint-down(lg) {
-            // padding: 15px 20px;
-            // }
         }
 
         &-title {
@@ -132,15 +103,6 @@
                 color: $LawnGreen;
             }
         }
-
-        // @include media-breakpoint-down(lg) {
-        //     height: auto;
-        //     width: 336px;
-        // }
-
-        // @include media-breakpoint-down(sm) {
-        //     width: 100%;
-        // }
     }
 
     &-container {
@@ -150,14 +112,9 @@
         overflow: hidden;
         transition: 0.4s all ease-in-out;
         width: 100%;
-
-        // @include media-breakpoint-down(lg) {
-        // height: 201.97px;
-        // }
     }
 
     &-image {
-        // background-image: url("https://foodingly.netlify.app/assets/img/blogs/blog-1.png");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -198,7 +155,6 @@
     &-icon {
         background-color: $cream;
         border-radius: 50px;
-        // font-size: 17px;
         font-size: 36px;
         padding: 8px;
     }
@@ -231,20 +187,17 @@
     @include media-breakpoint-down(lg) {
         &-content {
             padding: 70px 0;
-            width: 720px;
+            width: 94%;
         }
 
         &-cards {
             gap: 28px;
             padding: 0;
-            // justify-content: flex-start;
-            // width: 698px;
             width: 100%;
         }
 
         &-card {
             height: auto;
-            // width: 336px;
             width: 48%;
 
             &-info {
@@ -257,10 +210,20 @@
         }
     }
 
+    @include media-breakpoint-down(md) {
+        &-cards {
+            gap: 20px;
+        }
+
+        &-card {
+            width: 48%;
+        }
+    }
+
     @include media-breakpoint-down(sm) {
         &-content {
-            padding: 40px 0;
-            width: 360px;
+            padding: 0;
+            width: 94%;
         }
 
         &-text {
@@ -274,6 +237,13 @@
 
         &-card {
             width: 100%;
+            &-details {
+                flex-direction: column;
+            }
+        }
+
+        &-owner {
+            margin-left: 0;
         }
     }
 }

@@ -9839,8 +9839,6 @@ h1, .h1, h2, .h2, h3, .h3 {
       .Testimonials-card-text {
         padding: 0 30px; } }
   @media (max-width: 991.98px) {
-    .Testimonials-content {
-      width: 700px; }
     .Testimonials-card {
       height: 373.19px;
       width: 340px; } }
@@ -10083,7 +10081,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   @media (max-width: 991.98px) {
     .Blog-content {
       padding: 70px 0;
-      width: 720px; }
+      width: 94%; }
     .Blog-cards {
       gap: 28px;
       padding: 0;
@@ -10095,17 +10093,26 @@ h1, .h1, h2, .h2, h3, .h3 {
         padding: 15px 20px; }
       .Blog-card-container {
         height: 201.97px; } }
+  @media (max-width: 767.98px) {
+    .Blog-cards {
+      gap: 20px; }
+    .Blog-card {
+      width: 48%; } }
   @media (max-width: 575.98px) {
     .Blog-content {
-      padding: 40px 0;
-      width: 360px; }
+      padding: 0;
+      width: 94%; }
     .Blog-text {
       font-size: 26px; }
     .Blog-cards {
       justify-content: center;
       width: 100%; }
     .Blog-card {
-      width: 100%; } }
+      width: 100%; }
+      .Blog-card-details {
+        flex-direction: column; }
+    .Blog-owner {
+      margin-left: 0; } }
 
 .Button {
   width: 100%; }
