@@ -22,14 +22,14 @@ const BlogCard = (props) => {
         <p className="Blog-card-text">{text}</p>
         <div className="Blog-card-details">
           <div className="Blog-date">
-            <FaCalendarDay className="Blog-icon fa-solid fa-calendar-days" />
+            <FaCalendarDay className="Blog-icon" />
             <div>
               <span className="Blog-date-bold">Date:</span>
               <p className="Blog-date-light">{date}</p>
             </div>
           </div>
           <div className="Blog-owner">
-            <FaUsers className="Blog-icon fa-solid fa-users" />
+            <FaUsers className="Blog-icon" />
             <div>
               <span className="Blog-date-bold">By:</span>
               <p className="Blog-date-light">{author}</p>
