@@ -9861,6 +9861,87 @@ h1, .h1, h2, .h2, h3, .h3 {
         padding: 0;
         text-align: center; } }
 
+.Subscribe {
+  background-color: #ffffff; }
+  .Subscribe-content {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1416px;
+    padding: 80px 0; }
+  .Subscribe-info {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    width: 50%; }
+  .Subscribe-image {
+    height: 104.03px;
+    width: 123.39px; }
+  .Subscribe-text {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 11px; }
+    .Subscribe-text:last-child {
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 0; }
+  .Subscribe-form {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%; }
+  .Subscribe-input {
+    border: 2px dashed #dddddd75;
+    font-size: 16px;
+    font-weight: 400;
+    height: 55px;
+    padding: 10px 22px;
+    width: 427.5px; }
+    .Subscribe-input:focus {
+      border: 2px dashed #80c100;
+      outline: none; }
+  @media ((max-width: 1024px)) {
+    .Subscribe-content {
+      padding: 80px 50px; }
+    .Subscribe-image {
+      height: 66.03px;
+      width: 76.39px; } }
+  @media (max-width: 991.98px) {
+    .Subscribe-content {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-start; }
+    .Subscribe-info {
+      margin-bottom: 30px;
+      width: 100%; }
+    .Subscribe-form {
+      width: 100%; }
+    .Subscribe-image {
+      height: 88.72px;
+      width: 104.39px; }
+    .Subscribe-input {
+      width: 100%; } }
+  @media (max-width: 575.98px) {
+    .Subscribe-content {
+      padding: 40px 10px; }
+    .Subscribe-info {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px; }
+    .Subscribe-image {
+      height: 104.41px;
+      width: 122.84px; }
+    .Subscribe-text {
+      font-size: 16px; }
+      .Subscribe-text:last-child {
+        font-size: 29px;
+        line-height: 40px;
+        margin-bottom: 0; } }
+
 .Button {
   width: 100%; }
   .Button-tools {
@@ -9927,6 +10008,19 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Button-fill-text {
       color: #ffffff;
       position: relative; }
+  .Button-subscribe {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 18px;
+    height: 55px;
+    padding: 12px 35px; }
+    @media (max-width: 575.98px) {
+      .Button-subscribe {
+        align-items: center;
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+        padding: 12px 30px; } }
 
 .Navbar {
   display: none; }

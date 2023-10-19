@@ -82,4 +82,20 @@
             position: relative;
         }
     }
+
+    &-subscribe {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        font-size: 18px;
+        height: 55px;
+        padding: 12px 35px;
+
+        @include media-breakpoint-down(sm) {
+            align-items: center;
+            display: flex;
+            font-size: 15px;
+            justify-content: center;
+            padding: 12px 30px;
+        }
+    }
 }

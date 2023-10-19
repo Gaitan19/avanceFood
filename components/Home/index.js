@@ -5,6 +5,7 @@ import ChefsCard from './ChefsCard';
 import Hero from './Hero';
 import TextButton from './TextButton';
 import Testimonials from '../Testimonials';
+import Subscribe from './Subscribe';
 
 const Home = () => {
   const renderChefs = () =>
@@ -55,6 +56,7 @@ const Home = () => {
         </div>
       </TextButton>
       <Testimonials />
+      <Subscribe />
     </>
   );
 };
