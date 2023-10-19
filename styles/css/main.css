@@ -9984,6 +9984,21 @@ h1, .h1, h2, .h2, h3, .h3 {
     gap: 23px;
     justify-content: center;
     width: 100%; }
+  .Blog-badge {
+    background-color: #80c100;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    left: 8px;
+    line-height: 1.5;
+    padding: 8px 15px;
+    position: absolute;
+    text-align: center;
+    top: 14px;
+    transition: all 0.3s ease-in-out 0.1s; }
   .Blog-card {
     background-color: #ffffff;
     border-radius: 12px;

@@ -14,8 +14,7 @@ const BlogCard = (props) => {
           className="Blog-image"
           style={{ backgroundImage: `url(${image})` }}
         />
-
-        <span className="button blog">{info}</span>
+        <span className="Blog-badge">{info}</span>
       </div>
       <div className="Blog-card-info">
         <Link className="Blog-card-title" href="#">
@@ -45,13 +44,13 @@ const BlogCard = (props) => {
 
 BlogCard.propTypes = {
   blog: PropTypes.shape({
-    image: PropTypes.string,
-    title: PropTypes.string,
-    author: PropTypes.string,
-    text: PropTypes.string,
-    date: PropTypes.string,
-    info: PropTypes.string,
-  }),
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    info: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default BlogCard;
