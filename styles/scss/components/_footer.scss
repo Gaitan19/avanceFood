@@ -111,20 +111,20 @@
         // @include media-breakpoint-down(lg) {
         //     margin-left: 0px;
         // }
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 30px;
-            width: 100%;
-        }
+        // @include media-breakpoint-down(sm) {
+        //     margin-bottom: 30px;
+        //     width: 100%;
+        // }
     }
 
     &-list {
         margin-top: 5px;
         padding: 0;
 
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 0;
-            margin-top: 0;
-        }
+        // @include media-breakpoint-down(sm) {
+        //     margin-bottom: 0;
+        //     margin-top: 0;
+        // }
     }
 
     &-link {
@@ -149,26 +149,26 @@
         // margin-left: 118px;
         width: 240px;
 
-        @include media-breakpoint-down(lg) {
-            margin-left: 0;
-        }
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 30px;
-            width: 100%;
-        }
+        // @include media-breakpoint-down(lg) {
+        //     margin-left: 0;
+        // }
+        // @include media-breakpoint-down(sm) {
+        //     margin-bottom: 30px;
+        //     width: 100%;
+        // }
     }
 
     &-opening {
         // margin-left: 88px;
         width: 448px;
 
-        @include media-breakpoint-down(lg) {
-            margin-left: 0;
-        }
+        // @include media-breakpoint-down(lg) {
+        //     margin-left: 0;
+        // }
 
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
+        // @include media-breakpoint-down(sm) {
+        //     width: 100%;
+        // }
     }
 
     &-table {
@@ -257,6 +257,14 @@
         &-quickP {
             margin-left: 0px;
         }
+
+        &-support {
+            margin-left: 0;
+        }
+
+        &-opening {
+            margin-left: 0;
+        }
     }
     @include media-breakpoint-down(sm) {
         &-container {
@@ -267,6 +275,25 @@
 
         &-helpInfo {
             margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &-quick {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &-list {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &-support {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &-opening {
             width: 100%;
         }
     }
