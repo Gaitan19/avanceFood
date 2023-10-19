@@ -9942,6 +9942,171 @@ h1, .h1, h2, .h2, h3, .h3 {
         line-height: 40px;
         margin-bottom: 0; } }
 
+.Blog {
+  background-color: #e5e5e5;
+  width: 100%; }
+  .Blog-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 80px 0 100px; }
+  .Blog-title {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center; }
+  .Blog-text {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 55px;
+    text-align: center;
+    text-transform: capitalize; }
+    .Blog-text::after {
+      background: #80c100;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 50%;
+      margin-top: 15px;
+      position: absolute;
+      transform: translate(-50%, 50%);
+      width: 200px; }
+  .Blog-cards {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+    width: 100%; }
+  .Blog-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.1);
+    height: 542px;
+    max-width: 456px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s all ease-in-out; }
+    .Blog-card:hover .Blog-image {
+      transform: scale(1.2) rotate(3deg); }
+    .Blog-card-text {
+      color: #818090;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-bottom: 17px; }
+    .Blog-card-details {
+      align-items: center;
+      border-top: 1px solid #dddddd75;
+      display: flex;
+      flex: 1;
+      padding-top: 15px;
+      width: 100%; }
+    .Blog-card-info {
+      padding: 35px 20px 15px; }
+    .Blog-card-title {
+      color: #2b2540;
+      font-family: inherit;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 35px;
+      margin-bottom: 10px;
+      transition: color ease-in-out 0.3s; }
+      .Blog-card-title:hover {
+        color: #80c100; }
+  .Blog-container {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 274.11px;
+    overflow: hidden;
+    transition: 0.4s all ease-in-out;
+    width: 100%; }
+  .Blog-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s all ease-in-out;
+    width: 100%; }
+  .Blog-date {
+    align-items: center;
+    border-right: 1px solid #dddddd75;
+    display: flex;
+    gap: 8px;
+    width: 100%; }
+    .Blog-date-bold {
+      color: #2b2540;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 0; }
+    .Blog-date-light {
+      color: #818090;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-bottom: 0; }
+  .Blog-icon {
+    background-color: #fceceb;
+    border-radius: 50px;
+    font-size: 36px;
+    padding: 8px; }
+  .Blog-owner {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-left: 24px;
+    width: 100%; }
+  @media (max-width: 1199.98px) {
+    .Blog-card {
+      height: auto;
+      width: 32%; }
+    .Blog-container {
+      height: 178px; }
+    .Blog-cards {
+      gap: 18px;
+      justify-content: space-between;
+      padding: 0 30px; } }
+  @media (max-width: 991.98px) {
+    .Blog-content {
+      padding: 70px 0;
+      width: 720px; }
+    .Blog-cards {
+      gap: 28px;
+      padding: 0;
+      width: 100%; }
+    .Blog-card {
+      height: auto;
+      width: 48%; }
+      .Blog-card-info {
+        padding: 15px 20px; }
+      .Blog-card-container {
+        height: 201.97px; } }
+  @media (max-width: 575.98px) {
+    .Blog-content {
+      padding: 40px 0;
+      width: 360px; }
+    .Blog-text {
+      font-size: 26px; }
+    .Blog-cards {
+      justify-content: center;
+      width: 100%; }
+    .Blog-card {
+      width: 100%; } }
+
 .Button {
   width: 100%; }
   .Button-tools {

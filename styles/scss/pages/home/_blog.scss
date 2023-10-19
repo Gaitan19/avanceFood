@@ -1,0 +1,279 @@
+.Blog {
+    background-color: $Gainsboro;
+    width: 100%;
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 80px 0 100px;
+
+        // @include media-breakpoint-down(lg) {
+        //     padding: 70px 0;
+        //     width: 720px;
+        // }
+
+        // @include media-breakpoint-down(sm) {
+        //     padding: 40px 0;
+        //     width: 360px;
+        // }
+    }
+
+    &-title {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-align: center;
+
+        // @extend .arrows;
+    }
+
+    &-text {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 55px;
+        text-align: center;
+        text-transform: capitalize;
+
+        &::after {
+            background: $LawnGreen;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            margin-top: 15px;
+            position: absolute;
+            transform: translate(-50%, 50%);
+            width: 200px;
+        }
+
+        // @include media-breakpoint-down(sm) {
+        // font-size: 26px;
+        // }
+    }
+
+    &-cards {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 23px;
+        justify-content: center;
+        width: 100%;
+
+        // @include media-breakpoint-down(lg) {
+        //     justify-content: flex-start;
+        //     width: 698px;
+        // }
+        // @include media-breakpoint-down(sm) {
+        //     justify-content: center;
+        //     width: 100%;
+        // }
+    }
+
+    &-card {
+        background-color: $white;
+        border-radius: 12px;
+        box-shadow: $shadow;
+        height: 542px;
+        max-width: 456px;
+        overflow: hidden;
+        position: relative;
+        transition: 0.4s all ease-in-out;
+
+        &:hover {
+            .Blog-image {
+                transform: scale(1.2) rotate(3deg);
+            }
+        }
+
+        &-text {
+            color: $paragraph-color;
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 17px;
+        }
+
+        &-details {
+            align-items: center;
+            border-top: 1px solid $LightGray;
+            display: flex;
+            flex: 1;
+            padding-top: 15px;
+            width: 100%;
+        }
+
+        &-info {
+            padding: 35px 20px 15px;
+
+            // @include media-breakpoint-down(lg) {
+            // padding: 15px 20px;
+            // }
+        }
+
+        &-title {
+            color: $black-color;
+            font-family: $font-options;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 35px;
+            margin-bottom: 10px;
+            transition: color ease-in-out 0.3s;
+
+            &:hover {
+                color: $LawnGreen;
+            }
+        }
+
+        // @include media-breakpoint-down(lg) {
+        //     height: auto;
+        //     width: 336px;
+        // }
+
+        // @include media-breakpoint-down(sm) {
+        //     width: 100%;
+        // }
+    }
+
+    &-container {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        height: 274.11px;
+        overflow: hidden;
+        transition: 0.4s all ease-in-out;
+        width: 100%;
+
+        // @include media-breakpoint-down(lg) {
+        // height: 201.97px;
+        // }
+    }
+
+    &-image {
+        // background-image: url("https://foodingly.netlify.app/assets/img/blogs/blog-1.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s all ease-in-out;
+        width: 100%;
+    }
+
+    &-date {
+        align-items: center;
+        border-right: 1px solid $LightGray;
+        display: flex;
+        gap: 8px;
+        width: 100%;
+
+        &-bold {
+            color: $black-color;
+            font-family: $font-options;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        &-light {
+            color: $paragraph-color;
+            font-family: $font-secondary;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+    }
+
+    &-icon {
+        background-color: $cream;
+        border-radius: 50px;
+        // font-size: 17px;
+        font-size: 36px;
+        padding: 8px;
+    }
+
+    &-owner {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        margin-left: 24px;
+        width: 100%;
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-card {
+            height: auto;
+            width: 32%;
+        }
+
+        &-container {
+            height: 178px;
+        }
+
+        &-cards {
+            gap: 18px;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            padding: 70px 0;
+            width: 720px;
+        }
+
+        &-cards {
+            gap: 28px;
+            padding: 0;
+            // justify-content: flex-start;
+            // width: 698px;
+            width: 100%;
+        }
+
+        &-card {
+            height: auto;
+            // width: 336px;
+            width: 48%;
+
+            &-info {
+                padding: 15px 20px;
+            }
+
+            &-container {
+                height: 201.97px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-content {
+            padding: 40px 0;
+            width: 360px;
+        }
+
+        &-text {
+            font-size: 26px;
+        }
+
+        &-cards {
+            justify-content: center;
+            width: 100%;
+        }
+
+        &-card {
+            width: 100%;
+        }
+    }
+}

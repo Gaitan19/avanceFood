@@ -1,3 +1,6 @@
+import { blogs } from '@/constants/blogsList';
+import BlogCard from './BlogCard';
+
 const LatestBlogs = () => {
   const renderBlogs = () =>
     blogs.map((blog) => <BlogCard key={blog.title} blog={blog} />);
