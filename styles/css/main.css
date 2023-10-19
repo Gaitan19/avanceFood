@@ -9363,6 +9363,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin-bottom: 20px;
     text-align: center; }
   .Reservation-carousel {
+    max-width: 1440px;
     width: 80%; }
   .Reservation-card {
     background-color: #ffffff;
@@ -10328,7 +10329,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     justify-content: space-evenly;
     margin: 0 auto;
     margin-top: 20px;
-    padding: 0 255px 0 192px;
+    max-width: 1440px;
     width: 100%; }
   .Hero-title {
     color: #2b2540;
