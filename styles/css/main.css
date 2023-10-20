@@ -10116,7 +10116,7 @@ h1, .h1, h2, .h2, h3, .h3 {
       width: 48%; } }
   @media (max-width: 575.98px) {
     .Blog-content {
-      padding: 0;
+      padding: 60px 0;
       width: 94%; }
     .Blog-text {
       font-size: 26px; }
@@ -10410,5 +10410,185 @@ h1, .h1, h2, .h2, h3, .h3 {
         line-height: 75px; }
       .Hero-image {
         display: none; } }
+
+.Footer {
+  background-color: #ffffff;
+  width: 100%; }
+  .Footer-container {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding: 100px 0;
+    padding-left: var(--bs-gutter-x, 1.75rem);
+    padding-right: var(--bs-gutter-x, 1.75rem);
+    width: 100%; }
+  .Footer-title {
+    border-bottom: 1px solid #80c100;
+    color: #2b2540;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    padding-bottom: 5px; }
+  .Footer-help {
+    line-height: 1.5;
+    width: 25%; }
+    .Footer-help-info {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px; }
+    .Footer-help-item {
+      border-left: 2px solid #80c100;
+      margin-bottom: 24px;
+      padding-left: 9px;
+      padding-top: 5px; }
+      .Footer-help-item:last-child {
+        margin-bottom: 0; }
+    .Footer-help-text {
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 8px; }
+    .Footer-help-green {
+      color: #80c100;
+      font-family: inherit;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 0;
+      transition: color ease-in-out 0.3s; }
+      .Footer-help-green:hover {
+        color: #2b2540; }
+  .Footer-social {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0;
+    padding: 0; }
+  .Footer-icons {
+    list-style: none; }
+  .Footer-icon {
+    color: #80c100;
+    transition: color 0.3s ease-in-out 0.1s; }
+    .Footer-icon:hover {
+      color: #2b2540; }
+  .Footer-quick {
+    width: 16%; }
+  .Footer-list {
+    margin-top: 5px;
+    padding: 0; }
+  .Footer-link {
+    list-style: none;
+    margin-bottom: 15px; }
+  .Footer-item {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: color ease-in-out 0.35s; }
+    .Footer-item:hover {
+      color: #80c100; }
+  .Footer-support {
+    width: 16%; }
+  .Footer-opening {
+    width: 33%; }
+  .Footer-table {
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    border-style: solid;
+    display: table;
+    margin-top: 5px;
+    width: 100%; }
+  .Footer-table-cell {
+    border: 1px solid #e5e5e5;
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 8px;
+    text-align: left; }
+  .Footer-copyright {
+    background-color: #f3f6fd;
+    padding: 15px 0;
+    width: 100%; }
+    .Footer-copyright-content {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1440px;
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      width: 100%; }
+    .Footer-copyright-text {
+      color: #2b2540;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 28px;
+      margin-bottom: 0;
+      margin-bottom: 10px; }
+    .Footer-copyright-image {
+      background-image: url("https://foodingly.netlify.app/assets/img/common/cards.png");
+      height: 35px;
+      width: 212px; }
+  @media ((max-width: 1024px)) {
+    .Footer-help {
+      width: 27%; }
+    .Footer-quick {
+      width: 15%; } }
+  @media (max-width: 991.98px) {
+    .Footer-container {
+      gap: 36px;
+      justify-self: start;
+      padding-left: 8%;
+      padding-right: 8%; }
+    .Footer-help {
+      margin-right: 0px;
+      width: 43%; }
+    .Footer-quick {
+      margin-left: 0px;
+      width: 50%; }
+    .Footer-support {
+      margin-left: 0;
+      width: 230px; }
+    .Footer-opening {
+      margin-left: 0;
+      width: 454px; } }
+  @media (max-width: 767.98px) {
+    .Footer-copyright-content {
+      flex-direction: column; } }
+  @media (max-width: 575.98px) {
+    .Footer-container {
+      gap: 25px;
+      justify-content: flex-start;
+      padding: 70px 15px 40px; }
+    .Footer-help-info {
+      width: 100%; }
+    .Footer-quick {
+      width: 100%; }
+    .Footer-list {
+      margin-bottom: 0;
+      margin-top: 0; }
+    .Footer-support {
+      width: 100%; }
+    .Footer-opening {
+      width: 100%; }
+    .Footer-table {
+      margin-bottom: 30px;
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

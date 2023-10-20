@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Header from '../Header';
 import HeadPage from '../HeadPage';
+import Footer from '../Footer';
 
 const Layout = (props) => {
   const { children } = props;
@@ -11,6 +12,7 @@ const Layout = (props) => {
       <section>
         <Header />
         {children}
+        <Footer />
       </section>
     </>
   );
