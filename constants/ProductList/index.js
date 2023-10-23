@@ -6,6 +6,7 @@ export const productList = [
     image: 'https://foodingly.netlify.app/assets/img/tab-img/item7.png',
     discount: 0,
     price: 45.0,
+    category: 'Chicken',
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ export const productList = [
     image: 'https://foodingly.netlify.app/assets/img/tab-img/item1.png',
     discount: 50,
     price: 59.0,
+    category: 'Burger',
   },
 
   {
@@ -21,6 +23,7 @@ export const productList = [
     image: 'https://foodingly.netlify.app/assets/img/tab-img/item5.png',
     discount: 0,
     price: 32.0,
+    category: 'Chicken',
   },
 
   {
@@ -29,6 +32,7 @@ export const productList = [
     image: 'https://foodingly.netlify.app/assets/img/tab-img/item4.png',
     discount: 30,
     price: 60.0,
+    category: 'Noodles',
   },
 
   {
@@ -37,6 +41,7 @@ export const productList = [
     image: 'https://foodingly.netlify.app/assets/img/tab-img/item9.png',
     discount: 0,
     price: 17.0,
+    category: 'Ice cream',
   },
 
   {
@@ -45,6 +50,7 @@ export const productList = [
     image: 'https://foodingly.netlify.app/assets/img/tab-img/item10.png',
     discount: 0,
     price: 25.0,
+    category: 'Drinks',
   },
 
   {
@@ -53,6 +59,7 @@ export const productList = [
     image: 'https://foodingly.netlify.app/assets/img/tab-img/item11.png',
     discount: 0,
     price: 18.0,
+    category: 'All',
   },
 
   {
@@ -61,5 +68,6 @@ export const productList = [
     image: 'https://foodingly.netlify.app/assets/img/tab-img/item12.png',
     discount: 60,
     price: 12.0,
+    category: 'All',
   },
 ];

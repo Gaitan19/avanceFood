@@ -7,6 +7,7 @@ import TextButton from './TextButton';
 import Testimonials from '../Testimonials';
 import Subscribe from './Subscribe';
 import LatestBlogs from './LatestBlogs';
+import PopularItems from './PopularItems';
 
 const Home = () => {
   const renderChefs = () =>
@@ -28,6 +29,7 @@ const Home = () => {
         text="Preferred Food, Drinks, Juice 30% Off Friday Only"
         hasFillButton
       />
+      <PopularItems></PopularItems>
       <TextButton
         customClass="Dinner"
         title="Do You Have Any Dinner Plan Today? Reserve Your Tbale"

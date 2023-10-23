@@ -32,7 +32,7 @@ const Product = (props) => {
       <div className="Products-cardAdd">
         <p className="Products-cardPrice">${price}</p>
         <div className="Products-cardButton">
-          <Button className="button outline">Add To Cart</Button>
+          <Button customClass="button outline">Add To Cart</Button>
         </div>
       </div>
     </article>

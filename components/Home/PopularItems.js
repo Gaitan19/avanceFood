@@ -1,19 +1,28 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Button from '../Button';
 import Product from './Product';
 import { productList } from '@/constants/ProductList';
 
 const PopularItems = () => {
   const [active, setActive] = useState('');
+  const [products, setProducts] = useState(productList);
 
   const filterProducts = async (category) => {
+    setProducts(productList);
     setActive(category);
+
+    if (category !== '') {
+      setProducts(() => {
+        const filteredProducts = productList.filter((product) => {
+          return category === '' || product.category === category;
+        });
+        return filteredProducts;
+      });
+    }
   };
 
   const renderProducts = () =>
-    productList.map((product) => (
-      <Product product={product} key={product.id} />
-    ));
+    products.map((product) => <Product product={product} key={product.id} />);
 
   return (
     <div className="Products">
@@ -22,48 +31,50 @@ const PopularItems = () => {
         <h2 className="Products-text">Our most popular items</h2>
         <div className="Products-filters">
           <Button
-            className={`button products ${active === '' ? 'filterActive' : ''}`}
+            customClass={`button products ${
+              active === '' ? 'filterActive' : ''
+            }`}
             onClick={() => filterProducts('')}
           >
             All Categories
           </Button>
           <Button
-            className={`button products ${
-              active === 'NOODLES' ? 'filterActive' : ''
+            customClass={`button products ${
+              active === 'Noodles' ? 'filterActive' : ''
             }`}
-            onClick={() => filterProducts('NOODLES')}
+            onClick={() => filterProducts('Noodles')}
           >
             Noodles
           </Button>
           <Button
-            className={`button products ${
-              active === 'BURGUER' ? 'filterActive' : ''
+            customClass={`button products ${
+              active === 'Burger' ? 'filterActive' : ''
             } `}
-            onClick={() => filterProducts('BURGER')}
+            onClick={() => filterProducts('Burger')}
           >
             Burger
           </Button>
           <Button
-            className={`button products ${
-              active === 'CHICKEN' ? 'filterActive' : ''
+            customClass={`button products ${
+              active === 'Chicken' ? 'filterActive' : ''
             }`}
-            onClick={() => filterProducts('CHICKEN')}
+            onClick={() => filterProducts('Chicken')}
           >
             Chicken
           </Button>
           <Button
-            className={`button products ${
-              active === 'ICE_CREAM' ? 'filterActive' : ''
+            customClass={`button products ${
+              active === 'Ice cream' ? 'filterActive' : ''
             }`}
-            onClick={() => filterProducts('ICE_CREAM')}
+            onClick={() => filterProducts('Ice cream')}
           >
             Ice Cream
           </Button>
           <Button
-            className={`button products ${
-              active === 'DRINKS' ? 'filterActive' : ''
+            customClass={`button products ${
+              active === 'Drinks' ? 'filterActive' : ''
             }`}
-            onClick={() => filterProducts('DRINKS')}
+            onClick={() => filterProducts('Drinks')}
           >
             Drinks
           </Button>

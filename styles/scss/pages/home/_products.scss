@@ -1,0 +1,223 @@
+.Products {
+    background-color: $Gainsboro;
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1420px;
+        padding: 80px 0;
+
+        @include media-breakpoint-down(lg) {
+            width: 720px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 60px 0;
+            width: 365px;
+        }
+    }
+
+    &-text {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 60px;
+
+        &::after {
+            background: $LawnGreen;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            margin-top: 15px;
+            position: absolute;
+            transform: translate(-50%, 50%);
+            width: 200px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 26px;
+        }
+    }
+
+    &-title {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 20px;
+
+        // @extend .arrows;
+    }
+
+    &-list {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: flex-start;
+        margin: 0 auto;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        @include media-breakpoint-down(sm) {
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    &-filters {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 100%;
+
+        @include media-breakpoint-down(lg) {
+            gap: 25px;
+            width: 720px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            gap: 15px;
+            width: 350px;
+        }
+    }
+
+    &-card {
+        background-color: $white;
+        border-radius: 11px;
+        height: 400px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+        width: 336px;
+
+        &:hover {
+            box-shadow: $shadow-product;
+
+            .Products-cardImage {
+                transform: scale(1.2);
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 10px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 360px;
+        }
+    }
+
+    &-cardHeader {
+        background-color: $white;
+        border-radius: 11px;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+    }
+
+    &-cardBody {
+        padding: 20px 15px;
+    }
+
+    &-cardImage {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 198px;
+        object-fit: cover;
+        transition: all 0.4s ease-in-out;
+        width: 100%;
+    }
+
+    &-cardName {
+        color: $black-color;
+        cursor: pointer;
+        font-family: $font-options;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        transition: color 0.4s ease-in-out;
+
+        &:hover {
+            color: $LawnGreen;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 16px;
+        }
+    }
+
+    &-cardDiscount {
+        align-items: center;
+        background-color: $LawnGreen;
+        border-radius: 100%;
+        bottom: 20px;
+        color: $white;
+        display: flex;
+        font-family: $font-options;
+        font-size: 16px;
+        font-weight: 500;
+        height: 45px;
+        justify-content: center;
+        line-height: 45px;
+        position: absolute;
+        right: 40px;
+        text-align: end;
+        width: 45px;
+    }
+
+    &-cardInfo {
+        margin-bottom: 10px;
+    }
+
+    &-cardRating {
+        color: $LawnGreen;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    &-cardReview {
+        color: $black-color;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-left: 10px;
+    }
+
+    &-cardPrice {
+        font-family: $font-options;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    &-cardAdd {
+        align-items: center;
+        bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        position: absolute;
+        width: 100%;
+    }
+
+    .filterActive {
+        color: $black-color;
+    }
+}
