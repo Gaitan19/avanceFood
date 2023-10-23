@@ -137,12 +137,61 @@
     }
 
     @include media-breakpoint-down(xl) {
+        &-toogle {
+            & span {
+                background-image: url(https://e7.pngegg.com/pngimages/233/724/png-clipart-computer-icons-dots-three-buttons-text-monochrome.png);
+            }
+
+            &:focus {
+                border: none;
+                box-shadow: none;
+            }
+
+            &-options {
+                border: none;
+                &:focus {
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
         &-content {
             justify-content: space-between;
             padding: 0 100px 0 0;
         }
         &-menu {
+            flex-direction: row-reverse;
             width: auto;
+        }
+
+        &-item {
+            border-top: 1px solid $LightCyan;
+            padding: 1em 5%;
+        }
+
+        &-nav {
+            background: $white;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            left: 10%;
+            max-height: 238px;
+            overflow-y: scroll;
+            position: absolute;
+            width: 79%;
+
+            &-tools {
+                align-items: center;
+                background: $white;
+                display: flex;
+                flex-direction: column-reverse;
+                max-width: 198px;
+                min-width: 198px;
+                padding: 15px;
+                position: absolute;
+                right: 12%;
+            }
         }
     }
 }

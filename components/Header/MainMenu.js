@@ -28,7 +28,7 @@ const MainMenu = () => {
     return mainMenuOptions.map((mainMenuOption) => {
       if (mainMenuOption.hasOwnProperty('menuOptions')) {
         return (
-          <CNavItem key={v4()}>
+          <CNavItem key={v4()} className="Navbar-item">
             <Dropdown
               isMenu
               menuOptions={mainMenuOption.menuOptions}
@@ -40,7 +40,7 @@ const MainMenu = () => {
       }
 
       return (
-        <CNavItem key={v4()}>
+        <CNavItem key={v4()} className="Navbar-item">
           <Link className="Menu-item" href={mainMenuOption.route}>
             {mainMenuOption.text}
           </Link>
@@ -85,6 +85,7 @@ const MainMenu = () => {
           <div className="Navbar-menu">
             <CContainer fluid className="Navbar-container-options">
               <CNavbarToggler
+                className="Navbar-toogle-options"
                 aria-label="Toggle navigation"
                 aria-expanded={visible}
                 onClick={() => setVisible(!visible)}
@@ -92,42 +93,20 @@ const MainMenu = () => {
               <CCollapse className="navbar-collapse" visible={visible}>
                 <CNavbarNav className="Navbar-nav">
                   {renderMainMenu()}
-                  {/* <CNavItem>
-                  <CNavLink href="#" active>
-                    Home
-                  </CNavLink>
-                </CNavItem>
-                <CNavItem>
-                  <CNavLink href="#">Features</CNavLink>
-                </CNavItem>
-                <CNavItem>
-                  <CNavLink href="#">Pricing</CNavLink>
-                </CNavItem>
-                <CDropdown variant="nav-item" popper={false}>
-                  <CDropdownToggle>Dropdown link</CDropdownToggle>
-                  <CDropdownMenu>
-                    <CDropdownItem href="#">Action</CDropdownItem>
-                    <CDropdownItem href="#">Another action</CDropdownItem>
-                    <CDropdownDivider />
-                    <CDropdownItem href="#">Something else here</CDropdownItem>
-                  </CDropdownMenu>
-                </CDropdown> */}
                 </CNavbarNav>
               </CCollapse>
             </CContainer>
 
             <CContainer fluid className="Navbar-container-tools">
-              {/* <CNavbarBrand href={routes.home}>
-            <div className="Menu-image" />
-          </CNavbarBrand> */}
               <CNavbarToggler
+                className="Navbar-toogle"
                 aria-label="Toggle navigation"
-                aria-expanded={visible}
+                aria-expanded={visibleOp}
                 onClick={() => setVisibleOp(!visibleOp)}
               />
 
               <CCollapse className="navbar-collapse" visible={visibleOp}>
-                <CNavbarNav>
+                <CNavbarNav className="Navbar-nav-tools">
                   <CNavItem>
                     <Button customClass="Button-tools">
                       <FaShoppingBag />

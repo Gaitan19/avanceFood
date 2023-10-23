@@ -10351,6 +10351,10 @@ h1, .h1, h2, .h2, h3, .h3 {
     border: none;
     font-size: 20px;
     margin-right: 35px; }
+    @media (max-width: 1199.98px) {
+      .Button-tools {
+        color: #818090;
+        margin: 0; } }
   .Button-reservation {
     background-color: #80c100;
     border: 2px solid #80c100;
@@ -10361,6 +10365,9 @@ h1, .h1, h2, .h2, h3, .h3 {
     font-weight: 400;
     line-height: 1.5;
     padding: 7px 10px; }
+    @media (max-width: 1199.98px) {
+      .Button-reservation {
+        display: none; } }
   .Button-carousel {
     background: #869791;
     border: none;
@@ -10557,11 +10564,45 @@ h1, .h1, h2, .h2, h3, .h3 {
   .Navbar-collapse-tools {
     margin-right: 219%; }
   @media (max-width: 1199.98px) {
+    .Navbar-toogle span {
+      background-image: url(https://e7.pngegg.com/pngimages/233/724/png-clipart-computer-icons-dots-three-buttons-text-monochrome.png); }
+    .Navbar-toogle:focus {
+      border: none;
+      box-shadow: none; }
+    .Navbar-toogle-options {
+      border: none; }
+      .Navbar-toogle-options:focus {
+        border: none;
+        box-shadow: none; }
     .Navbar-content {
       justify-content: space-between;
       padding: 0 100px 0 0; }
     .Navbar-menu {
-      width: auto; } }
+      flex-direction: row-reverse;
+      width: auto; }
+    .Navbar-item {
+      border-top: 1px solid #dbeefd;
+      padding: 1em 5%; }
+    .Navbar-nav {
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      left: 10%;
+      max-height: 238px;
+      overflow-y: scroll;
+      position: absolute;
+      width: 79%; }
+      .Navbar-nav-tools {
+        align-items: center;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 198px;
+        min-width: 198px;
+        padding: 15px;
+        position: absolute;
+        right: 12%; } }
 
 .Dropdown {
   display: flex;
@@ -10652,7 +10693,13 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin-right: 0; }
   @media (max-width: 1199.98px) {
     .Menu-dropdown {
-      margin-left: 0; } }
+      margin-left: 0; }
+    .Menu-item {
+      font-size: 15px;
+      margin: 0;
+      padding: 0; }
+    .Menu-icon {
+      color: #818090; } }
 
 .Hero {
   background-image: url("https://foodingly.netlify.app/assets/img/banner/bg.png");
