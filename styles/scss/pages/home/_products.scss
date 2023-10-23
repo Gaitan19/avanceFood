@@ -29,10 +29,6 @@
             transform: translate(-50%, 50%);
             width: 200px;
         }
-
-        // @include media-breakpoint-down(sm) {
-        //     font-size: 26px;
-        // }
     }
 
     &-title {
@@ -41,8 +37,6 @@
         font-size: 24px;
         font-weight: 300;
         margin-bottom: 20px;
-
-        // @extend .arrows;
     }
 
     &-list {
@@ -51,16 +45,7 @@
         flex-wrap: wrap;
         gap: 24px;
         justify-content: flex-start;
-        margin: 0 auto;
-
-        // @include media-breakpoint-down(lg) {
-        //     justify-content: space-between;
-        //     padding: 0 10px;
-        // }
-        // @include media-breakpoint-down(sm) {
-        //     justify-content: center;
-        //     padding: 0;
-        // }
+        width: 100%;
     }
 
     &-filters {
@@ -71,16 +56,6 @@
         justify-content: center;
         margin-bottom: 30px;
         width: 100%;
-
-        // @include media-breakpoint-down(lg) {
-        //     gap: 25px;
-        //     width: 720px;
-        // }
-
-        // @include media-breakpoint-down(sm) {
-        //     gap: 15px;
-        //     width: 350px;
-        // }
     }
 
     &-card {
@@ -99,14 +74,6 @@
                 transform: scale(1.2);
             }
         }
-
-        // @include media-breakpoint-down(lg) {
-        //     margin-bottom: 10px;
-        // }
-
-        // @include media-breakpoint-down(sm) {
-        //     width: 360px;
-        // }
 
         &-header {
             background-color: $white;
@@ -143,10 +110,6 @@
             &:hover {
                 color: $LawnGreen;
             }
-
-            // @include media-breakpoint-down(sm) {
-            //     font-size: 16px;
-            // }
         }
 
         &-discount {
@@ -208,13 +171,55 @@
         }
     }
 
-    .filterActive {
-        color: $black-color;
+    @include media-breakpoint-down(xxl) {
+        &-content {
+            padding: 80px 3%;
+        }
+
+        &-list {
+            margin-left: 10px;
+        }
+
+        &-card {
+            height: auto;
+            width: 261px;
+
+            &-image {
+                height: 157px;
+            }
+
+            &-info {
+                margin-bottom: 41px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-card {
+            height: auto;
+            width: 214px;
+
+            &-image {
+                height: 123px;
+            }
+
+            // &-info {
+            // margin-bottom: 41px;
+            // }
+
+            &-name {
+                max-width: 184px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
         &-content {
-            width: 720px;
+            //    width: 720px;
+            padding: 80px 5%;
         }
 
         &-list {
@@ -223,19 +228,68 @@
         }
 
         &-filters {
-            gap: 25px;
-            width: 720px;
+            gap: 15px;
+            // width: 720px;
         }
 
         &-card {
             margin-bottom: 10px;
+            width: 48%;
+
+            &-header {
+                align-content: center;
+                // padding: 10px 47px;
+                display: flex;
+                justify-content: center;
+            }
+
+            &-image {
+                height: 197px;
+                width: 314px;
+            }
+
+            &-name {
+                max-width: 214px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-content {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 80px 0;
+        }
+
+        &-list {
+            width: 85%;
+        }
+
+        &-filters {
+            padding: 0 28px;
+        }
+
+        &-card {
+            width: 270px;
+
+            &-header {
+                display: flex;
+                justify-content: center;
+            }
+
+            &-image {
+                height: 141px;
+                width: 224px;
+            }
         }
     }
 
     @include media-breakpoint-down(sm) {
         &-content {
             padding: 60px 0;
-            width: 365px;
+            // width: 365px;
+            width: 100%;
         }
 
         &-text {
@@ -245,19 +299,27 @@
         &-list {
             justify-content: center;
             padding: 0;
+            width: 92%;
         }
 
         &-filters {
             gap: 15px;
-            width: 350px;
+            // width: 350px;
+            padding: 0 10px;
         }
 
         &-card {
-            width: 360px;
-        }
+            // width: 360px;
+            width: 100%;
 
-        &-card-name {
-            font-size: 16px;
+            &-name {
+                font-size: 16px;
+            }
+
+            &-image {
+                height: 238px;
+                width: 379px;
+            }
         }
     }
 }

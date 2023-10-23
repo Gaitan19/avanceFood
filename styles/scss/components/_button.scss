@@ -99,8 +99,31 @@
     }
 
     &-products {
+        background: $LawnGreen;
+        border: none;
+        border-radius: 5px;
+        color: $white;
         font-size: 16px;
         padding: 8px 30px;
+
+        &-active {
+            color: $black-color;
+        }
+
+        @include media-breakpoint-down(xl) {
+            background: none;
+            border: 1px solid $LawnGreen;
+            color: $black;
+
+            &-active {
+                background: $LawnGreen;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+            padding: 8px 10px;
+        }
     }
 
     &-add {

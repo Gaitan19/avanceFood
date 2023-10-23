@@ -26,13 +26,12 @@ const PopularItems = () => {
     productOptions.map((productOption) => (
       <Button
         key={v4()}
-        customClass={`Button-fill Button-products ${
-          active === productOption ? 'filterActive' : ''
+        customClass={`Button-products ${
+          active === productOption ? 'Button-products-active' : ''
         }`}
         onClick={() => filterProducts(productOption)}
-      >
-        <span className="Button-fill-text">{productOption}</span>
-      </Button>
+        buttonText={productOption}
+      />
     ));
 
   const renderProducts = () =>

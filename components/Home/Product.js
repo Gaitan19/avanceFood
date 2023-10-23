@@ -31,11 +31,9 @@ const Product = (props) => {
       </div>
       <div className="Products-card-add">
         <p className="Products-card-price">${price}</p>
-        {/* <div className="Products-cardButton"> */}
         <Button customClass="Button-fill Button-add">
           <span>Add To Cart</span>
         </Button>
-        {/* </div> */}
       </div>
     </article>
   );
