@@ -1,5 +1,7 @@
 .Navbar {
-    display: none;
+    display: flex;
+    justify-content: center;
+
     &-top {
         background-color: $LawnGreen;
         border-bottom: 1px solid $GhostWhite;
@@ -41,6 +43,18 @@
         text-align: end;
     }
 
+    &-menu {
+        // align-items: center;
+        // display: flex;
+        /* gap: 104px; */
+        // flex-direction: row;
+        /* align-content: center; */
+        // justify-content: space-between;
+        // width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
     &-account {
         color: $white;
         font-size: 14px;
@@ -49,4 +63,97 @@
             color: $black;
         }
     }
+
+    &-content {
+        align-items: center;
+        display: flex;
+        gap: 40px;
+        justify-content: flex-start;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &-brand {
+        margin-left: 12%;
+        margin-left: 10%;
+    }
+
+    &-menu {
+        // align-content: center;
+        // align-content: center;
+        // align-items: center;
+
+        // align-items: center;
+        // display: flex;
+        // display: flex;
+        // flex-direction: row;
+        // flex-direction: row;
+        // justify-content: center;
+        // justify-content: space-between;
+        width: 100%;
+    }
+
+    &-container {
+        &-options {
+            align-items: center;
+
+            align-items: center;
+            display: flex;
+            display: flex;
+            flex-direction: column;
+            flex-direction: column;
+            justify-content: flex-end;
+            justify-content: center;
+            /* margin: 0 70px; */
+            /* padding: 0; */
+            /* width: 47%;*/
+        }
+
+        &-tools {
+            align-content: flex-start;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+
+    &-nav {
+        // align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        // justify-content: center;
+        width: 100%;
+    }
+
+    &-collapse {
+        &-options {
+            margin-right: 62%;
+        }
+        &-tools {
+            margin-right: 219%;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-content {
+            justify-content: space-between;
+            padding: 0 100px 0 0;
+        }
+        &-menu {
+            width: auto;
+        }
+    }
 }
+
+// .Menu {
+//     &-item {
+//         margin-right: 0;
+//         min-width: 70px;
+//     }
+
+//     &-dropDown {
+//         margin-right: 0;
+//     }
+// }

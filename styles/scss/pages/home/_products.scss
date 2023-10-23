@@ -203,10 +203,6 @@
                 height: 123px;
             }
 
-            // &-info {
-            // margin-bottom: 41px;
-            // }
-
             &-name {
                 max-width: 184px;
                 overflow: hidden;
@@ -218,7 +214,6 @@
 
     @include media-breakpoint-down(lg) {
         &-content {
-            //    width: 720px;
             padding: 80px 5%;
         }
 
@@ -229,7 +224,6 @@
 
         &-filters {
             gap: 15px;
-            // width: 720px;
         }
 
         &-card {
@@ -238,7 +232,6 @@
 
             &-header {
                 align-content: center;
-                // padding: 10px 47px;
                 display: flex;
                 justify-content: center;
             }
@@ -288,7 +281,6 @@
     @include media-breakpoint-down(sm) {
         &-content {
             padding: 60px 0;
-            // width: 365px;
             width: 100%;
         }
 
@@ -304,12 +296,10 @@
 
         &-filters {
             gap: 15px;
-            // width: 350px;
             padding: 0 10px;
         }
 
         &-card {
-            // width: 360px;
             width: 100%;
 
             &-name {
