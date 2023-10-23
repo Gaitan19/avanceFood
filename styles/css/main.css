@@ -10140,13 +10140,6 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin: 0 auto;
     max-width: 1420px;
     padding: 80px 0; }
-    @media (max-width: 991.98px) {
-      .Products-content {
-        width: 720px; } }
-    @media (max-width: 575.98px) {
-      .Products-content {
-        padding: 60px 0;
-        width: 365px; } }
   .Products-text {
     color: #2b2540;
     font-family: inherit;
@@ -10163,9 +10156,6 @@ h1, .h1, h2, .h2, h3, .h3 {
       position: absolute;
       transform: translate(-50%, 50%);
       width: 200px; }
-    @media (max-width: 575.98px) {
-      .Products-text {
-        font-size: 26px; } }
   .Products-title {
     color: #2b2540;
     font-family: inherit;
@@ -10179,14 +10169,6 @@ h1, .h1, h2, .h2, h3, .h3 {
     gap: 24px;
     justify-content: flex-start;
     margin: 0 auto; }
-    @media (max-width: 991.98px) {
-      .Products-list {
-        justify-content: space-between;
-        padding: 0 10px; } }
-    @media (max-width: 575.98px) {
-      .Products-list {
-        justify-content: center;
-        padding: 0; } }
   .Products-filters {
     align-items: center;
     display: flex;
@@ -10195,14 +10177,6 @@ h1, .h1, h2, .h2, h3, .h3 {
     justify-content: center;
     margin-bottom: 30px;
     width: 100%; }
-    @media (max-width: 991.98px) {
-      .Products-filters {
-        gap: 25px;
-        width: 720px; } }
-    @media (max-width: 575.98px) {
-      .Products-filters {
-        gap: 15px;
-        width: 350px; } }
   .Products-card {
     background-color: #ffffff;
     border-radius: 11px;
@@ -10213,92 +10187,110 @@ h1, .h1, h2, .h2, h3, .h3 {
     width: 336px; }
     .Products-card:hover {
       box-shadow: 4px 14px 28px rgba(0, 0, 0, 0.1); }
-      .Products-card:hover .Products-cardImage {
+      .Products-card:hover .Products-card-image {
         transform: scale(1.2); }
-    @media (max-width: 991.98px) {
-      .Products-card {
-        margin-bottom: 10px; } }
-    @media (max-width: 575.98px) {
-      .Products-card {
-        width: 360px; } }
-  .Products-cardHeader {
-    background-color: #ffffff;
-    border-radius: 11px;
-    padding: 10px;
-    position: relative;
-    width: 100%; }
-  .Products-cardBody {
-    padding: 20px 15px; }
-  .Products-cardImage {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 198px;
-    object-fit: cover;
-    transition: all 0.4s ease-in-out;
-    width: 100%; }
-  .Products-cardName {
-    color: #2b2540;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-    transition: color 0.4s ease-in-out; }
-    .Products-cardName:hover {
-      color: #80c100; }
-    @media (max-width: 575.98px) {
-      .Products-cardName {
-        font-size: 16px; } }
-  .Products-cardDiscount {
-    align-items: center;
-    background-color: #80c100;
-    border-radius: 100%;
-    bottom: 20px;
-    color: #ffffff;
-    display: flex;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    height: 45px;
-    justify-content: center;
-    line-height: 45px;
-    position: absolute;
-    right: 40px;
-    text-align: end;
-    width: 45px; }
-  .Products-cardInfo {
-    margin-bottom: 10px; }
-  .Products-cardRating {
-    color: #80c100;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px; }
-  .Products-cardReview {
-    color: #2b2540;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-left: 10px; }
-  .Products-cardPrice {
-    font-family: inherit;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 0; }
-  .Products-cardAdd {
-    align-items: center;
-    bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    position: absolute;
-    width: 100%; }
+    .Products-card-header {
+      background-color: #ffffff;
+      border-radius: 11px;
+      padding: 10px;
+      position: relative;
+      width: 100%; }
+    .Products-card-body {
+      padding: 20px 15px; }
+    .Products-card-image {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 198px;
+      object-fit: cover;
+      transition: all 0.4s ease-in-out;
+      width: 100%; }
+    .Products-card-name {
+      color: #2b2540;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      transition: color 0.4s ease-in-out; }
+      .Products-card-name:hover {
+        color: #80c100; }
+    .Products-card-discount {
+      align-items: center;
+      background-color: #80c100;
+      border-radius: 100%;
+      bottom: 20px;
+      color: #ffffff;
+      display: flex;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      height: 45px;
+      justify-content: center;
+      line-height: 45px;
+      position: absolute;
+      right: 40px;
+      text-align: end;
+      width: 45px; }
+    .Products-card-info {
+      margin-bottom: 10px; }
+    .Products-card-rating {
+      color: #80c100;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px; }
+    .Products-card-review {
+      color: #2b2540;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-left: 10px; }
+    .Products-card-price {
+      font-family: inherit;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 0; }
+    .Products-card-add {
+      align-items: center;
+      bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      position: absolute;
+      width: 100%; }
   .Products .filterActive {
     color: #2b2540; }
+  @media (max-width: 991.98px) {
+    .Products-content {
+      width: 720px; }
+    .Products-list {
+      justify-content: space-between;
+      padding: 0 10px; }
+    .Products-filters {
+      gap: 25px;
+      width: 720px; }
+    .Products-card {
+      margin-bottom: 10px; } }
+  @media (max-width: 575.98px) {
+    .Products-content {
+      padding: 60px 0;
+      width: 365px; }
+    .Products-text {
+      font-size: 26px; }
+    .Products-list {
+      justify-content: center;
+      padding: 0; }
+    .Products-filters {
+      gap: 15px;
+      width: 350px; }
+    .Products-card {
+      width: 360px; }
+    .Products-card-name {
+      font-size: 16px; } }
 
 .Button {
   width: 100%; }
@@ -10335,7 +10327,6 @@ h1, .h1, h2, .h2, h3, .h3 {
     border-radius: 5px;
     color: #ffffff;
     font-family: inherit;
-    font-size: 16px;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
@@ -10379,6 +10370,19 @@ h1, .h1, h2, .h2, h3, .h3 {
         font-size: 15px;
         justify-content: center;
         padding: 12px 30px; } }
+  .Button-products {
+    font-size: 16px;
+    padding: 8px 30px; }
+  .Button-add {
+    background: none;
+    border: 1px solid #80c100;
+    border-radius: 5px;
+    color: #000;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 5px 18px; }
+    .Button-add span {
+      position: relative; }
 
 .button {
   background-color: #80c100;

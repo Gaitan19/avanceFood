@@ -41,7 +41,6 @@
         border-radius: 5px;
         color: $white;
         font-family: $font-options;
-        font-size: 16px;
         font-size: 18px;
         font-weight: 400;
         line-height: 1.5;
@@ -96,6 +95,25 @@
             font-size: 15px;
             justify-content: center;
             padding: 12px 30px;
+        }
+    }
+
+    &-products {
+        font-size: 16px;
+        padding: 8px 30px;
+    }
+
+    &-add {
+        background: none;
+        border: 1px solid $LawnGreen;
+        border-radius: 5px;
+        color: $black;
+        font-family: inherit;
+        font-size: 16px;
+        padding: 5px 18px;
+
+        & span {
+            position: relative;
         }
     }
 }

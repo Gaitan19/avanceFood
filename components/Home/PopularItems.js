@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import { v4 } from 'uuid';
 import Button from '../Button';
 import Product from './Product';
-import { productList } from '@/constants/ProductList';
+import { productList, productOptions } from '@/constants/ProductList';
 
 const PopularItems = () => {
   const [active, setActive] = useState('');
@@ -11,15 +12,28 @@ const PopularItems = () => {
     setProducts(productList);
     setActive(category);
 
-    if (category !== '') {
+    if (category !== 'All Categories') {
       setProducts(() => {
         const filteredProducts = productList.filter((product) => {
-          return category === '' || product.category === category;
+          return product.category === category;
         });
         return filteredProducts;
       });
     }
   };
+
+  const renderProductOptions = () =>
+    productOptions.map((productOption) => (
+      <Button
+        key={v4()}
+        customClass={`Button-fill Button-products ${
+          active === productOption ? 'filterActive' : ''
+        }`}
+        onClick={() => filterProducts(productOption)}
+      >
+        <span className="Button-fill-text">{productOption}</span>
+      </Button>
+    ));
 
   const renderProducts = () =>
     products.map((product) => <Product product={product} key={product.id} />);
@@ -29,56 +43,7 @@ const PopularItems = () => {
       <div className="Products-content">
         <h3 className="Products-title">Our Featured Items</h3>
         <h2 className="Products-text">Our most popular items</h2>
-        <div className="Products-filters">
-          <Button
-            customClass={`button products ${
-              active === '' ? 'filterActive' : ''
-            }`}
-            onClick={() => filterProducts('')}
-          >
-            All Categories
-          </Button>
-          <Button
-            customClass={`button products ${
-              active === 'Noodles' ? 'filterActive' : ''
-            }`}
-            onClick={() => filterProducts('Noodles')}
-          >
-            Noodles
-          </Button>
-          <Button
-            customClass={`button products ${
-              active === 'Burger' ? 'filterActive' : ''
-            } `}
-            onClick={() => filterProducts('Burger')}
-          >
-            Burger
-          </Button>
-          <Button
-            customClass={`button products ${
-              active === 'Chicken' ? 'filterActive' : ''
-            }`}
-            onClick={() => filterProducts('Chicken')}
-          >
-            Chicken
-          </Button>
-          <Button
-            customClass={`button products ${
-              active === 'Ice cream' ? 'filterActive' : ''
-            }`}
-            onClick={() => filterProducts('Ice cream')}
-          >
-            Ice Cream
-          </Button>
-          <Button
-            customClass={`button products ${
-              active === 'Drinks' ? 'filterActive' : ''
-            }`}
-            onClick={() => filterProducts('Drinks')}
-          >
-            Drinks
-          </Button>
-        </div>
+        <div className="Products-filters">{renderProductOptions()}</div>
         <div className="Products-list">{renderProducts()}</div>
       </div>
     </div>

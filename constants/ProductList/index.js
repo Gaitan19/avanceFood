@@ -1,4 +1,12 @@
-/* eslint-disable import/prefer-default-export */
+export const productOptions = [
+  'All Categories',
+  'Noodles',
+  'Burger',
+  'Chicken',
+  'Ice cream',
+  'Drinks',
+];
+
 export const productList = [
   {
     id: 1,

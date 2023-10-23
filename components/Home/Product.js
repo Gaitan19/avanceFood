@@ -8,32 +8,34 @@ const Product = (props) => {
 
   const showDiscount = () => {
     if (discount)
-      return <div className="Products-cardDiscount">{discount}%</div>;
+      return <div className="Products-card-discount">{discount}%</div>;
 
     return <></>;
   };
 
   return (
     <article className="Products-card">
-      <div className="Products-cardHeader">
+      <div className="Products-card-header">
         <div
-          className="Products-cardImage"
+          className="Products-card-image"
           style={{ backgroundImage: `url(${image})` }}
         />
         {showDiscount()}
       </div>
-      <div className="Products-cardBody">
-        <p className="Products-cardName">{name.toLowerCase()}</p>
-        <p className="Products-cardInfo">
-          <span className="Products-cardRating">4.8/5 Excellent</span>
-          <span className="Products-cardReview">(1214 reviews)</span>
+      <div className="Products-card-body">
+        <p className="Products-card-name">{name.toLowerCase()}</p>
+        <p className="Products-card-info">
+          <span className="Products-card-rating">4.8/5 Excellent</span>
+          <span className="Products-card-review">(1214 reviews)</span>
         </p>
       </div>
-      <div className="Products-cardAdd">
-        <p className="Products-cardPrice">${price}</p>
-        <div className="Products-cardButton">
-          <Button customClass="button outline">Add To Cart</Button>
-        </div>
+      <div className="Products-card-add">
+        <p className="Products-card-price">${price}</p>
+        {/* <div className="Products-cardButton"> */}
+        <Button customClass="Button-fill Button-add">
+          <span>Add To Cart</span>
+        </Button>
+        {/* </div> */}
       </div>
     </article>
   );
