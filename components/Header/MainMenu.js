@@ -18,6 +18,7 @@ import { FaSearch, FaShoppingBag } from 'react-icons/fa';
 import { v4 } from 'uuid';
 import { useState, useContext } from 'react';
 // import Navbar from '../Navbar';
+import { Badge } from '@mui/material';
 import routes from '@/constants/routes';
 import Dropdown from '../Dropdown';
 import { mainMenuOptions } from '@/constants/menuOptions';
@@ -26,10 +27,11 @@ import Button from '../Button';
 import { foodinglyContext } from '../FoodinglyContext';
 
 const MainMenu = () => {
-  const { setVisibleCart } = useContext(foodinglyContext);
+  const { setVisibleCart, productsCart } = useContext(foodinglyContext);
 
   const renderMainMenu = () => {
     return mainMenuOptions.map((mainMenuOption) => {
+      console.log('productsCart :>> ', productsCart.lenght);
       if (mainMenuOption.hasOwnProperty('menuOptions')) {
         return (
           <CNavItem key={v4()} className="Navbar-item">
@@ -94,7 +96,9 @@ const MainMenu = () => {
                       customClass="Button-tools"
                       onClick={() => setVisibleCart(true)}
                     >
-                      <FaShoppingBag />
+                      <Badge badgeContent={productsCart.lenght} color="success">
+                        <FaShoppingBag />
+                      </Badge>
                     </Button>
                   </CNavItem>
                   <CNavItem>
