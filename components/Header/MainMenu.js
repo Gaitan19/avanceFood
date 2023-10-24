@@ -2,13 +2,13 @@ import Link from 'next/link';
 import {
   CCollapse,
   CContainer,
-  CDropdown,
-  CDropdownDivider,
-  CDropdownItem,
-  CDropdownMenu,
-  CDropdownToggle,
+  // CDropdown,
+  // CDropdownDivider,
+  // CDropdownItem,
+  // CDropdownMenu,
+  // CDropdownToggle,
   CNavItem,
-  CNavLink,
+  // CNavLink,
   CNavbar,
   CNavbarBrand,
   CNavbarNav,
@@ -16,14 +16,18 @@ import {
 } from '@coreui/react';
 import { FaSearch, FaShoppingBag } from 'react-icons/fa';
 import { v4 } from 'uuid';
-import { useState } from 'react';
-import Navbar from '../Navbar';
+import { useState, useContext } from 'react';
+// import Navbar from '../Navbar';
 import routes from '@/constants/routes';
 import Dropdown from '../Dropdown';
 import { mainMenuOptions } from '@/constants/menuOptions';
 import Button from '../Button';
+// import ShopCart from '../ShopCart.js';
+import { foodinglyContext } from '../FoodinglyContext';
 
 const MainMenu = () => {
+  const { setVisibleCart } = useContext(foodinglyContext);
+
   const renderMainMenu = () => {
     return mainMenuOptions.map((mainMenuOption) => {
       if (mainMenuOption.hasOwnProperty('menuOptions')) {
@@ -48,28 +52,6 @@ const MainMenu = () => {
       );
     });
   };
-
-  // return (
-  //   <Navbar>
-  //     <nav className="navbar navbar-expand-md">
-  //       <Link href={routes.home}>
-  //         <div className="Menu-image" />
-  //       </Link>
-  //       <div className="Navbar-menu">
-  //         <CNavbarNav className="Menu-options">{renderMainMenu()}</CNavbarNav>
-  //         <div className="Menu-tools">
-  //           <Button customClass="Button-tools">
-  //             <FaShoppingBag />
-  //           </Button>
-  //           <Button customClass="Button-tools">
-  //             <FaSearch className="Menu-icon" />
-  //           </Button>
-  //           <Button buttonText="Reservation" customClass="Button-reservation" />
-  //         </div>
-  //       </div>
-  //     </nav>
-  //   </Navbar>
-  // );
 
   const [visible, setVisible] = useState(false);
   const [visibleOp, setVisibleOp] = useState(false);
@@ -108,7 +90,10 @@ const MainMenu = () => {
               <CCollapse className="navbar-collapse" visible={visibleOp}>
                 <CNavbarNav className="Navbar-nav-tools">
                   <CNavItem>
-                    <Button customClass="Button-tools">
+                    <Button
+                      customClass="Button-tools"
+                      onClick={() => setVisibleCart(true)}
+                    >
                       <FaShoppingBag />
                     </Button>
                   </CNavItem>
