@@ -7,6 +7,37 @@ export const productOptions = [
   'Drinks',
 ];
 
+export const cartProducts = [
+  {
+    id: 1,
+    name: 'Full Chicken Grill',
+    image: '/item7.png',
+    discount: 0,
+    price: 45.0,
+    category: 'Chicken',
+    cantidad: 1,
+  },
+  {
+    id: 2,
+    name: 'Double Cheese Burger',
+    image: '/item1.png',
+    discount: 50,
+    price: 59.0,
+    category: 'Burger',
+    cantidad: 1,
+  },
+
+  {
+    id: 3,
+    name: 'Chicken Cutlet',
+    image: '/item5.png',
+    discount: 0,
+    price: 32.0,
+    category: 'Chicken',
+    cantidad: 1,
+  },
+];
+
 export const productList = [
   {
     id: 1,

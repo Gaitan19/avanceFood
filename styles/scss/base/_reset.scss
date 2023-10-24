@@ -47,3 +47,17 @@ h3 {
   background-color: $transparent;
   color: $black;
 }
+
+.offcanvas-sm,
+.offcanvas-md,
+.offcanvas-lg,
+.offcanvas-xl,
+.offcanvas-xxl,
+.offcanvas,
+.offcanvas.offcanvas-end {
+  width: 320px;
+}
+
+.offcanvas-body {
+  padding: 0 15px;
+}

@@ -1,0 +1,42 @@
+.Cart {
+    width: 34%;
+
+    &-title {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &-product {
+        align-items: center;
+        display: flex;
+        gap: 24px;
+        justify-content: flex-start;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            margin-right: 13px;
+            min-width: 153.02px;
+        }
+
+        &-price {
+            font-size: 14px;
+        }
+    }
+
+    &-name {
+        color: $LawnGreen;
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 153.02px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &-image {
+        height: 34.63px;
+        width: 55px;
+    }
+}

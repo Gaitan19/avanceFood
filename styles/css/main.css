@@ -9327,6 +9327,18 @@ h1, .h1, h2, .h2, h3, .h3 {
   background-color: transparent;
   color: #000; }
 
+.offcanvas-sm,
+.offcanvas-md,
+.offcanvas-lg,
+.offcanvas-xl,
+.offcanvas-xxl,
+.offcanvas,
+.offcanvas.offcanvas-end {
+  width: 320px; }
+
+.offcanvas-body {
+  padding: 0 15px; }
+
 .Reservation {
   align-items: center;
   background-color: #e5e5e5;
@@ -10964,5 +10976,35 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Footer-table {
       margin-bottom: 30px;
       width: 100%; } }
+
+.Cart {
+  width: 34%; }
+  .Cart-title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .Cart-product {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start; }
+    .Cart-product-info {
+      display: flex;
+      flex-direction: column;
+      margin-right: 13px;
+      min-width: 153.02px; }
+    .Cart-product-price {
+      font-size: 14px; }
+  .Cart-name {
+    color: #80c100;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 153.02px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .Cart-image {
+    height: 34.63px;
+    width: 55px; }
 
 /*# sourceMappingURL=main.css.map */
