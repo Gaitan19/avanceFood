@@ -5,6 +5,7 @@ import {
   FaInstagramSquare,
   FaLinkedin,
 } from 'react-icons/fa';
+import { v4 } from 'uuid';
 import Dropdown from '../Dropdown';
 import Navbar from '../Navbar';
 import routes from '@/constants/routes';
@@ -20,9 +21,9 @@ const TopBar = () => {
   const currencyType = ['USD', 'BD', 'URO'];
 
   const renderIconList = () => {
-    return socialIcons.map((socialIcon, index) => {
+    return socialIcons.map((socialIcon) => {
       return (
-        <li key={index}>
+        <li key={v4()}>
           <Link href={routes.home}>{socialIcon}</Link>
         </li>
       );

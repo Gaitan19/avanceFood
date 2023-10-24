@@ -10559,16 +10559,18 @@ h1, .h1, h2, .h2, h3, .h3 {
   .Navbar-collapse-tools {
     margin-right: 219%; }
   @media (max-width: 1199.98px) {
-    .Navbar-toogle span {
-      background-image: url(https://e7.pngegg.com/pngimages/233/724/png-clipart-computer-icons-dots-three-buttons-text-monochrome.png); }
-    .Navbar-toogle:focus {
-      border: none;
-      box-shadow: none; }
-    .Navbar-toogle-options {
+    .Navbar-toogle {
       border: none; }
-      .Navbar-toogle-options:focus {
+      .Navbar-toogle span {
+        background-image: url(https://e7.pngegg.com/pngimages/233/724/png-clipart-computer-icons-dots-three-buttons-text-monochrome.png); }
+      .Navbar-toogle:focus {
         border: none;
         box-shadow: none; }
+      .Navbar-toogle-options {
+        border: none; }
+        .Navbar-toogle-options:focus {
+          border: none;
+          box-shadow: none; }
     .Navbar-content {
       justify-content: space-between;
       padding: 0 100px 0 0; }
@@ -10598,6 +10600,12 @@ h1, .h1, h2, .h2, h3, .h3 {
         padding: 15px;
         position: absolute;
         right: 12%; } }
+  @media (max-width: 991.98px) {
+    .Navbar-icons {
+      display: none; } }
+  @media (max-width: 767.98px) {
+    .Navbar-top {
+      display: none; } }
 
 .Dropdown {
   display: flex;

@@ -115,6 +115,7 @@
 
     @include media-breakpoint-down(xl) {
         &-toogle {
+            border: none;
             & span {
                 background-image: url(https://e7.pngegg.com/pngimages/233/724/png-clipart-computer-icons-dots-three-buttons-text-monochrome.png);
             }
@@ -173,5 +174,14 @@
     }
 
     @include media-breakpoint-down(lg) {
+        &-icons {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-top {
+            display: none;
+        }
     }
 }
