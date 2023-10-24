@@ -4,11 +4,11 @@ import Button from '../Button';
 import { foodinglyContext } from '../FoodinglyContext';
 
 const Product = (props) => {
-  const { product } = props;
+  const { product, isCartProduct } = props;
 
   const { id, name, image, discount, price } = product;
 
-  const { addProductCart } = useContext(foodinglyContext);
+  const { addProductCart, deleteProductCart } = useContext(foodinglyContext);
 
   const showDiscount = () => {
     if (discount)
@@ -18,7 +18,11 @@ const Product = (props) => {
   };
 
   const handleAdd = () => {
-    addProductCart(product);
+    if (isCartProduct) {
+      deleteProductCart(product);
+    } else {
+      addProductCart(product);
+    }
   };
 
   return (
@@ -55,6 +59,8 @@ Product.propTypes = {
     discount: PropTypes.number.isRequired,
     price: PropTypes.number.isRequired,
   }).isRequired,
+
+  isCartProduct: PropTypes.bool.isRequired,
 };
 
 export default Product;

@@ -15,7 +15,7 @@ import { foodinglyContext } from '../FoodinglyContext';
 
 const ShopCart = (props) => {
   const { visible, setVisible } = props;
-  const { productsCart } = useContext(foodinglyContext);
+  const { productsCart, deleteProductCart } = useContext(foodinglyContext);
   const productsCounter = productsCart.length;
 
   const renderCartProducts = () => {
@@ -34,7 +34,10 @@ const ShopCart = (props) => {
             <span className="Cart-name">{cartProduct.name}</span>
             <span className="Cart-product-price">{`${cartProduct.cantidad} x $${cartProduct.price}`}</span>
           </div>
-          <Button customClass="Cart-delete">
+          <Button
+            customClass="Cart-delete"
+            onClick={() => deleteProductCart(cartProduct)}
+          >
             <FaTrashAlt />
           </Button>
         </li>

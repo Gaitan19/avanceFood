@@ -15,9 +15,23 @@ const FoodinglyContext = (props) => {
     setProductsCart([...productsCart, newCartProduct]);
   };
 
+  const deleteProductCart = (product) => {
+    const filterProducts = productsCart.filter(
+      (productCart) => productCart.id !== product.id,
+    );
+
+    setProductsCart(filterProducts);
+  };
+
   return (
     <foodinglyContext.Provider
-      value={{ visibleCart, setVisibleCart, productsCart, addProductCart }}
+      value={{
+        visibleCart,
+        setVisibleCart,
+        productsCart,
+        addProductCart,
+        deleteProductCart,
+      }}
     >
       {children}
     </foodinglyContext.Provider>

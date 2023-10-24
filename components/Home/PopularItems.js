@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { v4 } from 'uuid';
 import Button from '../Button';
 import Product from './Product';
 import { productList, productOptions } from '@/constants/ProductList';
+import { foodinglyContext } from '../FoodinglyContext';
 
 const PopularItems = () => {
   const [active, setActive] = useState('');
   const [products, setProducts] = useState(productList);
+
+  const { productsCart } = useContext(foodinglyContext);
 
   const filterProducts = async (category) => {
     setProducts(productList);
@@ -34,8 +37,21 @@ const PopularItems = () => {
       />
     ));
 
-  const renderProducts = () =>
-    products.map((product) => <Product product={product} key={product.id} />);
+  const renderProducts = () => {
+    return products.map((product) => {
+      const isCartproduct =
+        productsCart.some((productCart) => productCart.id === product.id) ||
+        false;
+
+      return (
+        <Product
+          product={product}
+          key={product.id}
+          isCartProduct={isCartproduct}
+        />
+      );
+    });
+  };
 
   return (
     <div className="Products">
