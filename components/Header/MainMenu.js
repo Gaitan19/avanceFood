@@ -27,11 +27,10 @@ import Button from '../Button';
 import { foodinglyContext } from '../FoodinglyContext';
 
 const MainMenu = () => {
-  const { setVisibleCart, productsCart } = useContext(foodinglyContext);
+  const { productsCart, setVisibleCart } = useContext(foodinglyContext);
 
   const renderMainMenu = () => {
     return mainMenuOptions.map((mainMenuOption) => {
-      console.log('productsCart :>> ', productsCart.lenght);
       if (mainMenuOption.hasOwnProperty('menuOptions')) {
         return (
           <CNavItem key={v4()} className="Navbar-item">
@@ -96,7 +95,7 @@ const MainMenu = () => {
                       customClass="Button-tools"
                       onClick={() => setVisibleCart(true)}
                     >
-                      <Badge badgeContent={productsCart.lenght} color="success">
+                      <Badge badgeContent={productsCart.length} color="success">
                         <FaShoppingBag />
                       </Badge>
                     </Button>
