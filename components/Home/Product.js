@@ -1,16 +1,24 @@
 import PropTypes from 'prop-types';
+import { useContext } from 'react';
 import Button from '../Button';
+import { foodinglyContext } from '../FoodinglyContext';
 
 const Product = (props) => {
   const { product } = props;
 
   const { id, name, image, discount, price } = product;
 
+  const { addProductCart } = useContext(foodinglyContext);
+
   const showDiscount = () => {
     if (discount)
       return <div className="Products-card-discount">{discount}%</div>;
 
     return <></>;
+  };
+
+  const handleAdd = () => {
+    addProductCart(product);
   };
 
   return (
@@ -31,7 +39,7 @@ const Product = (props) => {
       </div>
       <div className="Products-card-add">
         <p className="Products-card-price">${price}</p>
-        <Button customClass="Button-fill Button-add">
+        <Button customClass="Button-fill Button-add" onClick={handleAdd}>
           <span>Add To Cart</span>
         </Button>
       </div>

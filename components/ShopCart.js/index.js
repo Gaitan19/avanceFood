@@ -8,15 +8,18 @@ import {
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 import { FaTrashAlt } from 'react-icons/fa';
+import { useContext } from 'react';
 import Button from '../Button';
-import { cartProducts } from '@/constants/ProductList';
+// import { cartProducts } from '@/constants/ProductList';
+import { foodinglyContext } from '../FoodinglyContext';
 
 const ShopCart = (props) => {
   const { visible, setVisible } = props;
-  const productsCounter = cartProducts.length;
+  const { productsCart } = useContext(foodinglyContext);
+  const productsCounter = productsCart.length;
 
   const renderCartProducts = () => {
-    return cartProducts.map((cartProduct) => {
+    return productsCart.map((cartProduct) => {
       return (
         <li className="Cart-product" key={cartProduct.id}>
           <Image
@@ -29,9 +32,9 @@ const ShopCart = (props) => {
           />
           <div className="Cart-product-info">
             <span className="Cart-name">{cartProduct.name}</span>
-            <span className="Cart-product-price">{`${cartProduct.cantidad}x$${cartProduct.price}`}</span>
+            <span className="Cart-product-price">{`${cartProduct.cantidad} x $${cartProduct.price}`}</span>
           </div>
-          <Button>
+          <Button customClass="Cart-delete">
             <FaTrashAlt />
           </Button>
         </li>
@@ -47,7 +50,7 @@ const ShopCart = (props) => {
       className="Cart"
     >
       <COffcanvasHeader>
-        <COffcanvasTitle className="Cart-title">{`MY CART(${productsCounter})`}</COffcanvasTitle>
+        <COffcanvasTitle className="Cart-title">{`MY CART (${productsCounter})`}</COffcanvasTitle>
         <CCloseButton
           className="text-reset"
           onClick={() => setVisible(false)}
@@ -55,12 +58,16 @@ const ShopCart = (props) => {
       </COffcanvasHeader>
       <COffcanvasBody>
         <div className="Cart-container">
-          <ul className="Cart-products"> {renderCartProducts()}</ul>
-          <div className="Cart-total">
-            <span className="Cart-total-text"></span>
-            <span className="Cart-price"></span>
+          <ul className="Cart-products">{renderCartProducts()}</ul>
+          <div className="Cart-product">
+            <div className="Cart-total">
+              <span className="Cart-total-text">subtotal</span>
+              <span className="Cart-total-text">$164.0</span>
+            </div>
           </div>
-          <Button>Checkout</Button>
+          <Button type="button" customClass="Button-fill Button-checkout">
+            <span className="Button-fill-text">Checkout</span>
+          </Button>
         </div>
         {/* Content for the offcanvas goes here. You can place just about any React
         component or custom elements here. */}
