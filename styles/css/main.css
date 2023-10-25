@@ -10358,6 +10358,47 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Blog-owner {
       margin-left: 0; } }
 
+.Best {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .Best-content {
+    display: flex;
+    max-width: 1440px;
+    padding: 80px 0; }
+  .Best-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+    .Best-container-image {
+      width: 50%; }
+    .Best-container-text {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 0 1.5rem;
+      width: 50%; }
+  .Best-about {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2; }
+  .Best-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 55px; }
+  .Best-image {
+    background-image: url(https://foodingly.netlify.app/assets/img/common/abour_right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 465px;
+    width: 98%; }
+  .Best-text {
+    color: #818090;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; }
+
 .Button {
   width: 100%; }
   .Button-tools {
@@ -11010,5 +11051,56 @@ h1, .h1, h2, .h2, h3, .h3 {
       line-height: 1.5;
       -webkit-text-size-adjust: 100%;
       text-transform: uppercase; }
+
+.Banner {
+  background-image: url(https://foodingly.netlify.app/assets/img/banner/common-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 414px;
+  padding: 150px 0;
+  width: 100%; }
+  .Banner-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px; }
+  .Banner-title {
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .Banner-pages {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 0; }
+  .Banner-light {
+    color: #ffffff91;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none; }
+  .Banner-icon {
+    color: #ffffff;
+    font-size: 7px;
+    text-align: center;
+    vertical-align: middle; }
+  .Banner-item {
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none; }
+  @media (max-width: 991.98px) {
+    .Banner {
+      height: 414px; } }
 
 /*# sourceMappingURL=main.css.map */

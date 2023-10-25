@@ -7,12 +7,12 @@ import ShopCart from '../ShopCart.js';
 import { foodinglyContext } from '../FoodinglyContext';
 
 const Layout = (props) => {
-  const { children } = props;
+  const { children, headPageTitle } = props;
   const { visibleCart, setVisibleCart } = useContext(foodinglyContext);
 
   return (
     <>
-      <HeadPage title="Home" description="Foodingly" />
+      <HeadPage title={headPageTitle} description="Foodingly" />
       <section>
         <Header />
         {children}
@@ -25,10 +25,12 @@ const Layout = (props) => {
 
 Layout.propTypes = {
   children: PropTypes.node,
+  headPageTitle: PropTypes.string,
 };
 
 Layout.defaultProps = {
   children: <></>,
+  headPageTitle: 'Home',
 };
 
 export default Layout;
