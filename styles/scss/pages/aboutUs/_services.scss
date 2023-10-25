@@ -19,9 +19,14 @@
 
     &-title {
         color: $LawnGreen;
+        cursor: pointer;
         font-size: 20px;
         font-weight: 500;
         padding-top: 15px;
+
+        &:hover {
+            color: $black-color;
+        }
     }
 
     &-text {

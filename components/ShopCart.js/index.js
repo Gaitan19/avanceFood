@@ -10,12 +10,11 @@ import Image from 'next/image';
 import { FaTrashAlt } from 'react-icons/fa';
 import { useContext } from 'react';
 import Button from '../Button';
-import { foodinglyContext } from '../FoodinglyContext';
+import { foodinglyContext } from '../../context/FoodinglyContext';
 
 const ShopCart = (props) => {
   const { visible, setVisible } = props;
   const { productsCart, deleteProductCart } = useContext(foodinglyContext);
-  const productsCounter = productsCart.length;
 
   const renderCartProducts = () => {
     return productsCart.map((cartProduct) => {
@@ -55,7 +54,7 @@ const ShopCart = (props) => {
       className="Cart"
     >
       <COffcanvasHeader>
-        <COffcanvasTitle className="Cart-title">{`MY CART (${productsCounter})`}</COffcanvasTitle>
+        <COffcanvasTitle className="Cart-title">{`MY CART (${productsCart.length})`}</COffcanvasTitle>
         <CCloseButton
           className="text-reset"
           onClick={() => setVisible(false)}

@@ -4,7 +4,7 @@ import Header from '../Header';
 import HeadPage from '../HeadPage';
 import Footer from '../Footer';
 import ShopCart from '../ShopCart.js';
-import { foodinglyContext } from '../FoodinglyContext';
+import { foodinglyContext } from '../../context/FoodinglyContext';
 
 const Layout = (props) => {
   const { children, headPageTitle } = props;

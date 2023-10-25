@@ -3,7 +3,7 @@ import { v4 } from 'uuid';
 import Button from '../Button';
 import Product from './Product';
 import { productList, productOptions } from '@/constants/ProductList';
-import { foodinglyContext } from '../FoodinglyContext';
+import { foodinglyContext } from '../../context/FoodinglyContext';
 import TextButton from './TextButton';
 
 const PopularItems = () => {

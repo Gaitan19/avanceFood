@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import Image from 'next/image';
 import Button from '../Button';
-import { foodinglyContext } from '../FoodinglyContext';
+import { foodinglyContext } from '../../context/FoodinglyContext';
 
 const Product = (props) => {
   const { product, isCartProduct } = props;

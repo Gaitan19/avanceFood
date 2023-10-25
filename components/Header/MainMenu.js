@@ -8,7 +8,7 @@ import routes from '@/constants/routes';
 import Dropdown from '../Dropdown';
 import { mainMenuOptions } from '@/constants/menuOptions';
 import Button from '../Button';
-import { foodinglyContext } from '../FoodinglyContext';
+import { foodinglyContext } from '../../context/FoodinglyContext';
 import Collapse from './Collapse';
 
 const MainMenu = () => {

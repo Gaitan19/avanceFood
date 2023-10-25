@@ -15,7 +15,7 @@ const Collapse = (props) => {
       <CNavbarToggler
         className={`Navbar-toogle${toggleClass}`}
         aria-expanded={visible}
-        onClick={() => setVisible(!visible)}
+        onClick={() => setVisible((preVisible) => !preVisible)}
       />
       <CCollapse className="navbar-collapse" visible={visible}>
         <CNavbarNav className={`Navbar-nav${navClass}`}>{children}</CNavbarNav>
