@@ -15,7 +15,15 @@ const Best = () => {
     <div className="Best">
       <div className="Best-content">
         <div className="Best-container-image">
-          <div className="Best-image" />
+          <Image
+            className="Best-image"
+            width={800}
+            height={100}
+            alt="about us"
+            priority
+            quality="100"
+            src="/abour_right.png"
+          />
         </div>
         <div className="Best-container-text">
           <span className="Best-about">About us</span>

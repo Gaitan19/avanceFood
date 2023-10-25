@@ -10365,7 +10365,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   .Best-content {
     display: flex;
     max-width: 1440px;
-    padding: 80px 0; }
+    padding: 80px; }
   .Best-container {
     display: flex;
     flex-direction: column;
@@ -10387,17 +10387,24 @@ h1, .h1, h2, .h2, h3, .h3 {
     font-weight: 500;
     line-height: 55px; }
   .Best-image {
-    background-image: url(https://foodingly.netlify.app/assets/img/common/abour_right.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 465px;
-    width: 98%; }
+    height: auto;
+    max-width: 100%; }
   .Best-text {
     color: #818090;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px; }
+  @media (max-width: 991.98px) {
+    .Best-content {
+      align-items: center;
+      flex-direction: column;
+      padding: 30px; }
+    .Best-container-image {
+      width: 100%; }
+    .Best-container-text {
+      padding-top: 20px;
+      width: 100%; } }
 
 .Button {
   width: 100%; }
