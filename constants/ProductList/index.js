@@ -36,16 +36,6 @@ export const cartProducts = [
     category: 'Chicken',
     cantidad: 1,
   },
-
-  // {
-  //   id: 6,
-  //   name: 'Glass of cola with ice',
-  //   image: '/item10.png',
-  //   discount: 0,
-  //   price: 25.0,
-  //   category: 'Drinks',
-  //   cantidad: 1,
-  // },
 ];
 
 export const productList = [
