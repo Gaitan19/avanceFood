@@ -148,6 +148,8 @@
     }
 
     @include media-breakpoint-down(sm) {
+        padding: 0;
+
         &-content {
             padding: 40px 16px 60px;
             width: 100%;
@@ -166,13 +168,6 @@
             &-header {
                 margin-top: 20px;
             }
-
-            // &-body {
-            //     display: flex;
-            //     flex-direction: column;
-            //     position: relative;
-            //     top: 10%;
-            // }
 
             &-text {
                 padding: 0;

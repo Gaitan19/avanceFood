@@ -7,37 +7,6 @@ export const productOptions = [
   'Drinks',
 ];
 
-export const cartProducts = [
-  {
-    id: 1,
-    name: 'Full Chicken Grill',
-    image: '/item7.png',
-    discount: 0,
-    price: 45.0,
-    category: 'Chicken',
-    cantidad: 1,
-  },
-  {
-    id: 2,
-    name: 'Double Cheese Burger',
-    image: '/item1.png',
-    discount: 50,
-    price: 59.0,
-    category: 'Burger',
-    cantidad: 1,
-  },
-
-  {
-    id: 3,
-    name: 'Chicken Cutlet',
-    image: '/item5.png',
-    discount: 0,
-    price: 32.0,
-    category: 'Chicken',
-    cantidad: 1,
-  },
-];
-
 export const productList = [
   {
     id: 1,
@@ -46,6 +15,8 @@ export const productList = [
     discount: 0,
     price: 45.0,
     category: 'Chicken',
+    rating: '4.8/5 Excellent',
+    reviews: 1214,
   },
   {
     id: 2,
@@ -54,6 +25,8 @@ export const productList = [
     discount: 50,
     price: 59.0,
     category: 'Burger',
+    rating: '4.8/5 Excellent',
+    reviews: 1214,
   },
 
   {
@@ -63,6 +36,8 @@ export const productList = [
     discount: 0,
     price: 32.0,
     category: 'Chicken',
+    rating: '4.8/5 Excellent',
+    reviews: 1214,
   },
 
   {
@@ -72,6 +47,8 @@ export const productList = [
     discount: 30,
     price: 60.0,
     category: 'Noodles',
+    rating: '4.8/5 Excellent',
+    reviews: 1214,
   },
 
   {
@@ -81,6 +58,8 @@ export const productList = [
     discount: 0,
     price: 17.0,
     category: 'Ice cream',
+    rating: '4.8/5 Excellent',
+    reviews: 1214,
   },
 
   {
@@ -90,6 +69,8 @@ export const productList = [
     discount: 0,
     price: 25.0,
     category: 'Drinks',
+    rating: '4.8/5 Excellent',
+    reviews: 1214,
   },
 
   {
@@ -98,7 +79,9 @@ export const productList = [
     image: '/item11.png',
     discount: 0,
     price: 18.0,
-    category: 'All',
+    category: 'All Categories',
+    rating: '4.8/5 Excellent',
+    reviews: 1214,
   },
 
   {
@@ -107,6 +90,8 @@ export const productList = [
     image: '/item12.png',
     discount: 60,
     price: 12.0,
-    category: 'All',
+    category: 'All Categories',
+    rating: '4.8/5 Excellent',
+    reviews: 1214,
   },
 ];

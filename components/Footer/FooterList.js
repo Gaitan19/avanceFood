@@ -4,9 +4,7 @@ const FooterList = (props) => {
   const { customClass, children, title } = props;
   return (
     <div className={`Footer-${customClass}`}>
-      <h5 className="Footer-title">
-        <span>{title}</span>
-      </h5>
+      <h2 className="Footer-title">{title}</h2>
       {children}
     </div>
   );

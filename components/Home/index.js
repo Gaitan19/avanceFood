@@ -4,14 +4,18 @@ import Reservation from '../Reservation';
 import ChefsCard from './ChefsCard';
 import Hero from './Hero';
 import TextButton from './TextButton';
-import Testimonials from '../Testimonials';
 import Subscribe from './Subscribe';
-import LatestBlogs from './LatestBlogs';
+import Testimonials from '../Testimonials';
+import { blogs } from '@/constants/blogsList';
+import BlogCard from './BlogCard';
 import PopularItems from './PopularItems';
 
 const Home = () => {
   const renderChefs = () =>
     chefList.map((chef) => <ChefsCard chefInformation={chef} key={v4()} />);
+
+  const renderBlogs = () =>
+    blogs.map((blog) => <BlogCard key={v4()} blog={blog} />);
 
   return (
     <>
@@ -29,7 +33,7 @@ const Home = () => {
         text="Preferred Food, Drinks, Juice 30% Off Friday Only"
         hasFillButton
       />
-      <PopularItems></PopularItems>
+      <PopularItems />
       <TextButton
         customClass="Dinner"
         title="Do You Have Any Dinner Plan Today? Reserve Your Tbale"
@@ -60,7 +64,13 @@ const Home = () => {
       </TextButton>
       <Testimonials />
       <Subscribe />
-      <LatestBlogs />
+      <TextButton
+        customClass="Blog"
+        title="Our Blog"
+        text="Our latest blogs and blogs"
+      >
+        <div className="Blog-cards">{renderBlogs()}</div>
+      </TextButton>
     </>
   );
 };

@@ -17,6 +17,7 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.3",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.2",
+    "datejs": "^1.0.0-rc3",
     "next": "13.4.13",
     "node-sass": "^9.0.0",
     "prop-types": "^15.8.1",

@@ -10,7 +10,6 @@ import Image from 'next/image';
 import { FaTrashAlt } from 'react-icons/fa';
 import { useContext } from 'react';
 import Button from '../Button';
-// import { cartProducts } from '@/constants/ProductList';
 import { foodinglyContext } from '../FoodinglyContext';
 
 const ShopCart = (props) => {
@@ -45,6 +44,9 @@ const ShopCart = (props) => {
     });
   };
 
+  const getTotalPrice = () =>
+    productsCart.reduce((total, product) => total + product.price, 0);
+
   return (
     <COffcanvas
       placement="end"
@@ -65,15 +67,13 @@ const ShopCart = (props) => {
           <div className="Cart-product">
             <div className="Cart-total">
               <span className="Cart-total-text">subtotal</span>
-              <span className="Cart-total-text">$164.0</span>
+              <span className="Cart-total-text">{`$ ${getTotalPrice()}`}</span>
             </div>
           </div>
           <Button type="button" customClass="Button-fill Button-checkout">
             <span className="Button-fill-text">Checkout</span>
           </Button>
         </div>
-        {/* Content for the offcanvas goes here. You can place just about any React
-        component or custom elements here. */}
       </COffcanvasBody>
     </COffcanvas>
   );

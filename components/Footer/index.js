@@ -5,24 +5,12 @@ import FooterHelp from './FooterHelp';
 import FooterList from './FooterList';
 
 const Footer = () => {
-  const renderQuickLinks = () => {
-    return quickLinks.map((quickLink) => {
+  const renderListLinks = (listLinks) => {
+    return listLinks.map((listLink) => {
       return (
         <li className="Footer-link" key={v4()}>
-          <Link href={quickLink.route} className="Footer-item">
-            {quickLink.text}
-          </Link>
-        </li>
-      );
-    });
-  };
-
-  const renderSupport = () => {
-    return supports.map((support) => {
-      return (
-        <li className="Footer-link" key={v4()}>
-          <Link href={support.route} className="Footer-item">
-            {support.text}
+          <Link href={listLink.route} className="Footer-item">
+            {listLink.text}
           </Link>
         </li>
       );
@@ -45,11 +33,11 @@ const Footer = () => {
       <div className="Footer-container">
         <FooterHelp />
         <FooterList customClass="quick" title="Quick links">
-          <ul className="Footer-list">{renderQuickLinks()}</ul>
+          <ul className="Footer-list">{renderListLinks(quickLinks)}</ul>
         </FooterList>
 
         <FooterList customClass="support" title="Support">
-          <ul className="Footer-list">{renderSupport()}</ul>
+          <ul className="Footer-list">{renderListLinks(supports)}</ul>
         </FooterList>
 
         <FooterList customClass="opening" title="Opening hours">
@@ -60,9 +48,9 @@ const Footer = () => {
       </div>
       <div className="Footer-copyright">
         <div className="Footer-copyright-content">
-          <p className="Footer-copyright-text">
+          <span className="Footer-copyright-text">
             Copyright &copy; 2022 All Rights Reserved
-          </p>
+          </span>
           <div className="Footer-copyright-image" />
         </div>
       </div>

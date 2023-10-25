@@ -47,7 +47,7 @@ TextButton.propTypes = {
   customClass: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   text: PropTypes.string,
-  buttonText: PropTypes.string.isRequired,
+  buttonText: PropTypes.string,
   hasImage: PropTypes.bool,
   hasFillButton: PropTypes.bool,
   children: PropTypes.node,
@@ -55,6 +55,7 @@ TextButton.propTypes = {
 
 TextButton.defaultProps = {
   text: '',
+  buttonText: '',
   hasImage: false,
   hasFillButton: false,
   children: <></>,

@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { FaCalendarDay, FaUsers } from 'react-icons/fa';
+import { formatDate } from '@/utils/FormatDate';
 
 const BlogCard = (props) => {
   const { blog } = props;
-
   const { image, title, author, text, date, info } = blog;
+
   return (
     <article className="Blog-card">
       <div className="Blog-container">
@@ -25,7 +26,7 @@ const BlogCard = (props) => {
             <FaCalendarDay className="Blog-icon" />
             <div>
               <span className="Blog-date-bold">Date:</span>
-              <p className="Blog-date-light">{date}</p>
+              <p className="Blog-date-light">{formatDate(date)}</p>
             </div>
           </div>
           <div className="Blog-owner">

@@ -43,7 +43,6 @@
     }
 
     &-carousel {
-        max-width: 1440px;
         width: 80%;
     }
 
@@ -69,40 +68,40 @@
                 color: $white;
             }
         }
+    }
 
-        &-icon {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 40px;
-            margin-bottom: 25px;
-            object-fit: cover;
-            width: 40px;
-        }
+    &-card-icon {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40px;
+        margin-bottom: 25px;
+        object-fit: cover;
+        width: 40px;
+    }
 
-        &-title {
-            color: $green;
-            font-family: $font-options;
-            font-size: 24px;
-            font-weight: 300;
-            line-height: 1.2;
-            margin-bottom: 18px;
-            width: 200px;
-        }
+    &-card-title {
+        color: $green;
+        font-family: $font-options;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.2;
+        margin-bottom: 18px;
+        width: 200px;
+    }
 
-        &-text {
-            color: $paragraph-color;
-            font-family: $font-secondary;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 28px;
-            margin-bottom: 25px;
-        }
+    &-card-text {
+        color: $paragraph-color;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
 
-        &-image {
-            height: 100px;
-            width: 50%;
-        }
+    &-card-image {
+        height: 100px;
+        width: 50%;
     }
 
     @media ($xxl) {

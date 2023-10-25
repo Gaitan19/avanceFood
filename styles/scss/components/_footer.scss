@@ -41,6 +41,8 @@
 
         &-item {
             border-left: 2px solid $LawnGreen;
+            display: flex;
+            flex-direction: column;
             margin-bottom: 24px;
             padding-left: 9px;
             padding-top: 5px;

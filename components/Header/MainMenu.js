@@ -1,30 +1,15 @@
 import Link from 'next/link';
-import {
-  CCollapse,
-  CContainer,
-  // CDropdown,
-  // CDropdownDivider,
-  // CDropdownItem,
-  // CDropdownMenu,
-  // CDropdownToggle,
-  CNavItem,
-  // CNavLink,
-  CNavbar,
-  CNavbarBrand,
-  CNavbarNav,
-  CNavbarToggler,
-} from '@coreui/react';
+import { CNavItem, CNavbar, CNavbarBrand } from '@coreui/react';
 import { FaSearch, FaShoppingBag } from 'react-icons/fa';
 import { v4 } from 'uuid';
 import { useState, useContext } from 'react';
-// import Navbar from '../Navbar';
 import { Badge } from '@mui/material';
 import routes from '@/constants/routes';
 import Dropdown from '../Dropdown';
 import { mainMenuOptions } from '@/constants/menuOptions';
 import Button from '../Button';
-// import ShopCart from '../ShopCart.js';
 import { foodinglyContext } from '../FoodinglyContext';
+import Collapse from './Collapse';
 
 const MainMenu = () => {
   const { productsCart, setVisibleCart } = useContext(foodinglyContext);
@@ -54,8 +39,8 @@ const MainMenu = () => {
     });
   };
 
-  const [visible, setVisible] = useState(false);
-  const [visibleOp, setVisibleOp] = useState(false);
+  const [visibleOptions, setVisibleOptions] = useState(false);
+  const [visibleTools, setVisibleTools] = useState(false);
 
   return (
     <>
@@ -66,54 +51,43 @@ const MainMenu = () => {
           </CNavbarBrand>
 
           <div className="Navbar-menu">
-            <CContainer fluid className="Navbar-container-options">
-              <CNavbarToggler
-                className="Navbar-toogle-options"
-                aria-label="Toggle navigation"
-                aria-expanded={visible}
-                onClick={() => setVisible(!visible)}
-              />
-              <CCollapse className="navbar-collapse" visible={visible}>
-                <CNavbarNav className="Navbar-nav">
-                  {renderMainMenu()}
-                </CNavbarNav>
-              </CCollapse>
-            </CContainer>
+            <Collapse
+              customClass="options"
+              toggleClass="-options"
+              visible={visibleOptions}
+              setVisible={setVisibleOptions}
+            >
+              {renderMainMenu()}
+            </Collapse>
 
-            <CContainer fluid className="Navbar-container-tools">
-              <CNavbarToggler
-                className="Navbar-toogle"
-                aria-label="Toggle navigation"
-                aria-expanded={visibleOp}
-                onClick={() => setVisibleOp(!visibleOp)}
-              />
-
-              <CCollapse className="navbar-collapse" visible={visibleOp}>
-                <CNavbarNav className="Navbar-nav-tools">
-                  <CNavItem>
-                    <Button
-                      customClass="Button-tools"
-                      onClick={() => setVisibleCart(true)}
-                    >
-                      <Badge badgeContent={productsCart.length} color="success">
-                        <FaShoppingBag />
-                      </Badge>
-                    </Button>
-                  </CNavItem>
-                  <CNavItem>
-                    <Button customClass="Button-tools">
-                      <FaSearch className="Menu-icon" />
-                    </Button>
-                  </CNavItem>
-                  <CNavItem>
-                    <Button
-                      buttonText="Reservation"
-                      customClass="Button-reservation"
-                    />
-                  </CNavItem>
-                </CNavbarNav>
-              </CCollapse>
-            </CContainer>
+            <Collapse
+              customClass="tools"
+              navClass="-tools"
+              visible={visibleTools}
+              setVisible={setVisibleTools}
+            >
+              <CNavItem>
+                <Button
+                  customClass="Button-tools"
+                  onClick={() => setVisibleCart(true)}
+                >
+                  <Badge badgeContent={productsCart.length} color="success">
+                    <FaShoppingBag />
+                  </Badge>
+                </Button>
+              </CNavItem>
+              <CNavItem>
+                <Button customClass="Button-tools">
+                  <FaSearch className="Menu-icon" />
+                </Button>
+              </CNavItem>
+              <CNavItem>
+                <Button
+                  buttonText="Reservation"
+                  customClass="Button-reservation"
+                />
+              </CNavItem>
+            </Collapse>
           </div>
         </div>
       </CNavbar>

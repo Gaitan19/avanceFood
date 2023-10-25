@@ -3,63 +3,63 @@ import routes from '../routes';
 export const quickLinks = [
   {
     text: 'About Us',
-    route: routes.home,
+    route: routes.aboutUs,
   },
 
   {
     text: 'Testimonials',
-    route: routes.home,
+    route: routes.testimonials,
   },
 
   {
     text: 'Faqs',
-    route: routes.home,
+    route: routes.faqs,
   },
 
   {
     text: 'Terms Service',
-    route: routes.home,
+    route: routes.termsService,
   },
 
   {
     text: 'Food Grip',
-    route: routes.home,
+    route: routes.foodGrid,
   },
 
   {
     text: 'Blog',
-    route: routes.home,
+    route: routes.blog,
   },
 ];
 
 export const supports = [
   {
     text: 'Customer Dashboard',
-    route: routes.home,
+    route: routes.costumerDashboard,
   },
   {
     text: 'Login',
-    route: routes.home,
+    route: routes.login,
   },
 
   {
     text: 'Cart',
-    route: routes.home,
+    route: routes.cart,
   },
 
   {
     text: 'Contact',
-    route: routes.home,
+    route: routes.contact,
   },
 
   {
     text: 'Reservation',
-    route: routes.home,
+    route: routes.reservation,
   },
 
   {
     text: 'Privacy Policy',
-    route: routes.home,
+    route: routes.privacyPolicy,
   },
 ];
 

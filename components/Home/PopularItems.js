@@ -1,38 +1,35 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { v4 } from 'uuid';
 import Button from '../Button';
 import Product from './Product';
 import { productList, productOptions } from '@/constants/ProductList';
 import { foodinglyContext } from '../FoodinglyContext';
+import TextButton from './TextButton';
 
 const PopularItems = () => {
-  const [active, setActive] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState(productOptions[0]);
   const [products, setProducts] = useState(productList);
-
   const { productsCart } = useContext(foodinglyContext);
 
-  const filterProducts = async (category) => {
-    setProducts(productList);
-    setActive(category);
+  useEffect(() => {
+    const filteredProducts =
+      selectedCategory === productOptions[0]
+        ? productList
+        : productList.filter(
+            (product) => product.category === selectedCategory,
+          );
 
-    if (category !== 'All Categories') {
-      setProducts(() => {
-        const filteredProducts = productList.filter((product) => {
-          return product.category === category;
-        });
-        return filteredProducts;
-      });
-    }
-  };
+    setProducts(filteredProducts);
+  }, [selectedCategory]);
 
   const renderProductOptions = () =>
     productOptions.map((productOption) => (
       <Button
         key={v4()}
         customClass={`Button-products ${
-          active === productOption ? 'Button-products-active' : ''
+          selectedCategory === productOption ? 'Button-products-active' : ''
         }`}
-        onClick={() => filterProducts(productOption)}
+        onClick={() => setSelectedCategory(productOption)}
         buttonText={productOption}
       />
     ));
@@ -54,14 +51,14 @@ const PopularItems = () => {
   };
 
   return (
-    <div className="Products">
-      <div className="Products-content">
-        <h3 className="Products-title">Our Featured Items</h3>
-        <h2 className="Products-text">Our most popular items</h2>
-        <div className="Products-filters">{renderProductOptions()}</div>
-        <div className="Products-list">{renderProducts()}</div>
-      </div>
-    </div>
+    <TextButton
+      title="Our Featured Items"
+      text="Our most popular items"
+      customClass="Products"
+    >
+      <div className="Products-filters">{renderProductOptions()}</div>
+      <div className="Products-list">{renderProducts()}</div>
+    </TextButton>
   );
 };
 

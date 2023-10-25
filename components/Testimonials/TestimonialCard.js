@@ -1,13 +1,14 @@
 import Proptypes from 'prop-types';
 import { FaStar } from 'react-icons/fa';
 import { v4 } from 'uuid';
+import { formatDate } from '@/utils/FormatDate';
 
 const TestimonialCard = (props) => {
   const { person } = props;
   const { image, name, date, text } = person;
 
   const renderStar = () => {
-    return [0, 1, 2, 3, 4].map(() => {
+    return [...Array(5).keys()].map(() => {
       return (
         <li key={v4()} className="Testimonials-card-icon">
           <FaStar />
@@ -19,7 +20,7 @@ const TestimonialCard = (props) => {
   return (
     <article className="Testimonials-card">
       <div className="Testimonials-card-header">
-        <p className="Testimonials-card-date">{date}</p>
+        <p className="Testimonials-card-date">{formatDate(date)}</p>
         <div className="Testimonials-card-rating">
           <p className="Testimonials-card-excellent">Excellent</p>
           <ul className="Testimonials-card-stars">{renderStar()}</ul>
