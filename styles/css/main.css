@@ -10587,6 +10587,25 @@ h1, .h1, h2, .h2, h3, .h3 {
       transition: all 0.3s ease-in-out 0.1s; }
       .Contact-card-view:hover {
         color: #2b2540; }
+  .Contact-message {
+    padding: 80px 0 10px; }
+    .Contact-message-form {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: -4px -4px 16px rgba(0, 0, 0, 0.06), 8px 10px 20px rgba(0, 0, 0, 0.06);
+      margin: 0 auto;
+      max-width: 936px;
+      padding: 35px;
+      position: relative;
+      width: 100%; }
+      @media (max-width: 575.98px) {
+        .Contact-message-form {
+          width: 365px; } }
+    .Contact-message-input {
+      margin-bottom: 30px; }
+    .Contact-message-error {
+      color: red;
+      padding-left: 10px; }
   @media (max-width: 991.98px) {
     .Contact-content {
       max-width: 720px; }
