@@ -10409,6 +10409,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 .Services {
   display: flex;
   justify-content: center;
+  padding-bottom: 80px;
   width: 100%; }
   .Services-content {
     display: flex;
@@ -10506,6 +10507,107 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Statistics-content {
       flex-direction: column;
       max-width: 100%; } }
+
+.Contact {
+  align-items: center;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 100px;
+  width: 100%; }
+  .Contact-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    width: 100%; }
+  .Contact-title {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 55px;
+    text-align: center; }
+    .Contact-title::after {
+      background: #80c100;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 50%;
+      margin-top: 15px;
+      position: absolute;
+      transform: translate(-50%, 50%);
+      width: 200px; }
+  .Contact-phone {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 20px;
+    width: 100%; }
+  .Contact-text {
+    font-size: 30px;
+    font-weight: 500; }
+  .Contact-number {
+    color: #80c100; }
+    .Contact-number:hover {
+      color: #2b2540; }
+  .Contact-cards {
+    display: flex; }
+  .Contact-card {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: -4px -4px 16px rgba(0, 0, 0, 0.06), 8px 10px 20px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.7rem;
+    padding: 30px 17px;
+    width: 25%; }
+    .Contact-card-title {
+      font-size: 16px;
+      font-weight: 500;
+      font-weight: 500;
+      padding-bottom: 15px; }
+    .Contact-card-city {
+      font-size: 24px;
+      font-weight: 500;
+      padding-bottom: 20px; }
+    .Contact-card-text {
+      color: #818090;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      padding-bottom: 15px;
+      text-align: center; }
+    .Contact-card-view {
+      color: #80c100;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out 0.1s; }
+      .Contact-card-view:hover {
+        color: #2b2540; }
+  @media (max-width: 991.98px) {
+    .Contact-content {
+      max-width: 720px; }
+    .Contact-cards {
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      padding-right: var(--bs-gutter-x, 0.75rem); }
+    .Contact-card {
+      margin-bottom: 30px;
+      width: 46%; } }
+  @media (max-width: 767.98px) {
+    .Contact-content {
+      max-width: 720px;
+      max-width: 540px; }
+    .Contact-card {
+      width: 100%; } }
+  @media (max-width: 575.98px) {
+    .Contact-phone {
+      flex-direction: column; } }
 
 .Button {
   width: 100%; }

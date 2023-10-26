@@ -22,7 +22,7 @@ const Best = () => {
             alt="about us"
             priority
             quality="100"
-            src="/abour_right.png"
+            src="/about_right.png"
           />
         </div>
         <div className="Best-container-text">
