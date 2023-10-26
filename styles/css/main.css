@@ -10700,6 +10700,9 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin-right: 62%; }
   .Navbar-collapse-tools {
     margin-right: 219%; }
+  @media ((max-width: 1400px)) {
+    .Navbar-container-tools {
+      padding: 0; } }
   @media (max-width: 1199.98px) {
     .Navbar-toogle {
       border: none; }
@@ -10748,6 +10751,9 @@ h1, .h1, h2, .h2, h3, .h3 {
   @media (max-width: 767.98px) {
     .Navbar-top {
       display: none; } }
+  @media (max-width: 575.98px) {
+    .Navbar-container-options {
+      padding: 0; } }
 
 .Dropdown {
   display: flex;
