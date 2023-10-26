@@ -54,8 +54,8 @@ const ContactForm = () => {
           </div>
 
           {/* <Input type="submit" className="button secondary" value="Send Messag" /> */}
-          <Button buttonType="submit" customClass="Buttton-fill">
-            <span className="Button-fill-text"></span>
+          <Button buttonType="submit" customClass="Button-fill">
+            <span className="Button-fill-text">Send Message</span>
           </Button>
         </form>
       </div>
