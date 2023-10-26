@@ -1,6 +1,5 @@
 import { offices } from '@/constants/offices';
 import ContactCard from './ContactCard';
-import ContactForm from './ContactForm';
 
 const ContactUs = () => {
   const renderOffice = () =>
@@ -17,7 +16,6 @@ const ContactUs = () => {
           </a>
         </div>
         <div className="Contact-cards">{renderOffice()}</div>
-        {/* <ContactForm /> */}
       </div>
     </div>
   );

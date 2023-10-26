@@ -26,37 +26,39 @@ const ContactForm = () => {
   //   };
 
   return (
-    <div className="Contact-message">
-      <div className="Contact-message-title">Leave us a message</div>
+    <div className="Contact">
+      <div className="Contact-content">
+        <h2 className="Contact-title">Leave us a message</h2>
 
-      <form className="Contact-message-form" onSubmit={handleSubmit}>
-        <div className="Contact-message-input">
-          <input name="name" type="text" placeholder="First Name" />
-        </div>
+        <form className="Contact-message-form" onSubmit={handleSubmit}>
+          <div className="Contact-message-input">
+            <input name="name" type="text" placeholder="First Name" />
+          </div>
 
-        <div className="Contact-message-input">
-          <input name="email" type="email" placeholder="Email Address" />
-        </div>
+          <div className="Contact-message-input">
+            <input name="email" type="email" placeholder="Email Address" />
+          </div>
 
-        <div className="Contact-message-input">
-          <input name="phone" type="tel" placeholder="Phone" />
-        </div>
+          <div className="Contact-message-input">
+            <input name="phone" type="tel" placeholder="Phone" />
+          </div>
 
-        <div className="Contact-message-input">
-          <input
-            as="textarea"
-            name="message"
-            type="text"
-            placeholder="Write message"
-            customClass="message"
-          />
-        </div>
+          <div className="Contact-message-input">
+            <input
+              as="textarea"
+              name="message"
+              type="text"
+              placeholder="Write message"
+              customClass="message"
+            />
+          </div>
 
-        {/* <Input type="submit" className="button secondary" value="Send Messag" /> */}
-        <Button buttonType="submit" customClass="Buttton-fill">
-          <span className="Button-fill-text"></span>
-        </Button>
-      </form>
+          {/* <Input type="submit" className="button secondary" value="Send Messag" /> */}
+          <Button buttonType="submit" customClass="Buttton-fill">
+            <span className="Button-fill-text"></span>
+          </Button>
+        </form>
+      </div>
     </div>
   );
 };
