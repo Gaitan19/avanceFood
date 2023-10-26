@@ -10453,6 +10453,61 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Services-card {
       width: 100%; } }
 
+.Statistics {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  width: 100%; }
+  .Statistics-content {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: -4px -4px 16px rgba(0, 0, 0, 0.06), 8px 10px 20px rgba(0, 0, 0, 0.06);
+    display: flex;
+    margin: 0 1.5rem;
+    max-width: 1440px;
+    width: 100%; }
+  .Statistics-container {
+    align-items: center;
+    border-right: 1px solid #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0;
+    width: 25%; }
+  .Statistics-counter {
+    color: #80c100;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 6px; }
+  .Statistics-title {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 2px; }
+  @media (max-width: 1399.98px) {
+    .Statistics-content {
+      max-width: 1140px; } }
+  @media (max-width: 1199.98px) {
+    .Statistics-content {
+      max-width: 960px; } }
+  @media (max-width: 991.98px) {
+    .Statistics-content {
+      flex-wrap: wrap;
+      max-width: 720px; }
+    .Statistics-container {
+      width: 50%; } }
+  @media (max-width: 767.98px) {
+    .Statistics-content {
+      flex-direction: column;
+      max-width: 540px; }
+    .Statistics-container {
+      border-bottom: 1px solid #e9e9e9;
+      width: 100%; } }
+  @media (max-width: 575.98px) {
+    .Statistics-content {
+      flex-direction: column;
+      max-width: 100%; } }
+
 .Button {
   width: 100%; }
   .Button-tools {

@@ -21,7 +21,7 @@ const CounterArea = () => {
 
   return (
     <div className="Statistics">
-      <div className="Statistics-content"></div>
+      <div className="Statistics-content">{renderStatistics()}</div>
     </div>
   );
 };

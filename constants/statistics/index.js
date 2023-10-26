@@ -1,22 +1,22 @@
 export const statistics = [
   {
-    image: '/icon/reservation.png',
+    image: '/reservation.png',
     counter: 120,
     title: 'Reservation',
   },
   {
-    image: '/icon/chefs.png',
+    image: '/chefs.png',
     counter: 20,
     title: 'Master Chef',
   },
   {
-    image: '/icon/food.png',
+    image: '/food.png',
     counter: 50,
     title: 'Food Menu',
   },
 
   {
-    image: '/icon/satisfy-user.png',
+    image: '/satisfy-user.png',
     counter: 60690,
     title: 'Satisfy User',
   },
