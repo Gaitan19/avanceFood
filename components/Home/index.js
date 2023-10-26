@@ -1,7 +1,5 @@
 import { v4 } from 'uuid';
-import { chefList } from '@/constants/chefsList';
 import Reservation from '../Reservation';
-import ChefsCard from './ChefsCard';
 import Hero from './Hero';
 import TextButton from './TextButton';
 import Subscribe from './Subscribe';
@@ -9,11 +7,9 @@ import Testimonials from '../Testimonials';
 import { blogs } from '@/constants/blogsList';
 import BlogCard from './BlogCard';
 import PopularItems from './PopularItems';
+import Chefs from './Chefs';
 
 const Home = () => {
-  const renderChefs = () =>
-    chefList.map((chef) => <ChefsCard chefInformation={chef} key={v4()} />);
-
   const renderBlogs = () =>
     blogs.map((blog) => <BlogCard key={v4()} blog={blog} />);
 
@@ -43,13 +39,7 @@ const Home = () => {
         hasImage
         hasFillButton
       />
-      <TextButton
-        customClass="Reservation"
-        text="Our Experienced chefs"
-        title="Meet Our Chefs"
-      >
-        <div className="Chefs">{renderChefs()}</div>
-      </TextButton>
+      <Chefs />
       <TextButton
         customClass="App"
         title="Never Feel Hungry! Download Our Mobile App & Enjoy Delicious Food"

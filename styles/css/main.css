@@ -10457,7 +10457,6 @@ h1, .h1, h2, .h2, h3, .h3 {
   background-color: #e5e5e5;
   display: flex;
   justify-content: center;
-  padding: 80px 0;
   width: 100%; }
   .Statistics-content {
     background: #ffffff;
