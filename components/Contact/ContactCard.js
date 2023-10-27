@@ -6,9 +6,7 @@ const ContactCard = (props) => {
   return (
     <article className="Contact-card">
       <p className="Contact-card-title">{title}</p>
-      <h3 className="Contact-card-city">
-        <span>{city}</span>
-      </h3>
+      <h2 className="Contact-card-city">{city}</h2>
       <p className="Contact-card-text">{text}</p>
       <p className="Contact-card-view">View on map</p>
     </article>

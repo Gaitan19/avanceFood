@@ -21,6 +21,56 @@ export const blogs = [
     text: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod...',
     date: '20/12/2021',
     author: 'Admin',
-    info: 'food and nutrition',
+  },
+];
+
+export const authorsBlogs = [
+  {
+    image: '/blog-1.png',
+    title: 'Home to get your home delevery ?',
+    text: 'Irure enim eiusmod ipsum do Lorem sit consectetur enim consectetur. Nostrud ipsum eiusmod eiusmod culpa anim excepteur.',
+    date: '26/10/2023',
+    author: 'Jennifer lawrence',
+    authorPicture: '/author-1.png',
+  },
+  {
+    image: '/blog-2.png',
+    title: 'Recieved first day first reservation',
+    text: 'Irure enim eiusmod ipsum do Lorem sit consectetur enim consectetur. Nostrud ipsum eiusmod eiusmod culpa anim excepteur.',
+    date: '26/10/2023',
+    author: 'Connley jimmy',
+    authorPicture: '/author-2.png',
+  },
+  {
+    image: '/blog-3.png',
+    title: 'Restaurant welcome day meetup',
+    text: 'Irure enim eiusmod ipsum do Lorem sit consectetur enim consectetur. Nostrud ipsum eiusmod eiusmod culpa anim excepteur.',
+    date: '26/10/2023',
+    author: 'Astom martin',
+    authorPicture: '/author-3.png',
+  },
+  {
+    image: '/blog-4.png',
+    title: 'Healthy food and nutrition among all the children',
+    text: 'Irure enim eiusmod ipsum do Lorem sit consectetur enim consectetur. Nostrud ipsum eiusmod eiusmod culpa anim excepteur.',
+    date: '26/10/2023',
+    author: 'Simon donald',
+    authorPicture: '/author-1.png',
+  },
+  {
+    image: '/blog-5.png',
+    title: 'How to make delicious and spicy chicken grill',
+    text: 'Irure enim eiusmod ipsum do Lorem sit consectetur enim consectetur. Nostrud ipsum eiusmod eiusmod culpa anim excepteur.',
+    date: '26/10/2023',
+    author: 'Jesica aliston',
+    authorPicture: '/author-5.png',
+  },
+  {
+    image: '/blog-6.png',
+    title: 'Historical culture of asian food and nutrition',
+    text: 'Irure enim eiusmod ipsum do Lorem sit consectetur enim consectetur. Nostrud ipsum eiusmod eiusmod culpa anim excepteur.',
+    date: '26/10/2023',
+    author: 'Patricia ramise',
+    authorPicture: '/author-6.png',
   },
 ];
