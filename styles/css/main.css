@@ -10540,6 +10540,8 @@ h1, .h1, h2, .h2, h3, .h3 {
       position: absolute;
       transform: translate(-50%, 50%);
       width: 200px; }
+  .Contact-form {
+    padding-bottom: 70px; }
   .Contact-phone {
     display: flex;
     justify-content: space-between;
@@ -10602,10 +10604,19 @@ h1, .h1, h2, .h2, h3, .h3 {
         .Contact-message-form {
           width: 365px; } }
     .Contact-message-input {
-      margin-bottom: 30px; }
-    .Contact-message-error {
-      color: red;
-      padding-left: 10px; }
+      background: #ffffff;
+      border: 2px dashed #dddddd75;
+      box-shadow: 0px 1px 13px 0px #0000000d;
+      font-size: 16px;
+      height: 55px;
+      margin-bottom: 30px;
+      padding: 10px 22px;
+      width: 100%; }
+      .Contact-message-input:focus-visible {
+        border: 2px dashed #80c100;
+        outline: none; }
+    .Contact-message-task {
+      height: 144px; }
   @media (max-width: 991.98px) {
     .Contact-content {
       max-width: 720px; }
