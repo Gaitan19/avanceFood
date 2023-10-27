@@ -10600,9 +10600,6 @@ h1, .h1, h2, .h2, h3, .h3 {
       padding: 35px;
       position: relative;
       width: 100%; }
-      @media (max-width: 575.98px) {
-        .Contact-message-form {
-          width: 365px; } }
     .Contact-message-input {
       background: #ffffff;
       border: 2px dashed #dddddd75;

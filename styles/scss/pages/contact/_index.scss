@@ -120,16 +120,12 @@
 			padding: 35px;
 			position: relative;
 			width: 100%;
-
-			@include media-breakpoint-down(sm) {
-				width: 365px;
-			}
 		}
 
 		&-input {
 			background: $white;
 			border: 2px dashed $LightGray;
-			box-shadow: 0px 1px 13px 0px #0000000d;
+			box-shadow: $shadow-input;
 			font-size: 16px;
 			height: 55px;
 			margin-bottom: 30px;
@@ -145,35 +141,6 @@
 		&-task {
 			height: 144px;
 		}
-
-		// &-field {
-		// 	border: 2px dashed map-get($gray, input);
-		// 	border-radius: 0.25rem;
-		// 	box-shadow: $shadow-field;
-		// 	color: map-get($black-color, secondary);
-		// 	display: block;
-		// 	font-family: $font-primary;
-		// 	font-size: 16px;
-		// 	font-weight: 400;
-		// 	height: 55px;
-		// 	line-height: 1.5;
-		// 	margin-bottom: 5px;
-		// 	padding: 10px 22px;
-		// 	transition: all 0.2s ease-in-out;
-		// 	width: 100%;
-
-		// 	&.message {
-		// 		height: 124px;
-		// 	}
-
-		// 	&:focus {
-		// 		border: 2px dashed $green;
-		// 	}
-
-		// 	&:focus-visible {
-		// 		outline: none;
-		// 	}
-		// }
 	}
 
 	@include media-breakpoint-down(lg) {
@@ -200,8 +167,6 @@
 			max-width: 720px;
 			max-width: 540px;
 		}
-		// &-cards {
-		// }
 
 		&-card {
 			width: 100%;
@@ -211,7 +176,6 @@
 	@include media-breakpoint-down(sm) {
 		&-phone {
 			flex-direction: column;
-			// margin-left: 20px;
 		}
 	}
 }
