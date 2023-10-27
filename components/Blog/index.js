@@ -1,4 +1,5 @@
 import { v4 } from 'uuid';
+import Pagination from '@mui/material/Pagination';
 import { authorsBlogs } from '@/constants/blogsList';
 import Banner from '../Banner';
 import Layout from '../Layout';
@@ -17,6 +18,7 @@ const Blog = () => {
       <div className="Authors">
         <div className="Authors-content">
           <div className="Authors-cards">{renderAuthorsBlogs()}</div>
+          <Pagination className="Authors-pagination" count={3} />
         </div>
       </div>
     </Layout>

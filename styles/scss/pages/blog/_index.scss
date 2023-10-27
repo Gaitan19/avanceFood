@@ -15,6 +15,28 @@
         width: 100%;
     }
 
+    &-pagination {
+        margin-top: 20px;
+
+        & li {
+            background: $white;
+            margin: 0 10px;
+        }
+
+        & li button {
+            border-radius: 0;
+            color: $LawnGreen;
+            margin: 0;
+            padding: 0;
+
+            &:hover {
+                background: $LawnGreen;
+                border-radius: 0;
+                color: $white;
+            }
+        }
+    }
+
     &-cards {
         display: flex;
         flex-wrap: wrap;

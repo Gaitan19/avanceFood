@@ -1,9 +1,17 @@
+import { v4 } from 'uuid';
 import { offices } from '@/constants/offices';
 import ContactCard from './ContactCard';
 
 const ContactUs = () => {
   const renderOffice = () =>
-    offices.map((office) => <ContactCard key={office.title} office={office} />);
+    offices.map((office) => (
+      <ContactCard
+        key={v4()}
+        city={office.city}
+        text={office.text}
+        title={office.title}
+      />
+    ));
 
   return (
     <div className="Contact">
