@@ -8,10 +8,18 @@ const routes = {
   termsService: '/termsService',
   foodGrid: '/foodGrid',
   blog: '/blog',
+  blogDetails: '/blogDetails',
   login: '/login',
   cart: '/cart',
+  chefs: '/chefs',
   reservation: '/reservation',
+  register: '/register',
   privacyPolicy: '/privacyPolicy',
+  foodGrip: '/foodGrip',
+  foodDetails: '/foodDetails',
+  cartView: '/cartView',
+  checkout: '/checkout',
+  orderSucces: '/orderSucces',
 };
 
 export default routes;

@@ -3,76 +3,76 @@ import routes from '../routes';
 export const menuOptions = {
   foodMenu: [
     {
-      route: '/',
+      route: routes.foodGrid,
       text: 'Food Grip',
     },
     {
-      route: '/',
+      route: routes.foodDetails,
       text: 'Food details',
     },
     {
-      route: '/',
+      route: routes.cartView,
       text: 'Cart View',
     },
     {
-      route: '/',
+      route: routes.checkout,
       text: 'Checkout View',
     },
     {
-      route: '/',
+      route: routes.orderSucces,
       text: 'Order Succes',
     },
   ],
 
   blogMenu: [
     {
-      route: '/',
+      route: routes.blog,
       text: 'Blog',
     },
     {
-      route: '/',
+      route: routes.blogDetails,
       text: 'Blog Details',
     },
   ],
 
   pagesMenu: [
     {
-      route: '/',
+      route: routes.aboutUs,
       text: 'About us',
     },
     {
-      route: '/',
+      route: routes.reservation,
       text: 'Reservation',
     },
     {
-      route: '/',
+      route: routes.chefs,
       text: 'Chefs',
     },
     {
-      route: '/',
+      route: routes.testimonials,
       text: 'Testimonials',
     },
     {
-      route: '/',
+      route: routes.faqs,
       text: 'FAQ',
     },
     {
-      route: '/',
+      route: routes.privacyPolicy,
       text: 'Privacy Policy',
     },
     {
-      route: '/',
+      route: routes.termsService,
       text: 'Terms Of Service',
     },
   ],
 
   userMenu: [
     {
-      route: '/',
+      route: routes.login,
       text: 'Login',
     },
     {
-      route: '/',
+      route: routes.register,
       text: 'Register',
     },
     {
@@ -84,13 +84,13 @@ export const menuOptions = {
       text: 'Reset Password',
     },
     {
-      route: '/',
+      route: routes.aboutUs,
       text: 'About us',
     },
   ],
   costumerMenu: [
     {
-      route: '/',
+      route: routes.costumerDashboard,
       text: 'Dashboard',
     },
     {
