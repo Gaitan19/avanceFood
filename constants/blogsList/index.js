@@ -81,3 +81,17 @@ export const instructions = [
   'Available but the majority have alteration in some injected or words.',
   " There are many variations of passages of Lorem Ipsum which don't look even slightly believable.",
 ];
+
+export const blogComents = [
+  {
+    image: '/comment.png',
+    name: 'James martin',
+    text: 'Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum. There are many variations of passages of Lorem Ipsum available but the majority.',
+  },
+
+  {
+    image: '/comment.png',
+    name: 'James martin',
+    text: 'Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum. There are many variations of passages of Lorem Ipsum available but the majority.',
+  },
+];

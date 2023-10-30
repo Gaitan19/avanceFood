@@ -10802,6 +10802,48 @@ h1, .h1, h2, .h2, h3, .h3 {
     font-weight: 400;
     line-height: 1.5;
     padding-top: 13px; }
+  .Details-comments {
+    padding-top: 60px; }
+    .Details-comments-counter {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 30px; }
+  .Details-comment {
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    width: 100%; }
+    .Details-comment-picture {
+      height: auto;
+      padding-right: 22px;
+      width: 15%; }
+    .Details-comment-information {
+      padding-left: 20px; }
+    .Details-comment-container {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      width: 100%; }
+    .Details-comment-name {
+      font-size: 20px;
+      font-weight: 500; }
+    .Details-comment-text {
+      color: #818090;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px; }
+    .Details-comment-reply {
+      align-items: center;
+      background: none;
+      border: none;
+      color: #80c100;
+      display: flex;
+      gap: 5px;
+      transition: all 0.3s ease-in-out 0.1s; }
+      .Details-comment-reply:hover {
+        color: #2b2540; }
   @media (max-width: 991.98px) {
     .Details-content {
       max-width: 720px; } }
