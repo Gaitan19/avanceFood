@@ -10953,13 +10953,34 @@ h1, .h1, h2, .h2, h3, .h3 {
       display: flex;
       justify-content: space-between;
       width: 100%; }
+  @media (max-width: 1399.98px) {
+    .Details-content {
+      max-width: 1140px; } }
+  @media (max-width: 1199.98px) {
+    .Details-content {
+      max-width: 960px; } }
   @media (max-width: 991.98px) {
     .Details-content {
-      max-width: 720px; } }
+      flex-direction: column;
+      max-width: 720px; }
+    .Details-historical, .Details-right, .Details-input-group {
+      width: 100%; }
+    .Details-form-container {
+      flex-direction: column; } }
   @media (max-width: 767.98px) {
     .Details-content {
       max-width: 720px;
-      max-width: 540px; } }
+      max-width: 540px; }
+    .Details-comment {
+      flex-direction: column;
+      margin: 0;
+      padding: 0; }
+      .Details-comment-picture {
+        height: 90px;
+        padding: 0;
+        width: 90px; }
+      .Details-comment-information {
+        padding: 20px 0 24px; } }
 
 .Button {
   width: 100%; }

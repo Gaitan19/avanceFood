@@ -129,7 +129,6 @@
     &-shares {
         align-items: center;
         display: flex;
-        // gap: 10px;
         justify-content: flex-start;
         padding-top: 30px;
     }
@@ -158,7 +157,7 @@
     }
 
     &-icon {
-        color: #80c100;
+        color: $LawnGreen;
         font-size: 18px;
         transition: color 0.3s ease-in-out;
     }
@@ -305,9 +304,31 @@
         }
     }
 
+    @include media-breakpoint-down(xxl) {
+        &-content {
+            max-width: 1140px;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-content {
+            max-width: 960px;
+        }
+    }
+
     @include media-breakpoint-down(lg) {
         &-content {
+            flex-direction: column;
             max-width: 720px;
+        }
+        &-historical,
+        &-right,
+        &-input-group {
+            width: 100%;
+        }
+
+        &-form-container {
+            flex-direction: column;
         }
     }
 
@@ -315,6 +336,22 @@
         &-content {
             max-width: 720px;
             max-width: 540px;
+        }
+
+        &-comment {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            &-picture {
+                height: 90px;
+                padding: 0;
+                width: 90px;
+            }
+
+            &-information {
+                padding: 20px 0 24px;
+            }
         }
     }
 
