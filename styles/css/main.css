@@ -10831,6 +10831,32 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Details-tag:hover {
       background: #80c100;
       color: #ffffff; }
+  .Details-shares {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px; }
+  .Details-social {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    height: 40px;
+    justify-content: center;
+    line-height: 30px;
+    margin-left: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    width: 40px; }
+    .Details-social:hover {
+      background-color: #80c100; }
+    .Details-social:hover .Details-icon {
+      color: #ffffff; }
+  .Details-icon {
+    color: #80c100;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out; }
   .Details-image {
     height: auto;
     width: 100%; }

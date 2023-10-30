@@ -1,4 +1,10 @@
 import { v4 } from 'uuid';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from 'react-icons/fa';
 import { blogComents, blogTags, recentBlogs } from '@/constants/blogsList';
 import Banner from '../Banner';
 import Layout from '../Layout';
@@ -10,6 +16,13 @@ import RecentBlog from './RecentBlog';
 import Button from '../Button';
 
 const BlogDetails = () => {
+  const socialIcons = [
+    <FaFacebookF className="Details-icon" />,
+    <FaTwitter className="Details-icon" />,
+    <FaInstagram className="Details-icon" />,
+    <FaLinkedinIn className="Details-icon" />,
+  ];
+
   const renderComments = () =>
     blogComents.map((comment) => (
       <Comments
@@ -35,6 +48,13 @@ const BlogDetails = () => {
       <Button customClass="Details-tag" buttonText={blogTag} key={v4()} />
     ));
 
+  const renderSharesCauses = () =>
+    socialIcons.map((socialIcon) => (
+      <a key={v4()} className="Details-social" href="#">
+        {socialIcon}
+      </a>
+    ));
+
   return (
     <Layout headPageTitle="BlogDetails">
       <Banner title="Blog" page="Blog Details" />
@@ -55,7 +75,9 @@ const BlogDetails = () => {
             <DetailsRight title="Popular tags" customClass="Details-tags">
               {rendePopularTags()}
             </DetailsRight>
-            <DetailsRight title="Share causes" />
+            <DetailsRight title="Share causes" customClass="Details-shares">
+              {renderSharesCauses()}
+            </DetailsRight>
           </div>
         </div>
       </div>
