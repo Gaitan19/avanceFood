@@ -4,6 +4,7 @@ import Banner from '../Banner';
 import Layout from '../Layout';
 import Historical from './Historical';
 import Comments from './Comments';
+import CommentForm from './CommentForm';
 
 const BlogDetails = () => {
   const renderComments = () =>
@@ -27,6 +28,7 @@ const BlogDetails = () => {
               <h3 className="Details-comments-counter">{`${blogComents.length} Comments`}</h3>
               <div className="Details-comments-list">{renderComments()}</div>
             </div>
+            <CommentForm />
           </div>
           <div className="Details-right"> hola</div>
         </div>
