@@ -118,3 +118,13 @@ export const recentBlogs = [
     date: '26/10/2021',
   },
 ];
+
+export const blogTags = [
+  'Asian food',
+  'Delicious Food',
+  'food and nutrition',
+  'Healthy food',
+  'Drinks',
+  'Prefferred Food',
+  'Spicy',
+];

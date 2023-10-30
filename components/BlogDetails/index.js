@@ -1,5 +1,5 @@
 import { v4 } from 'uuid';
-import { blogComents, recentBlogs } from '@/constants/blogsList';
+import { blogComents, blogTags, recentBlogs } from '@/constants/blogsList';
 import Banner from '../Banner';
 import Layout from '../Layout';
 import Historical from './Historical';
@@ -7,6 +7,7 @@ import Comments from './Comments';
 import CommentForm from './CommentForm';
 import DetailsRight from './DetailsRight';
 import RecentBlog from './RecentBlog';
+import Button from '../Button';
 
 const BlogDetails = () => {
   const renderComments = () =>
@@ -29,6 +30,11 @@ const BlogDetails = () => {
       />
     ));
 
+  const rendePopularTags = () =>
+    blogTags.map((blogTag) => (
+      <Button customClass="Details-tag" buttonText={blogTag} key={v4()} />
+    ));
+
   return (
     <Layout headPageTitle="BlogDetails">
       <Banner title="Blog" page="Blog Details" />
@@ -46,7 +52,9 @@ const BlogDetails = () => {
             <DetailsRight title="Recent Blogs">
               {renderRecentBlogs()}
             </DetailsRight>
-            <DetailsRight title="Popular tags" />
+            <DetailsRight title="Popular tags" customClass="Details-tags">
+              {rendePopularTags()}
+            </DetailsRight>
             <DetailsRight title="Share causes" />
           </div>
         </div>

@@ -49,6 +49,53 @@
         }
     }
 
+    &-recent {
+        display: flex;
+        padding-top: 25px;
+
+        &-circle {
+            color: $LawnGreen;
+            font-size: 6px;
+            margin: 0 7px;
+        }
+
+        &-date {
+            color: $LawnGreen;
+            cursor: pointer;
+            font-family: $font-secondary;
+            font-size: 14px;
+            line-height: 28px;
+            transition: all 0.3s ease-in-out 0.1s;
+
+            &:hover {
+                color: $LightSlateGray;
+            }
+        }
+
+        &-image {
+            height: auto;
+            padding-right: 10px;
+            width: 23%;
+        }
+
+        &-information {
+            padding-left: 10px;
+        }
+
+        &-text {
+            color: $black-color;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            transition: all 0.3s ease-in-out 0.1s;
+
+            &:hover {
+                color: $LawnGreen;
+            }
+        }
+    }
+
     &-right {
         padding: 0 0.7rem;
         width: 33.33333333%;
@@ -67,6 +114,27 @@
             margin-bottom: 30px;
             padding: 30px 20px;
             width: 100%;
+        }
+    }
+
+    &-tags {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    &-tag {
+        background: $LightGainsboro;
+        border: none;
+        color: $black-color;
+        display: inline-flex;
+        margin-right: 10px;
+        margin-top: 15px;
+        padding: 7px 15px;
+        transition: all 0.3s ease-in-out 0.1s;
+
+        &:hover {
+            background: $LawnGreen;
+            color: $white;
         }
     }
 

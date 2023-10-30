@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 import { FaCircle } from 'react-icons/fa';
+import { formatDate } from '@/utils/FormatDate';
 
 const RecentBlog = (props) => {
   const { image, text, date } = props;
@@ -18,9 +19,9 @@ const RecentBlog = (props) => {
       <div className="Details-recent-information">
         <p className="Details-recent-text">{text}</p>
         <div className="Details-recent-container">
-          <span className="Details-recent-date">{date}</span>
+          <span className="Details-recent-date">{formatDate(date)}</span>
           <FaCircle className="Details-recent-circle" />
-          <span className="Details-recent-gray">8 min read</span>
+          <span>8 min read</span>
         </div>
       </div>
     </article>
