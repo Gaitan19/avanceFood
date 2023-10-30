@@ -5,6 +5,7 @@ import Layout from '../Layout';
 import Historical from './Historical';
 import Comments from './Comments';
 import CommentForm from './CommentForm';
+import DetailsRight from './DetailsRight';
 
 const BlogDetails = () => {
   const renderComments = () =>
@@ -30,7 +31,11 @@ const BlogDetails = () => {
             </div>
             <CommentForm />
           </div>
-          <div className="Details-right"> hola</div>
+          <div className="Details-right">
+            <DetailsRight title="Recent Blogs" />
+            <DetailsRight title="Popular tags" />
+            <DetailsRight title="Share causes" />
+          </div>
         </div>
       </div>
     </Layout>

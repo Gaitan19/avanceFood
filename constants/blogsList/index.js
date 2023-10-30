@@ -95,3 +95,26 @@ export const blogComents = [
     text: 'Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum. There are many variations of passages of Lorem Ipsum available but the majority.',
   },
 ];
+
+export const recentBlogs = [
+  {
+    image: '/recent-1.png',
+    text: 'Ea exercitation qui nostrud sint labore irure in exercitation',
+    date: '26/10/2021',
+  },
+  {
+    image: '/recent-2.png',
+    text: 'Amet cupidatat aliqua dolor del proident veniam proident',
+    date: '26/10/2021',
+  },
+  {
+    image: '/recent-3.png',
+    text: 'Consequat enim aute sint sint ad et culpa eu magna',
+    date: '26/10/2021',
+  },
+  {
+    image: '/recent-4.png',
+    text: 'Proident dolore dolore cillum pelo aliquip irure elit',
+    date: '26/10/2021',
+  },
+];
