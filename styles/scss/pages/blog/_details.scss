@@ -158,6 +158,45 @@
         }
     }
 
+    &-input {
+        background: $white;
+        border: none;
+        box-shadow: $shadow-input;
+        font-size: 16px;
+        height: 55px;
+        margin-bottom: 30px;
+        padding: 10px 22px;
+        width: 100%;
+
+        &:focus-visible {
+            border: 2px dashed $LawnGreen;
+            outline: none;
+        }
+
+        &-group {
+            width: 48.5%;
+        }
+
+        &-comment {
+            height: 168px;
+        }
+    }
+
+    &-form {
+        width: 100%;
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
     @include media-breakpoint-down(lg) {
         &-content {
             max-width: 720px;
