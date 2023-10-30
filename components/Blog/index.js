@@ -8,7 +8,15 @@ import AuthorCard from './AuthorCard';
 const Blog = () => {
   const renderAuthorsBlogs = () => {
     return authorsBlogs.map((authorBlog) => (
-      <AuthorCard key={v4()} author={authorBlog} />
+      <AuthorCard
+        key={v4()}
+        image={authorBlog.image}
+        title={authorBlog.title}
+        text={authorBlog.date}
+        authorName={authorBlog.authorName}
+        authorPicture={authorBlog.authorPicture}
+        date={authorBlog.date}
+      />
     ));
   };
 

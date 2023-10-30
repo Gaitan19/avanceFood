@@ -5,9 +5,7 @@ import { FaCircle } from 'react-icons/fa';
 import { formatDate } from '@/utils/FormatDate';
 
 const AuthorCard = (props) => {
-  const { author } = props;
-
-  const { image, title, text, date, authorName, authorPicture } = author;
+  const { image, title, text, date, authorName, authorPicture } = props;
 
   return (
     <article className="Authors-card">
@@ -50,14 +48,12 @@ const AuthorCard = (props) => {
 };
 
 AuthorCard.propTypes = {
-  author: PropTypes.shape({
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
-    authorName: PropTypes.string.isRequired,
-    authorPicture: PropTypes.string.isRequired,
-  }).isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  authorName: PropTypes.string.isRequired,
+  authorPicture: PropTypes.string.isRequired,
 };
 
 export default AuthorCard;

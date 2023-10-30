@@ -9340,10 +9340,8 @@ h1, .h1, h2, .h2, h3, .h3 {
 .offcanvas-body {
   padding: 0 15px; }
 
-.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
-  background-color: #80c100;
-  border-radius: 0;
-  color: #ffffff; }
+.Mui-selected {
+  border-radius: 0; }
 
 .Reservation {
   align-items: center;
