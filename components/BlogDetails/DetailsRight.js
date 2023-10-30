@@ -17,4 +17,8 @@ DetailsRight.propTypes = {
   children: PropTypes.node,
 };
 
+DetailsRight.defaultProps = {
+  children: <></>,
+};
+
 export default DetailsRight;

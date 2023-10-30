@@ -1,11 +1,12 @@
 import { v4 } from 'uuid';
-import { blogComents } from '@/constants/blogsList';
+import { blogComents, recentBlogs } from '@/constants/blogsList';
 import Banner from '../Banner';
 import Layout from '../Layout';
 import Historical from './Historical';
 import Comments from './Comments';
 import CommentForm from './CommentForm';
 import DetailsRight from './DetailsRight';
+import RecentBlog from './RecentBlog';
 
 const BlogDetails = () => {
   const renderComments = () =>
@@ -15,6 +16,16 @@ const BlogDetails = () => {
         name={comment.name}
         text={comment.text}
         key={v4()}
+      />
+    ));
+
+  const renderRecentBlogs = () =>
+    recentBlogs.map((recentBlog) => (
+      <RecentBlog
+        key={v4()}
+        image={recentBlog.image}
+        text={recentBlog.text}
+        date={recentBlog.date}
       />
     ));
 
@@ -32,7 +43,9 @@ const BlogDetails = () => {
             <CommentForm />
           </div>
           <div className="Details-right">
-            <DetailsRight title="Recent Blogs" />
+            <DetailsRight title="Recent Blogs">
+              {renderRecentBlogs()}
+            </DetailsRight>
             <DetailsRight title="Popular tags" />
             <DetailsRight title="Share causes" />
           </div>
