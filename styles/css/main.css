@@ -10742,6 +10742,74 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Authors-card {
       width: 100%; } }
 
+.Details {
+  align-items: center;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  width: 100%; }
+  .Details-content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1440px;
+    width: 100%; }
+  .Details-container {
+    background: #ffffff;
+    padding: 20px; }
+    .Details-container-images {
+      display: flex;
+      padding-top: 30px;
+      width: 100%; }
+  .Details-historical {
+    padding: 0 0.7rem;
+    width: 66.66666667%; }
+    .Details-historical-image {
+      height: auto;
+      padding: 0 0.5rem;
+      width: 50%; }
+  .Details-right {
+    background: #ffffff;
+    padding: 0 0.5rem;
+    width: 33.33333333%; }
+  .Details-image {
+    height: auto;
+    width: 100%; }
+  .Details-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 45px;
+    padding-top: 30px; }
+    .Details-title-secondary {
+      font-size: 24px;
+      font-weight: 500;
+      padding-top: 20px; }
+  .Details-text {
+    color: #818090;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-top: 20px; }
+  .Details-circle {
+    color: #80c100;
+    font-size: 18px;
+    padding-right: 7px; }
+  .Details-instruction {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 13px; }
+  @media (max-width: 991.98px) {
+    .Details-content {
+      max-width: 720px; } }
+  @media (max-width: 767.98px) {
+    .Details-content {
+      max-width: 720px;
+      max-width: 540px; } }
+
 .Button {
   width: 100%; }
   .Button-tools {

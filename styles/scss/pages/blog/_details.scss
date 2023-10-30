@@ -1,4 +1,11 @@
 .Details {
+    align-items: center;
+    background-color: $Gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    width: 100%;
+
     // &::after {
     // background: $LawnGreen;
     // content: "";
@@ -10,4 +17,98 @@
     // transform: translate(-50%, 50%);
     // width: 200px;
     // }
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &-container {
+        background: $white;
+        padding: 20px;
+
+        &-images {
+            display: flex;
+            padding-top: 30px;
+            width: 100%;
+        }
+    }
+
+    &-historical {
+        padding: 0 0.7rem;
+        width: 66.66666667%;
+
+        &-image {
+            height: auto;
+            padding: 0 0.5rem;
+            width: 50%;
+        }
+    }
+
+    &-right {
+        background: $white;
+        padding: 0 0.5rem;
+        width: 33.33333333%;
+    }
+
+    &-image {
+        height: auto;
+
+        width: 100%;
+    }
+
+    &-title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 45px;
+        padding-top: 30px;
+
+        &-secondary {
+            font-size: 24px;
+            font-weight: 500;
+            padding-top: 20px;
+        }
+    }
+
+    &-text {
+        color: $paragraph-color;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        padding-top: 20px;
+    }
+
+    &-circle {
+        color: $LawnGreen;
+        font-size: 18px;
+        padding-right: 7px;
+    }
+
+    &-instruction {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding-top: 13px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            max-width: 720px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-content {
+            max-width: 720px;
+            max-width: 540px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
 }

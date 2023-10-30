@@ -74,3 +74,10 @@ export const authorsBlogs = [
     authorPicture: '/author-6.png',
   },
 ];
+
+export const instructions = [
+  ' Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum.',
+  ' There are many variations of passages of Lorem Ipsum.',
+  'Available but the majority have alteration in some injected or words.',
+  " There are many variations of passages of Lorem Ipsum which don't look even slightly believable.",
+];
