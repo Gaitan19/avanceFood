@@ -156,4 +156,11 @@
             position: relative;
         }
     }
+
+    &-apply {
+        background: none;
+        border: none;
+        color: $LawnGreen;
+        margin-top: 20px;
+    }
 }

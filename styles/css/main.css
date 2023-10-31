@@ -11032,7 +11032,9 @@ h1, .h1, h2, .h2, h3, .h3 {
       padding: 0 0.7rem;
       width: 75%; }
   .Food-slider {
-    color: #80c100; }
+    color: #80c100;
+    margin: 15px 5px 0;
+    width: 95%; }
   .Food-item {
     background: #ffffff;
     border: 1px solid #00000030;
@@ -11179,6 +11181,11 @@ h1, .h1, h2, .h2, h3, .h3 {
     padding: 5px 18px; }
     .Button-add span {
       position: relative; }
+  .Button-apply {
+    background: none;
+    border: none;
+    color: #80c100;
+    margin-top: 20px; }
 
 .Navbar {
   display: flex;

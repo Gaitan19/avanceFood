@@ -2,6 +2,7 @@ import Slider from '@mui/material/Slider';
 import { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import FoodLeftItem from './FoodLeftItem';
+import Button from '../Button';
 
 const FilterPrice = () => {
   const [valueSlider, setValueSlider] = useState([0, 200]);
@@ -41,6 +42,7 @@ const FilterPrice = () => {
         className="Food-slider"
         valueLabelFormat={sliderLable}
       />
+      <Button buttonText="Apply" customClass="Button-apply" />
     </FoodLeftItem>
   );
 };
