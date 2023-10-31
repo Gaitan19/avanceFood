@@ -1,8 +1,31 @@
+import { useContext } from 'react';
+import Pagination from '@mui/material/Pagination';
 import { foodPopularItems, foodReservation } from '@/constants/food';
 import FilterPrice from './FilterPrice';
 import FilterStars from './FilterStars';
+import Product from '../Home/Product';
+import { foodinglyContext } from '../../context/FoodinglyContext';
+import { productList } from '@/constants/ProductList';
 
 const FoodFound = () => {
+  const { productsCart } = useContext(foodinglyContext);
+
+  const renderProducts = () => {
+    return productList.map((product) => {
+      const isCartproduct =
+        productsCart.some((productCart) => productCart.id === product.id) ||
+        false;
+
+      return (
+        <Product
+          product={product}
+          key={product.id}
+          isCartProduct={isCartproduct}
+        />
+      );
+    });
+  };
+
   return (
     <div className="Food">
       <div className="Food-content">
@@ -22,7 +45,12 @@ const FoodFound = () => {
               filterTypes={foodPopularItems}
             />
           </div>
-          <div className="Food-container-right">right</div>
+          <div className="Food-container-right">
+            <div className="Products-list Food-products">
+              {renderProducts()}
+            </div>
+            <Pagination className="Authors-pagination" count={3} />
+          </div>
         </div>
       </div>
     </div>

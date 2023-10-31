@@ -11029,6 +11029,9 @@ h1, .h1, h2, .h2, h3, .h3 {
       padding: 0 0.7rem;
       width: 25%; }
     .Food-container-right {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
       padding: 0 0.7rem;
       width: 75%; }
     .Food-container-stars {
@@ -11081,11 +11084,22 @@ h1, .h1, h2, .h2, h3, .h3 {
   @media (max-width: 991.98px) {
     .Food-content {
       flex-direction: column;
-      max-width: 720px; } }
+      max-width: 720px; }
+    .Food-container {
+      flex-direction: column; }
+      .Food-container-left, .Food-container-right {
+        width: 100%; } }
   @media (max-width: 767.98px) {
     .Food-content {
       max-width: 720px;
-      max-width: 540px; } }
+      max-width: 540px; }
+    .Food-products {
+      width: 100%; }
+      .Food-products .Products-card {
+        width: 47.5%; } }
+  @media (max-width: 575.98px) {
+    .Food-products .Products-card {
+      width: 100%; } }
 
 .Button {
   width: 100%; }
