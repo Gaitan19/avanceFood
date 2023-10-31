@@ -52,6 +52,34 @@
             padding: 0 0.7rem;
             width: 75%;
         }
+
+        &-starts {
+            align-items: center;
+            display: flex;
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+
+    &-checkbox {
+        border-radius: 0.25em;
+        height: 1rem;
+        width: 1rem;
+    }
+
+    &-starts {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &-start {
+        color: $LightGainsboro;
+        font-size: 18px;
+        margin-left: 6px;
+
+        &-green {
+            color: $LawnGreen;
+        }
     }
 
     &-slider {

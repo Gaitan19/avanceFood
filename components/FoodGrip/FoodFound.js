@@ -1,4 +1,5 @@
 import FilterPrice from './FilterPrice';
+import FilterStars from './FilterStars';
 
 const FoodFound = () => {
   return (
@@ -8,6 +9,7 @@ const FoodFound = () => {
         <div className="Food-container">
           <div className="Food-container-left">
             <FilterPrice />
+            <FilterStars title="Filter by Review" />
           </div>
           <div className="Food-container-right">right</div>
         </div>

@@ -11031,6 +11031,24 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Food-container-right {
       padding: 0 0.7rem;
       width: 75%; }
+    .Food-container-starts {
+      align-items: center;
+      display: flex;
+      margin-top: 15px;
+      width: 100%; }
+  .Food-checkbox {
+    border-radius: 0.25em;
+    height: 1rem;
+    width: 1rem; }
+  .Food-starts {
+    display: flex;
+    flex-direction: row-reverse; }
+  .Food-start {
+    color: #dddddd;
+    font-size: 18px;
+    margin-left: 6px; }
+    .Food-start-green {
+      color: #80c100; }
   .Food-slider {
     color: #80c100;
     margin: 15px 5px 0;

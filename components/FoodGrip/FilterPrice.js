@@ -27,8 +27,6 @@ const FilterPrice = () => {
     }
   };
 
-  const sliderLable = (value) => `$${value}`;
-
   return (
     <FoodLeftItem title="Filter by price">
       <Slider
@@ -40,7 +38,7 @@ const FilterPrice = () => {
         step={50}
         disableSwap
         className="Food-slider"
-        valueLabelFormat={sliderLable}
+        valueLabelFormat={(value) => `$${value}`}
       />
       <Button buttonText="Apply" customClass="Button-apply" />
     </FoodLeftItem>
