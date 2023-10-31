@@ -11,7 +11,7 @@ const Comments = (props) => {
       <Image
         width={150}
         height={90}
-        alt="user"
+        alt={`user ${name}`}
         priority
         src={image}
         className="Details-comment-picture"

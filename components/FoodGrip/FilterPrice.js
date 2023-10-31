@@ -1,6 +1,5 @@
 import Slider from '@mui/material/Slider';
 import { useState } from 'react';
-import Typography from '@mui/material/Typography';
 import FoodLeftItem from './FoodLeftItem';
 import Button from '../Button';
 
@@ -9,11 +8,7 @@ const FilterPrice = () => {
 
   const minDistance = 200;
 
-  const handleChange1 = (event, newValue, activeThumb) => {
-    if (!Array.isArray(newValue)) {
-      return;
-    }
-
+  const handleChangeSlider = (event, newValue, activeThumb) => {
     if (activeThumb === 0) {
       setValueSlider([
         Math.min(newValue[0], valueSlider[1] - minDistance),
@@ -31,7 +26,7 @@ const FilterPrice = () => {
     <FoodLeftItem title="Filter by price">
       <Slider
         value={valueSlider}
-        onChange={handleChange1}
+        onChange={handleChangeSlider}
         valueLabelDisplay="on"
         max={1000}
         min={0}

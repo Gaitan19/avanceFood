@@ -51,7 +51,7 @@ const Historical = () => {
           width={436}
           height={272}
           className="Details-historical-image"
-          alt="historical food"
+          alt="historical food 1"
           priority
           src="/blogs_details_left.png"
         />
@@ -60,7 +60,7 @@ const Historical = () => {
           width={436}
           height={272}
           className="Details-historical-image"
-          alt="historical food"
+          alt="historical food 2"
           priority
           src="/blogs_details_right.png"
         />
