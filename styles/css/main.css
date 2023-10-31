@@ -11031,7 +11031,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Food-container-right {
       padding: 0 0.7rem;
       width: 75%; }
-    .Food-container-starts {
+    .Food-container-stars {
       align-items: center;
       display: flex;
       margin-top: 15px;
@@ -11040,19 +11040,27 @@ h1, .h1, h2, .h2, h3, .h3 {
     border-radius: 0.25em;
     height: 1rem;
     width: 1rem; }
-  .Food-starts {
+  .Food-stars {
     display: flex;
     flex-direction: row-reverse; }
-  .Food-start {
+  .Food-star {
     color: #dddddd;
     font-size: 18px;
     margin-left: 6px; }
-    .Food-start-green {
+    .Food-star-green {
       color: #80c100; }
   .Food-slider {
     color: #80c100;
     margin: 15px 5px 0;
     width: 95%; }
+  .Food-types {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6px;
+    width: 90%; }
+    .Food-types-text {
+      color: #2b2540;
+      font-weight: 500; }
   .Food-item {
     background: #ffffff;
     border: 1px solid #00000030;

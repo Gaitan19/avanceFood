@@ -1,3 +1,4 @@
+import { foodPopularItems, foodReservation } from '@/constants/food';
 import FilterPrice from './FilterPrice';
 import FilterStars from './FilterStars';
 
@@ -10,6 +11,16 @@ const FoodFound = () => {
           <div className="Food-container-left">
             <FilterPrice />
             <FilterStars title="Filter by Review" />
+            <FilterStars
+              title="Reservation"
+              isByType
+              filterTypes={foodReservation}
+            />
+            <FilterStars
+              title="Popular Items"
+              isByType
+              filterTypes={foodPopularItems}
+            />
           </div>
           <div className="Food-container-right">right</div>
         </div>

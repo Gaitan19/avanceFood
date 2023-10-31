@@ -4,7 +4,7 @@ import { v4 } from 'uuid';
 import FoodLeftItem from './FoodLeftItem';
 
 const FilterStars = (props) => {
-  const { title } = props;
+  const { title, isByType, filterTypes } = props;
 
   const renderStar = (marks) => {
     return [...Array(5).keys()].map((index) => {
@@ -12,17 +12,24 @@ const FilterStars = (props) => {
 
       return (
         <li key={v4()}>
-          <FaStar className={`Food-start ${isGreen && 'Food-start-green'}`} />
+          <FaStar className={`Food-star ${isGreen && 'Food-star-green'}`} />
         </li>
       );
     });
   };
 
   const renderReviews = () =>
-    [...Array(5).keys()].map((index) => (
-      <div className="Food-container-starts" key={v4()}>
+    filterTypes.map((filterType) => (
+      <div className="Food-container-stars" key={v4()}>
         <input type="checkbox" className="Food-checkbox" />
-        <ul className="Food-starts">{renderStar(index)}</ul>
+        {isByType ? (
+          <div className="Food-types">
+            <span className="Food-types-text">{filterType.text}</span>
+            <span className="Food-types-text">{filterType.counter}</span>
+          </div>
+        ) : (
+          <ul className="Food-stars">{renderStar(filterType)}</ul>
+        )}
       </div>
     ));
   return <FoodLeftItem title={title}>{renderReviews()}</FoodLeftItem>;
@@ -30,6 +37,13 @@ const FilterStars = (props) => {
 
 FilterStars.propTypes = {
   title: PropTypes.string.isRequired,
+  isByType: PropTypes.bool,
+  filterTypes: PropTypes.array,
+};
+
+FilterStars.defaultProps = {
+  isByType: false,
+  filterTypes: [...Array(5).keys()],
 };
 
 export default FilterStars;
