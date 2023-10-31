@@ -9343,6 +9343,12 @@ h1, .h1, h2, .h2, h3, .h3 {
 .Mui-selected {
   border-radius: 0; }
 
+.css-nnid7-MuiSlider-valueLabel {
+  background: none;
+  color: #333333; }
+  .css-nnid7-MuiSlider-valueLabel.MuiSlider-valueLabelOpen {
+    transform: translateY(100%) scale(1); }
+
 .Reservation {
   align-items: center;
   background-color: #e5e5e5;
@@ -11025,6 +11031,8 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Food-container-right {
       padding: 0 0.7rem;
       width: 75%; }
+  .Food-slider {
+    color: #80c100; }
   .Food-item {
     background: #ffffff;
     border: 1px solid #00000030;

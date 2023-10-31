@@ -54,6 +54,11 @@
         }
     }
 
+    &-slider {
+        color: $LawnGreen;
+        //     transform: translate(-50%, -312%) rotate(45deg)
+    }
+
     &-item {
         background: $white;
         border: 1px solid $black-secondary;
