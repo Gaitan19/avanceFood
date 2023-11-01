@@ -11101,6 +11101,101 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Food-products .Products-card {
       width: 100%; } }
 
+.Food-details {
+  align-items: center;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  width: 100%; }
+  .Food-details-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    width: 100%; }
+  .Food-details-title {
+    color: #2b2540;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 55px;
+    text-align: center; }
+    .Food-details-title::after {
+      background: #80c100;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 50%;
+      margin-top: 15px;
+      position: absolute;
+      transform: translate(-50%, 50%);
+      width: 200px; }
+  .Food-details-container {
+    display: flex;
+    width: 100%; }
+  .Food-details-right {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.7rem;
+    width: 33.33333333%; }
+  .Food-details-left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.7rem;
+    width: 66.66666667%; }
+  .Food-details-item {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: -4px -5px 14px rgba(0, 0, 0, 0.08), 5px 8px 16px rgba(0, 0, 0, 0.08);
+    padding: 25px 20px 35px 20px;
+    width: 100%; }
+  .Food-details-heading {
+    align-items: center;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; }
+  .Food-details-forward {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 5px;
+    padding-top: 15px; }
+  .Food-details-excellent {
+    color: #80c100;
+    display: flex;
+    flex-direction: column; }
+    .Food-details-excellent h4, .Food-details-excellent .h4 {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0; }
+    .Food-details-excellent span {
+      font-size: 16px;
+      font-weight: 400;
+      padding-top: 5px; }
+    .Food-details-excellent-reviews {
+      color: #818090;
+      padding-top: 2px; }
+  @media (max-width: 1399.98px) {
+    .Food-details-content {
+      max-width: 1140px; } }
+  @media (max-width: 1199.98px) {
+    .Food-details-content {
+      max-width: 960px; } }
+  @media (max-width: 991.98px) {
+    .Food-details-content {
+      flex-direction: column;
+      max-width: 720px; } }
+  @media (max-width: 767.98px) {
+    .Food-details-content {
+      max-width: 720px;
+      max-width: 540px; } }
+
 .Button {
   width: 100%; }
   .Button-tools {

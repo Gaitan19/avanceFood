@@ -1,5 +1,6 @@
 import Banner from '../Banner';
 import Layout from '../Layout';
+import FoodDetailsLeft from './FoodDetailsLeft';
 
 const FoodDetails = () => {
   return (
@@ -8,8 +9,8 @@ const FoodDetails = () => {
       <div className="Food-details">
         <div className="Food-details-content">
           <div className="Food-details-container">
-            <div className="Food-details-left"></div>
-            <div className="Food-details-right"></div>
+            <FoodDetailsLeft />
+            <div className="Food-details-right">right</div>
           </div>
         </div>
       </div>
