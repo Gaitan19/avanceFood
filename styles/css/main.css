@@ -11141,6 +11141,34 @@ h1, .h1, h2, .h2, h3, .h3 {
     flex-direction: column;
     padding: 0 0.7rem;
     width: 33.33333333%; }
+  .Food-details-title {
+    border-bottom: 1px solid #80c100;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 10px; }
+    .Food-details-title.Price {
+      font-size: 18px;
+      padding-bottom: 0; }
+  .Food-details-price {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; }
+    .Food-details-price .Total {
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: line-through; }
+    .Food-details-price .Discounted {
+      color: #80c100;
+      font-size: 22px;
+      font-weight: 500;
+      margin-left: 10px; }
+  .Food-details-standar {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column; }
   .Food-details-left {
     align-items: center;
     display: flex;

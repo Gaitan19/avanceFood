@@ -49,6 +49,46 @@
         width: 33.33333333%;
     }
 
+    &-title {
+        border-bottom: 1px solid $LawnGreen;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+
+        &.Price {
+            font-size: 18px;
+            padding-bottom: 0;
+        }
+    }
+
+    &-price {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+
+        & .Total {
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: line-through;
+        }
+
+        & .Discounted {
+            color: $LawnGreen;
+            font-size: 22px;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+    }
+
+    &-standar {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
     &-left {
         align-items: center;
         display: flex;

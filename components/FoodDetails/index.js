@@ -1,6 +1,7 @@
 import Banner from '../Banner';
 import Layout from '../Layout';
 import FoodDetailsLeft from './FoodDetailsLeft';
+import FoodDetailsRight from './FoodDetailsRight';
 
 const FoodDetails = () => {
   return (
@@ -10,7 +11,7 @@ const FoodDetails = () => {
         <div className="Food-details-content">
           <div className="Food-details-container">
             <FoodDetailsLeft />
-            <div className="Food-details-right">right</div>
+            <FoodDetailsRight />
           </div>
         </div>
       </div>
