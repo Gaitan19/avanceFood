@@ -2,6 +2,8 @@ import Banner from '../Banner';
 import Layout from '../Layout';
 import FoodDetailsLeft from './FoodDetailsLeft';
 import FoodDetailsRight from './FoodDetailsRight';
+import FoodLike from './FoodLike';
+import FoodReview from './FoodReview';
 
 const FoodDetails = () => {
   return (
@@ -15,6 +17,8 @@ const FoodDetails = () => {
           </div>
         </div>
       </div>
+      <FoodReview />
+      <FoodLike />
     </Layout>
   );
 };
