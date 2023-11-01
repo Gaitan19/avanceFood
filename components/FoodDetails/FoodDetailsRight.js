@@ -1,9 +1,19 @@
 import { useState } from 'react';
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaCircle, FaShoppingCart } from 'react-icons/fa';
+import { v4 } from 'uuid';
 import Button from '../Button';
+import { descriptionsList } from '@/constants/food';
 
 const FoodDetailsRight = () => {
   const [quantity, setQuantity] = useState(0);
+
+  const renderDescriptionsList = () =>
+    descriptionsList.map((description) => (
+      <li className="Food-details-description-text" key={v4()}>
+        <FaCircle className="Food-details-circle" />
+        {description}
+      </li>
+    ));
 
   return (
     <div className="Food-details-right">
@@ -18,7 +28,7 @@ const FoodDetailsRight = () => {
         </div>
         <div className="Food-details-quantity">
           <span>Quantity</span>
-          <div>
+          <div className="Food-details-button-set">
             <Button
               customClass="Food-details-counter"
               buttonText="+"
@@ -32,13 +42,18 @@ const FoodDetailsRight = () => {
             />
           </div>
 
-          <Button customClass="Button-fill">
+          <Button customClass="Food-details-button-add">
             <span className="Button-fill-text Food-details-add">
               <FaShoppingCart className="Shopping" />
               Add To Cart
             </span>
           </Button>
         </div>
+      </div>
+
+      <div className="Food-details-item">
+        <h3 className="Food-details-title">Included</h3>
+        <ul className="Food-details-included">{renderDescriptionsList()}</ul>
       </div>
     </div>
   );

@@ -2,14 +2,9 @@ import { FaCircle, FaForward } from 'react-icons/fa';
 import { v4 } from 'uuid';
 import FoodDetailsForm from './FoodDetailsForm';
 import FoodPictures from './FoodPictures';
+import { descriptionsList } from '@/constants/food';
 
 const FoodDetailsLeft = () => {
-  const descriptionsList = [
-    'Buffet breakfast as per the Itinerary',
-    'Visit eight villages showcasing Polynesian culture',
-    'Complimentary Camel safari, Bonfire,',
-  ];
-
   const renderDescriptionsList = () =>
     descriptionsList.map((description) => (
       <li className="Food-details-description-text" key={v4()}>

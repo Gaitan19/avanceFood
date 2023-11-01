@@ -2,8 +2,8 @@ import { useContext } from 'react';
 import { productList } from '@/constants/ProductList';
 import { foodinglyContext } from '@/context/FoodinglyContext';
 import Product from '../Home/Product';
-import { responsiveCarouselTestimonials } from '@/constants/responsiveCarousel';
 import MultiCarousel from '../MultiCarousel';
+import { responsiveCarousel } from '@/constants/responsiveCarousel';
 
 const FoodLike = () => {
   const { productsCart } = useContext(foodinglyContext);
@@ -29,7 +29,10 @@ const FoodLike = () => {
       <div className="Food-details-content">
         <h3 className="Food-like-title">You May Also Like</h3>
 
-        <MultiCarousel customClass="Testimonials-carousel">
+        <MultiCarousel
+          customClass="Testimonials-carousel"
+          responsive={responsiveCarousel}
+        >
           {renderProducts()}
         </MultiCarousel>
       </div>

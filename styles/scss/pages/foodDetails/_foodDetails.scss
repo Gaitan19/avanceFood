@@ -23,6 +23,7 @@
     &-right {
         display: flex;
         flex-direction: column;
+        gap: 25px;
         padding: 0 0.7rem;
         width: 33.33333333%;
     }
@@ -105,6 +106,10 @@
         align-items: flex-start;
         display: flex;
         flex-direction: column;
+    }
+
+    &-included {
+        margin-top: 20px;
     }
 
     &-left {
@@ -230,6 +235,21 @@
         border: none;
         margin-right: 30px;
         width: 20%;
+
+        &-add {
+            background-color: $LawnGreen;
+            border: none;
+            border-radius: 5px;
+            color: $white;
+            font-family: inherit;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+            overflow: hidden;
+            padding: 12px 35px;
+            position: relative;
+            transition: background-color 0.3s;
+        }
     }
 
     &-images {
@@ -242,11 +262,31 @@
         &-content {
             max-width: 1140px;
         }
+
+        &-button-add {
+            padding: 12px 20px;
+        }
     }
 
     @include media-breakpoint-down(xl) {
         &-content {
             max-width: 960px;
+        }
+
+        &-button {
+            &-add {
+                font-size: 12px;
+
+                & .Shopping {
+                    font-size: 17px;
+                }
+            }
+
+            &-set {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 
@@ -255,6 +295,31 @@
             flex-direction: column;
             max-width: 720px;
         }
+
+        &-container {
+            flex-direction: column;
+        }
+
+        &-left,
+        &-right {
+            width: 100%;
+        }
+
+        &-button {
+            &-add {
+                font-size: 12px;
+
+                & .Shopping {
+                    font-size: 17px;
+                }
+            }
+
+            &-set {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+            }
+        }
     }
 
     @include media-breakpoint-down(md) {
@@ -262,8 +327,5 @@
             max-width: 720px;
             max-width: 540px;
         }
-    }
-
-    @include media-breakpoint-down(sm) {
     }
 }

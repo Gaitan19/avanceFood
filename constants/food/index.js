@@ -47,3 +47,9 @@ export const foodPictures = [
   '/big-img4.png',
   '/big-img5.png',
 ];
+
+export const descriptionsList = [
+  'Buffet breakfast as per the Itinerary',
+  'Visit eight villages showcasing Polynesian culture',
+  'Complimentary Camel safari, Bonfire,',
+];
