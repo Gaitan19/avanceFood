@@ -11153,6 +11153,28 @@ h1, .h1, h2, .h2, h3, .h3 {
     box-shadow: -4px -5px 14px rgba(0, 0, 0, 0.08), 5px 8px 16px rgba(0, 0, 0, 0.08);
     padding: 25px 20px 35px 20px;
     width: 100%; }
+    .Food-details-item-title {
+      border-bottom: 1px solid #80c100;
+      display: inline-block;
+      font-weight: 500;
+      margin-bottom: 20px;
+      padding-bottom: 10px; }
+  .Food-details-description {
+    margin-top: 30px;
+    padding: 20px; }
+    .Food-details-description-text {
+      color: #818090;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-bottom: 0;
+      padding-bottom: 15px; }
+  .Food-details-circle {
+    color: #2b2540;
+    font-size: 6px;
+    margin: 7px;
+    margin-top: 6px; }
   .Food-details-heading {
     align-items: center;
     border-radius: 0;
