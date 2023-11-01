@@ -11115,24 +11115,6 @@ h1, .h1, h2, .h2, h3, .h3 {
     justify-content: center;
     max-width: 1440px;
     width: 100%; }
-  .Food-details-title {
-    color: #2b2540;
-    font-family: inherit;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 40px;
-    margin-bottom: 55px;
-    text-align: center; }
-    .Food-details-title::after {
-      background: #80c100;
-      content: "";
-      display: block;
-      height: 1px;
-      left: 50%;
-      margin-top: 15px;
-      position: absolute;
-      transform: translate(-50%, 50%);
-      width: 200px; }
   .Food-details-container {
     display: flex;
     width: 100%; }
@@ -11165,6 +11147,34 @@ h1, .h1, h2, .h2, h3, .h3 {
       font-size: 22px;
       font-weight: 500;
       margin-left: 10px; }
+  .Food-details-quantity {
+    align-items: center;
+    border-bottom: 1px solid #00000030;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    padding-top: 20px;
+    width: 100%; }
+    .Food-details-quantity .Counter {
+      font-size: 14px;
+      margin: 0 4px; }
+  .Food-details-counter {
+    background: none;
+    border: 1px solid #d6d6d6;
+    font-size: 16px;
+    padding: 0 7px;
+    transition: all 0.3s ease-in-out 0.1s; }
+    .Food-details-counter:hover {
+      background: #80c100;
+      color: #ffffff; }
+  .Food-details-add {
+    align-items: center;
+    display: flex;
+    gap: 5px; }
+    .Food-details-add .Shopping {
+      font-size: 25px; }
   .Food-details-standar {
     align-items: flex-start;
     display: flex;
