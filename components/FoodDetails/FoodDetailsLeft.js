@@ -1,6 +1,7 @@
 import { FaCircle, FaForward } from 'react-icons/fa';
 import { v4 } from 'uuid';
 import FoodDetailsForm from './FoodDetailsForm';
+import FoodPictures from './FoodPictures';
 
 const FoodDetailsLeft = () => {
   const descriptionsList = [
@@ -35,6 +36,7 @@ const FoodDetailsLeft = () => {
           </span>
         </div>
       </div>
+      <FoodPictures />
       <div className="Food-details-item Food-details-description">
         <h3 className="Food-details-item-title">Description</h3>
         <p className="Food-details-description-text">

@@ -12,7 +12,7 @@ const FoodDetailsForm = () => {
           <input
             className="Details-input Details-input-group Food-details-inputs"
             type="text"
-            placeholder="First Name"
+            placeholder="Enter your full name"
             required
           />
 
@@ -27,7 +27,7 @@ const FoodDetailsForm = () => {
         <textarea
           className="Details-input Details-input-comment Food-details-inputs"
           type="text"
-          placeholder="Write your comment"
+          placeholder="Write your comments"
           required
         />
 

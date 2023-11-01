@@ -39,3 +39,11 @@ export const foodPopularItems = [
     counter: 12,
   },
 ];
+
+export const foodPictures = [
+  '/big-img1.png',
+  '/big-img2.png',
+  '/big-img3.png',
+  '/big-img4.png',
+  '/big-img5.png',
+];
