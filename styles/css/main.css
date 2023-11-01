@@ -11156,9 +11156,17 @@ h1, .h1, h2, .h2, h3, .h3 {
     .Food-details-item-title {
       border-bottom: 1px solid #80c100;
       display: inline-block;
+      font-size: 24px;
       font-weight: 500;
       margin-bottom: 20px;
       padding-bottom: 10px; }
+  .Food-details-inputs {
+    border: 2px dashed #dddddd75; }
+  .Food-details-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .Food-details-description {
     margin-top: 30px;
     padding: 20px; }
@@ -11175,6 +11183,9 @@ h1, .h1, h2, .h2, h3, .h3 {
     font-size: 6px;
     margin: 7px;
     margin-top: 6px; }
+  .Food-details-comments {
+    margin-top: 50px;
+    padding: 20px; }
   .Food-details-heading {
     align-items: center;
     border-radius: 0;

@@ -68,10 +68,22 @@
         &-title {
             border-bottom: 1px solid $LawnGreen;
             display: inline-block;
+            font-size: 24px;
             font-weight: 500;
             margin-bottom: 20px;
             padding-bottom: 10px;
         }
+    }
+
+    &-inputs {
+        border: 2px dashed $LightGray;
+    }
+
+    &-form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     &-description {
@@ -94,6 +106,11 @@
         font-size: 6px;
         margin: 7px;
         margin-top: 6px;
+    }
+
+    &-comments {
+        margin-top: 50px;
+        padding: 20px;
     }
 
     &-heading {

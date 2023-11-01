@@ -1,11 +1,12 @@
 import { FaCircle, FaForward } from 'react-icons/fa';
 import { v4 } from 'uuid';
+import FoodDetailsForm from './FoodDetailsForm';
 
 const FoodDetailsLeft = () => {
   const descriptionsList = [
     'Buffet breakfast as per the Itinerary',
     'Visit eight villages showcasing Polynesian culture',
-    'Complimentary Camel safari, Bonfire, and Cultural Dance at Camp',
+    'Complimentary Camel safari, Bonfire,',
   ];
 
   const renderDescriptionsList = () =>
@@ -49,6 +50,7 @@ const FoodDetailsLeft = () => {
         </p>
         <ul>{renderDescriptionsList()}</ul>
       </div>
+      <FoodDetailsForm />
     </div>
   );
 };
