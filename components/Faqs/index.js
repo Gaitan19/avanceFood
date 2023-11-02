@@ -5,11 +5,15 @@ import {
   CAccordionItem,
 } from '@coreui/react';
 import { v4 } from 'uuid';
+import Image from 'next/image';
+import Link from 'next/link';
 import Banner from '../Banner';
 import Layout from '../Layout';
 import { questionsList } from '@/constants/faqs';
 
 const Faqs = () => {
+  const phoneNumber = '00 123 456 789';
+
   const renderItemsQuestions = (itemQuestions) =>
     itemQuestions.map((itemQuestion) => (
       <CAccordionItem
@@ -28,10 +32,10 @@ const Faqs = () => {
 
   const renderQuestions = () =>
     questionsList.map((questionsItem) => (
-      <div className="Faqs-item">
+      <div className="Faqs-item" key={v4()}>
         <h3 className="Faqs-item-title">{questionsItem.text}</h3>
 
-        <CAccordion key={v4()} flush className="Faqs-accordion">
+        <CAccordion flush className="Faqs-accordion">
           {renderItemsQuestions(questionsItem.questions)}
         </CAccordion>
       </div>
@@ -45,7 +49,23 @@ const Faqs = () => {
           <h2 className="Food-title">Frequent answer and question</h2>
           <div className="Faqs-container">
             <div className="Faqs-container-left">{renderQuestions()}</div>
-            <div className="Faqs-container-right"></div>
+            <div className="Faqs-container-right">
+              <div className="Faqs-call">
+                <Image
+                  width={106}
+                  height={106}
+                  alt="phone call"
+                  className="Faqs-call-image"
+                  src="/call.png"
+                  quality={100}
+                />
+
+                <span className="Faqs-call-text">Contact us</span>
+                <Link className="Faqs-call-link" href="tel:00 123 456 789">
+                  +{phoneNumber}
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

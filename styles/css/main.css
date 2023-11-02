@@ -11430,6 +11430,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     width: 100%; } }
 
 .Faqs-container {
+  display: flex;
   width: 100%; }
   .Faqs-container-left {
     padding: 0 0.5rem;
@@ -11456,6 +11457,37 @@ h1, .h1, h2, .h2, h3, .h3 {
     line-height: 28px; }
   .Faqs-accordion-item {
     margin-bottom: 30px; }
+
+.Faqs-call {
+  align-items: center;
+  background: #80c100;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  padding: 90px 30px; }
+  .Faqs-call-image {
+    height: auto;
+    max-width: 100%; }
+  .Faqs-call-text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 20px; }
+  .Faqs-call-link {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out 0.1s; }
+    .Faqs-call-link:hover {
+      color: #2b2540; }
+
+@media (max-width: 991.98px) {
+  .Faqs-container {
+    flex-direction: column; }
+    .Faqs-container-left, .Faqs-container-right {
+      width: 100%; } }
 
 .Button {
   width: 100%; }
