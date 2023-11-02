@@ -72,12 +72,6 @@
         }
     }
 
-    @include media-breakpoint-down(xxl) {
-    }
-
-    @include media-breakpoint-down(xl) {
-    }
-
     @include media-breakpoint-down(lg) {
         &-container {
             flex-direction: column;
@@ -86,8 +80,5 @@
                 width: 100%;
             }
         }
-    }
-
-    @include media-breakpoint-down(md) {
     }
 }
