@@ -36,6 +36,17 @@
             padding: 0 0.5rem;
             width: 100%;
         }
+
+        &-link {
+            margin-bottom: 15px;
+            padding-top: 1.5rem;
+        }
+    }
+
+    &-checkbox {
+        border-radius: 0.25rem;
+        cursor: pointer;
+        margin-right: 5px;
     }
 
     &-form {
@@ -57,6 +68,16 @@
         &:focus-visible {
             border: 2px dashed $LawnGreen;
             outline: none;
+        }
+    }
+
+    &-links {
+        color: $LawnGreen;
+        margin: 0 3px;
+        transition: $transition;
+
+        &:hover {
+            color: $black-color;
         }
     }
 

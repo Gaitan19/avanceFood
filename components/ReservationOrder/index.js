@@ -60,12 +60,16 @@ const ReservationOrder = () => {
                 <input className="Order-inputs" placeholder="Aditional Notes" />
               </div>
             </div>
-            <div>
-              <input type="checkbox" />
+            <div className="Order-container-link">
+              <input type="checkbox" className="Order-checkbox" />
               <span>I have read and accepted the</span>
-              <Link href={routes.termsService}>Therms and conditions</Link>
+              <Link className="Order-links" href={routes.termsService}>
+                Therms and conditions
+              </Link>
               <span>and</span>
-              <Link href={routes.privacyPolicy}> Privacy policy</Link>
+              <Link className="Order-links" href={routes.privacyPolicy}>
+                Privacy policy
+              </Link>
             </div>
 
             <Button type="submit" customClass="Button-fill">

@@ -11385,6 +11385,14 @@ h1, .h1, h2, .h2, h3, .h3 {
     justify-content: space-between;
     padding: 0 0.5rem;
     width: 100%; }
+  .Order-container-link {
+    margin-bottom: 15px;
+    padding-top: 1.5rem; }
+
+.Order-checkbox {
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-right: 5px; }
 
 .Order-form {
   display: flex;
@@ -11402,6 +11410,13 @@ h1, .h1, h2, .h2, h3, .h3 {
   .Order-inputs:focus-visible {
     border: 2px dashed #80c100;
     outline: none; }
+
+.Order-links {
+  color: #80c100;
+  margin: 0 3px;
+  transition: all 0.3s ease-in-out 0.1s; }
+  .Order-links:hover {
+    color: #2b2540; }
 
 .Button {
   width: 100%; }
