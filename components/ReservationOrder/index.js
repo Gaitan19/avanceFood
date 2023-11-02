@@ -72,7 +72,7 @@ const ReservationOrder = () => {
               </Link>
             </div>
 
-            <Button type="submit" customClass="Button-fill">
+            <Button buttonType="submit" customClass="Button-fill">
               <span className="Button-fill-text">Book Now</span>
             </Button>
           </form>

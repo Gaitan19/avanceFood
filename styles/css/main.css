@@ -11418,6 +11418,10 @@ h1, .h1, h2, .h2, h3, .h3 {
   .Order-links:hover {
     color: #2b2540; }
 
+@media (max-width: 991.98px) {
+  .Order-inputs {
+    width: 100%; } }
+
 .Button {
   width: 100%; }
   .Button-tools {
