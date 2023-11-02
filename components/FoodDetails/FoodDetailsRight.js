@@ -10,6 +10,9 @@ const FoodDetailsRight = () => {
 
   const [quantity, setQuantity] = useState(0);
 
+  const handleDeleteQuantity = () =>
+    quantity > 0 && setQuantity((prevQuantity) => prevQuantity - 1);
+
   const renderDescriptionsList = () =>
     descriptionsList.map((description) => (
       <li className="Food-details-description-text" key={v4()}>
@@ -17,9 +20,6 @@ const FoodDetailsRight = () => {
         {description}
       </li>
     ));
-
-  const handleDeleteQuantity = () =>
-    quantity > 0 && setQuantity((prevQuantity) => prevQuantity - 1);
 
   return (
     <div className="Food-details-right">

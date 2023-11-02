@@ -6,6 +6,7 @@ import { descriptionsList } from '@/constants/food';
 
 const FoodDetailsLeft = () => {
   const excellent = 4.8;
+  const reviews = 1214;
 
   const renderDescriptionsList = () =>
     descriptionsList.map((description) => (
@@ -28,7 +29,9 @@ const FoodDetailsLeft = () => {
         <div className="Food-details-excellent">
           <h4>Excellent</h4>
           <span>{excellent}/5</span>
-          <span className="Food-details-excellent-reviews">(1214 reviews)</span>
+          <span className="Food-details-excellent-reviews">
+            ({reviews} reviews)
+          </span>
         </div>
       </div>
       <FoodPictures />

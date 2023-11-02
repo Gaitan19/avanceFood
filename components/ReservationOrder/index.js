@@ -1,5 +1,81 @@
+import Link from 'next/link';
+import { v4 } from 'uuid';
+import Banner from '../Banner';
+import Layout from '../Layout';
+import routes from '@/constants/routes';
+import Button from '../Button';
+
 const ReservationOrder = () => {
-  return <div>ReservationOrder</div>;
+  const sectectOptions = ['Guest', '20+', '30+', '40+', '50+', '100+'];
+
+  const renderSelectOptions = () =>
+    sectectOptions.map((selectOption) => (
+      <option key={v4()} value={selectOption}>
+        {selectOption}
+      </option>
+    ));
+
+  return (
+    <Layout headPageTitle="Food reservation">
+      <Banner title="Reservation" page="Reservation" />
+      <div className="Food-details Order">
+        <div className="Food-details-content Order-content">
+          <h2 className="Order-title">Booking your order</h2>
+          <p className="Order-text">
+            Eu sint minim tempor anim aliqua officia voluptate incididunt
+            deserunt. Velitgo quis Lorem culpa qui pariatur occaecat.
+          </p>
+          <form
+            className="Order-container"
+            onSubmit={(event) => event.preventDefault()}
+          >
+            <div className="Order-form Food-details-item ">
+              <div className="Order-container-inputs">
+                <input
+                  className="Order-inputs"
+                  placeholder="First  name*"
+                  required
+                />
+                <input
+                  className="Order-inputs"
+                  placeholder="Last name*"
+                  required
+                />
+                <input
+                  className="Order-inputs"
+                  placeholder="Email address (Optional)"
+                  required
+                />
+                <input
+                  className="Order-inputs"
+                  placeholder="Mobile number*"
+                  type="tel"
+                  required
+                />
+                <select className="Order-inputs">
+                  {renderSelectOptions()}
+                </select>
+                <input className="Order-inputs" type="date" required />
+                <input className="Order-inputs" type="time" required />
+                <input className="Order-inputs" placeholder="Aditional Notes" />
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <span>I have read and accepted the</span>
+              <Link href={routes.termsService}>Therms and conditions</Link>
+              <span>and</span>
+              <Link href={routes.privacyPolicy}> Privacy policy</Link>
+            </div>
+
+            <Button type="submit" customClass="Button-fill">
+              <span className="Button-fill-text">Book Now</span>
+            </Button>
+          </form>
+        </div>
+      </div>
+    </Layout>
+  );
 };
 
 export default ReservationOrder;
