@@ -5,6 +5,9 @@ import Button from '../Button';
 import { descriptionsList } from '@/constants/food';
 
 const FoodDetailsRight = () => {
+  const total = 55.0;
+  const discounted = 45.0;
+
   const [quantity, setQuantity] = useState(0);
 
   const renderDescriptionsList = () =>
@@ -15,6 +18,9 @@ const FoodDetailsRight = () => {
       </li>
     ));
 
+  const handleDeleteQuantity = () =>
+    quantity > 0 && setQuantity((prevQuantity) => prevQuantity - 1);
+
   return (
     <div className="Food-details-right">
       <div className="Food-details-item Food-details-standar">
@@ -22,8 +28,8 @@ const FoodDetailsRight = () => {
         <div className="Food-details-price">
           <span className="Food-details-title Price">Price</span>
           <div>
-            <span className="Total">$55.00</span>
-            <span className="Discounted">$45.00</span>
+            <span className="Total">${total}</span>
+            <span className="Discounted">${discounted}</span>
           </div>
         </div>
         <div className="Food-details-quantity">
@@ -32,13 +38,13 @@ const FoodDetailsRight = () => {
             <Button
               customClass="Food-details-counter"
               buttonText="+"
-              onClick={() => setQuantity(quantity + 1)}
+              onClick={() => setQuantity((prevQuantity) => prevQuantity + 1)}
             />
             <span className="Counter">{quantity}</span>
             <Button
               customClass="Food-details-counter"
               buttonText="-"
-              onClick={() => quantity > 0 && setQuantity(quantity - 1)}
+              onClick={handleDeleteQuantity}
             />
           </div>
 

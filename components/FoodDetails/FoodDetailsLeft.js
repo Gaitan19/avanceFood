@@ -5,6 +5,8 @@ import FoodPictures from './FoodPictures';
 import { descriptionsList } from '@/constants/food';
 
 const FoodDetailsLeft = () => {
+  const excellent = 4.8;
+
   const renderDescriptionsList = () =>
     descriptionsList.map((description) => (
       <li className="Food-details-description-text" key={v4()}>
@@ -25,10 +27,8 @@ const FoodDetailsLeft = () => {
         </div>
         <div className="Food-details-excellent">
           <h4>Excellent</h4>
-          <span>4.8/5</span>
-          <span className="Food-details-excellent-reviews">
-            (1214 reviewes)
-          </span>
+          <span>{excellent}/5</span>
+          <span className="Food-details-excellent-reviews">(1214 reviews)</span>
         </div>
       </div>
       <FoodPictures />
