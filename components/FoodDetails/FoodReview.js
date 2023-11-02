@@ -15,11 +15,7 @@ const FoodReview = () => {
       <div className="Food-details-content Review-content">
         <h3 className="Food-details-item-title">All review</h3>
 
-        <div
-          className="Review-container"
-          customClass="Testimonials-carousel"
-          responsive={responsiveCarouselTestimonials}
-        >
+        <div className="Review-container" customClass="Testimonials-carousel">
           {renderTestimonials()}
         </div>
       </div>
