@@ -75,3 +75,15 @@ h3 {
     transform: translateY(100%) scale(1);
   }
 }
+
+.accordion-button {
+  background-color: $white;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:not(.collapse) {
+    background-color: $white;
+  }
+}
