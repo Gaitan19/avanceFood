@@ -11570,14 +11570,17 @@ h1, .h1, h2, .h2, h3, .h3 {
   .View-trash:hover {
     color: #2b2540; }
 
-.View-input-quantity {
-  background: none;
-  border: 1px solid #ededed;
-  height: 40px;
-  margin-left: 5px;
-  padding: 0 5px 0 10px;
-  text-align: center;
-  width: 60px; }
+.View-input {
+  margin: 30px 0 20px;
+  width: 100%; }
+  .View-input-quantity {
+    background: none;
+    border: 1px solid #ededed;
+    height: 40px;
+    margin-left: 5px;
+    padding: 0 5px 0 10px;
+    text-align: center;
+    width: 60px; }
 
 .Button {
   width: 100%; }

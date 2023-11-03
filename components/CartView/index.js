@@ -17,7 +17,12 @@ const CartView = () => {
                 <h3 className="Food-details-title">Coupon code</h3>
               </div>
             </div> */}
-            <CartViewItem title="Coupon code"></CartViewItem>
+            <CartViewItem title="Coupon code">
+              <input
+                className="Order-inputs View-input"
+                placeholder="Enter coupon code"
+              />
+            </CartViewItem>
             {/* <div className="View-container-item">
               <div className="View-item">
                 <h3 className="Food-details-title">Cart Total</h3>

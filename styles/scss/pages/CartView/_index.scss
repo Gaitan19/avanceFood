@@ -85,6 +85,10 @@
     }
 
     &-input {
+        margin: 30px 0 20px;
+
+        width: 100%;
+
         &-quantity {
             background: none;
             border: 1px solid $light-gray-secondary;
