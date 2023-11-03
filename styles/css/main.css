@@ -11527,6 +11527,38 @@ h1, .h1, h2, .h2, h3, .h3 {
     padding: 10px;
     text-align: center;
     text-transform: capitalize; }
+  .View-table-rows {
+    background: #ffffff; }
+    .View-table-rows td {
+      border-bottom: 1px solid #ededed;
+      border-right: 1px solid #ededed;
+      font-weight: 500;
+      padding: 10px;
+      text-align: center;
+      text-transform: capitalize; }
+  .View-table-name {
+    color: #80c100; }
+  .View-table-image {
+    max-width: 180px;
+    overflow: hidden; }
+
+.View-trash {
+  background: none;
+  border: none;
+  color: #80c100;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out 0.1s; }
+  .View-trash:hover {
+    color: #2b2540; }
+
+.View-input-quantity {
+  background: none;
+  border: 1px solid #ededed;
+  height: 40px;
+  margin-left: 5px;
+  padding: 0 5px 0 10px;
+  text-align: center;
+  width: 60px; }
 
 .Button {
   width: 100%; }

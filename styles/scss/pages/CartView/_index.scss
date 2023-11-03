@@ -27,5 +27,50 @@
             text-align: center;
             text-transform: capitalize;
         }
+
+        &-rows {
+            background: $white;
+            & td {
+                border-bottom: 1px solid $light-gray-secondary;
+                border-right: 1px solid $light-gray-secondary;
+                font-weight: 500;
+                padding: 10px;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+
+        &-name {
+            color: $LawnGreen;
+        }
+
+        &-image {
+            max-width: 180px;
+            overflow: hidden;
+        }
+    }
+
+    &-trash {
+        background: none;
+        border: none;
+        color: $LawnGreen;
+        font-size: 20px;
+        transition: $transition;
+
+        &:hover {
+            color: $black-color;
+        }
+    }
+
+    &-input {
+        &-quantity {
+            background: none;
+            border: 1px solid $light-gray-secondary;
+            height: 40px;
+            margin-left: 5px;
+            padding: 0 5px 0 10px;
+            text-align: center;
+            width: 60px;
+        }
     }
 }

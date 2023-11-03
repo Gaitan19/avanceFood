@@ -23,6 +23,18 @@ const FoodinglyContext = (props) => {
     setProductsCart(filterProducts);
   };
 
+  const handleProductQuantity = (id, value) => {
+    const tempProducts = [...productsCart];
+    const productIndex = tempProducts.findIndex(
+      (product) => product.id === parseInt(id),
+    );
+
+    if (productIndex !== -1) {
+      tempProducts[productIndex].quantity = value;
+      setProductsCart(tempProducts);
+    }
+  };
+
   return (
     <foodinglyContext.Provider
       value={{
@@ -31,6 +43,7 @@ const FoodinglyContext = (props) => {
         productsCart,
         addProductCart,
         deleteProductCart,
+        handleProductQuantity,
       }}
     >
       {children}

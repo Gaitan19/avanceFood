@@ -1,13 +1,14 @@
 import { v4 } from 'uuid';
 import { useContext } from 'react';
-import { FaTrashAlt } from 'react-icons/fa';
+import { FaRegTrashAlt } from 'react-icons/fa';
 import Image from 'next/image';
 import { tableHeaders } from '@/constants/cartView';
 import { foodinglyContext } from '../../context/FoodinglyContext';
 import Button from '../Button';
 
 const TableView = () => {
-  const { productsCart, deleteProductCart } = useContext(foodinglyContext);
+  const { productsCart, deleteProductCart, handleProductQuantity } =
+    useContext(foodinglyContext);
 
   //   const getTotalPrice = () =>
   //     productsCart.reduce(
@@ -16,6 +17,15 @@ const TableView = () => {
   //     );
 
   const getTotalFood = (quantity, price) => quantity * price;
+
+  const handleOnchangeQuantity = (event) => {
+    const {
+      target: { value, id },
+    } = event;
+
+    handleProductQuantity(id, value);
+    // console.log('value :>> ', value);
+  };
 
   const renderTableHeaders = () =>
     tableHeaders.map((tableHeader) => (
@@ -26,21 +36,21 @@ const TableView = () => {
 
   const renderTableBody = () =>
     productsCart.map((cartProduct) => (
-      <tr key={v4()}>
+      <tr key={v4()} className="View-table-rows">
         <td className="View-table-item">
           <Button
-            customClass="Cart-delete View-trash"
+            customClass="View-trash"
             onClick={() => deleteProductCart(cartProduct)}
           >
-            <FaTrashAlt />
+            <FaRegTrashAlt />
           </Button>
         </td>
 
         <td className="View-table-image">
           <Image
             className="View-image"
-            width={100}
-            height={100}
+            width={92}
+            height={92}
             alt={cartProduct.name}
             src={cartProduct.image}
           />
@@ -50,7 +60,14 @@ const TableView = () => {
         <td className="View-table-price">{`$${cartProduct.price}`}</td>
         <td className="View-table-quantity">
           Quantity
-          <input type="number" defaultValue={cartProduct.quantity} min={1} />
+          <input
+            className="View-input-quantity"
+            id={cartProduct.id}
+            type="number"
+            defaultValue={cartProduct.quantity}
+            min={1}
+            onChange={handleOnchangeQuantity}
+          />
         </td>
         <td>${getTotalFood(cartProduct.quantity, cartProduct.price)}</td>
       </tr>
