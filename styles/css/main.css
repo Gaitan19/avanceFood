@@ -11507,11 +11507,13 @@ h1, .h1, h2, .h2, h3, .h3 {
   padding-top: 15px; }
 
 .View-container {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   padding: 0 0.7rem;
   width: 100%; }
   .View-container-table {
+    max-height: 499px;
+    overflow-y: auto;
     padding: 0 0.7rem;
     width: 100%; }
   .View-container-item {
@@ -11600,6 +11602,21 @@ h1, .h1, h2, .h2, h3, .h3 {
   justify-content: space-between;
   padding: 15px 0;
   width: 100%; }
+
+@media (max-width: 991.98px) {
+  .View-table {
+    min-width: 890px; }
+  .View-container {
+    flex-direction: row; }
+    .View-container-table {
+      max-width: 100%;
+      overflow-x: auto; } }
+
+@media (max-width: 767.98px) {
+  .View-container {
+    flex-direction: column; }
+    .View-container-item {
+      width: 100%; } }
 
 .Button {
   width: 100%; }

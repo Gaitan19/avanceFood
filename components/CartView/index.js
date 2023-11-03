@@ -16,22 +16,12 @@ const CartView = () => {
         <div className="Food-content View-content">
           <TableView />
           <div className="Food-container View-container">
-            {/* <div className="View-container-item">
-              <div className="View-item">
-                <h3 className="Food-details-title">Coupon code</h3>
-              </div>
-            </div> */}
             <CartViewItem title="Coupon code" buttonText="Apply voucher">
               <input
                 className="Order-inputs View-input"
                 placeholder="Enter coupon code"
               />
             </CartViewItem>
-            {/* <div className="View-container-item">
-              <div className="View-item">
-                <h3 className="Food-details-title">Cart Total</h3>
-              </div>
-            </div> */}
             <CartViewItem title="Cart Total" buttonText="Proceed to Checkout">
               <div className="View-total">
                 <div className="View-subtotal">
