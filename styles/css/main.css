@@ -11506,6 +11506,28 @@ h1, .h1, h2, .h2, h3, .h3 {
   line-height: 28px;
   padding-top: 15px; }
 
+.View-container-table {
+  padding: 0 0.7rem;
+  width: 100%; }
+
+.View-table {
+  width: 100%; }
+  .View-table-headers {
+    background: #80c100;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5; }
+  .View-table-header {
+    border-bottom: 3px solid #80c100;
+    border-right: 1px solid #d6d6d6;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize; }
+
 .Button {
   width: 100%; }
   .Button-tools {

@@ -1,0 +1,31 @@
+.View {
+    &-container {
+        &-table {
+            padding: 0 0.7rem;
+            width: 100%;
+        }
+    }
+
+    &-table {
+        width: 100%;
+
+        &-headers {
+            background: $LawnGreen;
+            color: $white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        &-header {
+            border-bottom: 3px solid $LawnGreen;
+            border-right: 1px solid $gray-secondary;
+            color: $white;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+}

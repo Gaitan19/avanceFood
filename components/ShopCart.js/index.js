@@ -30,7 +30,7 @@ const ShopCart = (props) => {
           />
           <div className="Cart-product-info">
             <span className="Cart-name">{cartProduct.name}</span>
-            <span className="Cart-product-price">{`${cartProduct.cantidad} x $${cartProduct.price}`}</span>
+            <span className="Cart-product-price">{`${cartProduct.quantity} x $${cartProduct.price}`}</span>
           </div>
           <Button
             customClass="Cart-delete"
@@ -44,7 +44,10 @@ const ShopCart = (props) => {
   };
 
   const getTotalPrice = () =>
-    productsCart.reduce((total, product) => total + product.price, 0);
+    productsCart.reduce(
+      (total, product) => total + product.price * product.quantity,
+      0,
+    );
 
   return (
     <COffcanvas

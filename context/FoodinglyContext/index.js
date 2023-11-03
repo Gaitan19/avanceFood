@@ -10,7 +10,7 @@ const FoodinglyContext = (props) => {
   const [productsCart, setProductsCart] = useLocalStorage('productsCart', []);
 
   const addProductCart = (product) => {
-    const newCartProduct = { ...product, cantidad: 1 };
+    const newCartProduct = { ...product, quantity: 1 };
 
     setProductsCart([...productsCart, newCartProduct]);
   };
