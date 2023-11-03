@@ -24,7 +24,6 @@ const TableView = () => {
     } = event;
 
     handleProductQuantity(id, value);
-    // console.log('value :>> ', value);
   };
 
   const renderTableHeaders = () =>
