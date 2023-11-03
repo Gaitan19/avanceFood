@@ -84,6 +84,14 @@
         }
     }
 
+    &-total {
+        width: 100%;
+
+        & span {
+            font-weight: 500;
+        }
+    }
+
     &-input {
         margin: 30px 0 20px;
 
@@ -98,5 +106,21 @@
             text-align: center;
             width: 60px;
         }
+    }
+
+    &-subtotal {
+        border-bottom: 1px solid $LightGrey;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        padding-left: 105px;
+        width: 100%;
+    }
+
+    &-amount {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        width: 100%;
     }
 }

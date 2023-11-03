@@ -10,12 +10,6 @@ const TableView = () => {
   const { productsCart, deleteProductCart, handleProductQuantity } =
     useContext(foodinglyContext);
 
-  //   const getTotalPrice = () =>
-  //     productsCart.reduce(
-  //       (total, product) => total + product.price * product.quantity,
-  //       0,
-  //     );
-
   const getTotalFood = (quantity, price) => quantity * price;
 
   const handleOnchangeQuantity = (event) => {

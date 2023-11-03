@@ -11570,6 +11570,11 @@ h1, .h1, h2, .h2, h3, .h3 {
   .View-trash:hover {
     color: #2b2540; }
 
+.View-total {
+  width: 100%; }
+  .View-total span {
+    font-weight: 500; }
+
 .View-input {
   margin: 30px 0 20px;
   width: 100%; }
@@ -11581,6 +11586,20 @@ h1, .h1, h2, .h2, h3, .h3 {
     padding: 0 5px 0 10px;
     text-align: center;
     width: 60px; }
+
+.View-subtotal {
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  padding-left: 105px;
+  width: 100%; }
+
+.View-amount {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  width: 100%; }
 
 .Button {
   width: 100%; }
@@ -11707,6 +11726,10 @@ h1, .h1, h2, .h2, h3, .h3 {
     border: none;
     color: #80c100;
     margin-top: 20px; }
+  .Button-view {
+    padding: 5px 18px; }
+    .Button-view-text {
+      font-size: 14px; }
 
 .Navbar {
   display: flex;

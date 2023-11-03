@@ -35,6 +35,12 @@ const FoodinglyContext = (props) => {
     }
   };
 
+  const getTotalPrice = () =>
+    productsCart.reduce(
+      (total, product) => total + product.price * product.quantity,
+      0,
+    );
+
   return (
     <foodinglyContext.Provider
       value={{
@@ -44,6 +50,7 @@ const FoodinglyContext = (props) => {
         addProductCart,
         deleteProductCart,
         handleProductQuantity,
+        getTotalPrice,
       }}
     >
       {children}

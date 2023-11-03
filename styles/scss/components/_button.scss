@@ -163,4 +163,12 @@
         color: $LawnGreen;
         margin-top: 20px;
     }
+
+    &-view {
+        padding: 5px 18px;
+
+        &-text {
+            font-size: 14px;
+        }
+    }
 }
