@@ -1,5 +1,6 @@
 import Banner from '../Banner';
 import Layout from '../Layout';
+import CartViewItem from './CartViewItem';
 import TableView from './TableView';
 
 const CartView = () => {
@@ -9,10 +10,20 @@ const CartView = () => {
 
       <div className="Food">
         <div className="Food-content View-content">
+          <TableView />
           <div className="Food-container View-container">
-            <TableView />
-            <div className="View-container-left"></div>
-            <div className="View-container-right"></div>
+            {/* <div className="View-container-item">
+              <div className="View-item">
+                <h3 className="Food-details-title">Coupon code</h3>
+              </div>
+            </div> */}
+            <CartViewItem title="Coupon code"></CartViewItem>
+            {/* <div className="View-container-item">
+              <div className="View-item">
+                <h3 className="Food-details-title">Cart Total</h3>
+              </div>
+            </div> */}
+            <CartViewItem title="Cart Total"></CartViewItem>
           </div>
         </div>
       </div>
