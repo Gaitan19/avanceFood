@@ -48,7 +48,7 @@ export const orderDetails = {
 export const costumersInformation = [
   {
     text: 'First name',
-    value: orderDetails.name,
+    value: orderDetails.firstName,
   },
   {
     text: 'Last name',
