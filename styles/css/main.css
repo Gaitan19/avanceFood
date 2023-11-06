@@ -11744,6 +11744,42 @@ h1, .h1, h2, .h2, h3, .h3 {
   .Checkout-input {
     width: 100%; } }
 
+.Not-found {
+  align-items: center;
+  background: #34383c;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw; }
+  .Not-found-content {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: -4px -5px 14px rgba(0, 0, 0, 0.08), 5px 8px 16px rgba(0, 0, 0, 0.08);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    max-width: 364px;
+    padding: 24px;
+    position: relative;
+    width: 75%; }
+  .Not-found-title {
+    font-size: 22px;
+    line-height: 24px; }
+  .Not-found-container {
+    border-bottom: 2px solid #dddddd75;
+    padding-bottom: 15px; }
+  .Not-found-text {
+    margin: 0.7rem 0; }
+  .Not-found-link {
+    color: #2b2540;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 8px;
+    text-decoration: underline; }
+    .Not-found-link:hover {
+      text-decoration: none; }
+
 .Button {
   width: 100%; }
   .Button-tools {
