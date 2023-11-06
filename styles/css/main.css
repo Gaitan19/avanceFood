@@ -11719,6 +11719,14 @@ h1, .h1, h2, .h2, h3, .h3 {
   padding-bottom: 6px;
   width: 100%; }
 
+@media (max-width: 991.98px) {
+  .Checkout-container {
+    flex-direction: column; }
+    .Checkout-container-left, .Checkout-container-right {
+      width: 100%; }
+  .Checkout-input {
+    width: 100%; } }
+
 .Button {
   width: 100%; }
   .Button-tools {

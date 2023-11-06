@@ -132,4 +132,19 @@
         padding-bottom: 6px;
         width: 100%;
     }
+
+    @include media-breakpoint-down(lg) {
+        &-container {
+            flex-direction: column;
+
+            &-left,
+            &-right {
+                width: 100%;
+            }
+        }
+
+        &-input {
+            width: 100%;
+        }
+    }
 }
