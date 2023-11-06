@@ -9,24 +9,20 @@ export const tableHeaders = [
 
 export const billingsInformation = [
   {
-    placeholder: 'First name*',
+    text: 'First name*',
     type: 'text',
-    isRequired: true,
   },
   {
-    placeholder: 'Last name*',
+    text: 'Last name*',
     type: 'text',
-    isRequired: true,
   },
   {
-    placeholder: 'Email address (optional)',
+    text: 'Email address',
     type: 'email',
-    isRequired: false,
   },
   {
-    placeholder: 'Mobile number',
+    text: 'Mobile number',
     type: 'tel',
-    isRequired: true,
   },
 ];
 

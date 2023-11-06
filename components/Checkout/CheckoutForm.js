@@ -1,5 +1,6 @@
 import { v4 } from 'uuid';
 import Link from 'next/link';
+import { useState } from 'react';
 import {
   billingsInformation,
   checkoutSelectors,
@@ -14,8 +15,9 @@ const CheckoutForm = () => {
       <input
         key={v4()}
         className="Order-inputs Checkout-input"
-        placeholder={billingInformation.placeholder}
-        required={billingInformation.isRequired}
+        placeholder={billingInformation.text}
+        name={billingInformation.text}
+        required
       />
     ));
 
@@ -41,6 +43,7 @@ const CheckoutForm = () => {
           id={paymentMethod}
           type="radio"
           name="Payment methods"
+          required
         />
         <label className="Checkout-label" for={paymentMethod}>
           {paymentMethod}
@@ -50,7 +53,10 @@ const CheckoutForm = () => {
 
   return (
     <form
-      onSubmit={(event) => event.preventDefault()}
+      onSubmit={(event) => {
+        event.preventDefault();
+        console.log('event.target :>> ', event);
+      }}
       className="Checkout-container-left"
     >
       <div className="Checkout-item">
@@ -91,6 +97,7 @@ const CheckoutForm = () => {
           className="Checkout-input-checkbox"
           id="conditions"
           type="checkbox"
+          required
         />
         <label for="conditions">
           I read and accept all
@@ -100,7 +107,7 @@ const CheckoutForm = () => {
         </label>
       </div>
 
-      <Button type="button" customClass="Button-fill">
+      <Button buttonType="submit" customClass="Button-fill">
         <span className="Button-fill-text">Place Order</span>
       </Button>
     </form>
