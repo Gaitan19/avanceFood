@@ -21,6 +21,7 @@ export const blogs = [
     text: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod...',
     date: '20/12/2021',
     author: 'Admin',
+    info: 'Food and nutrition',
   },
 ];
 
