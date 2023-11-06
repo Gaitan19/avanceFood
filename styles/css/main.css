@@ -11622,6 +11622,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   display: flex;
   width: 100%; }
   .Checkout-container-left {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     padding: 0 0.7rem;
@@ -11629,11 +11630,23 @@ h1, .h1, h2, .h2, h3, .h3 {
   .Checkout-container-right {
     padding: 0 0.7rem;
     width: 33.33333333%; }
+  .Checkout-container-methods {
+    display: block;
+    margin-bottom: 0.125rem;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    width: 100%; }
+  .Checkout-container-check {
+    display: block;
+    margin-bottom: 15px;
+    min-height: 1.5rem;
+    padding-top: 10px; }
 
 .Checkout-item {
   align-items: flex-start;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%; }
 
 .Checkout-title {
   border-bottom: 1px solid #80c100;
@@ -11648,7 +11661,46 @@ h1, .h1, h2, .h2, h3, .h3 {
   box-shadow: -4px -5px 14px rgba(0, 0, 0, 0.08), 5px 8px 16px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-wrap: wrap;
-  padding: 20px; }
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 100%; }
+  .Checkout-box-payment {
+    flex-direction: column; }
+  .Checkout-box-inputs {
+    justify-content: space-between; }
+
+.Checkout-input {
+  width: 48.5%; }
+  .Checkout-input-checkbox {
+    border-radius: 10px;
+    height: 1rem;
+    margin-right: 0.5rem;
+    width: 1rem; }
+  .Checkout-input-notes, .Checkout-input-street {
+    width: 100%; }
+
+.Checkout-label {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 13px; }
+
+.Checkout-radio {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1em;
+  margin-right: 0.5rem;
+  margin-top: 0.25em;
+  vertical-align: top;
+  width: 1em; }
+
+.Checkout-link {
+  color: #80c100;
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out 0.1s; }
+  .Checkout-link:hover {
+    color: #2b2540; }
 
 .Button {
   width: 100%; }
