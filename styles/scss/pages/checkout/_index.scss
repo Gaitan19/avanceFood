@@ -1,0 +1,41 @@
+.Checkout {
+    &-container {
+        display: flex;
+        width: 100%;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.7rem;
+            width: 66.66666667%;
+        }
+
+        &-right {
+            padding: 0 0.7rem;
+            width: 33.33333333%;
+        }
+    }
+
+    &-item {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-title {
+        border-bottom: 1px solid $LawnGreen;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    &-box {
+        background: $white;
+        border-radius: 10px;
+        box-shadow: $shadow-food;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+}
