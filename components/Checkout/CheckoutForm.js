@@ -1,6 +1,5 @@
 import { v4 } from 'uuid';
 import Link from 'next/link';
-import { useState } from 'react';
 import {
   billingsInformation,
   checkoutSelectors,
@@ -53,10 +52,7 @@ const CheckoutForm = () => {
 
   return (
     <form
-      onSubmit={(event) => {
-        event.preventDefault();
-        console.log('event.target :>> ', event);
-      }}
+      onSubmit={(event) => event.preventDefault()}
       className="Checkout-container-left"
     >
       <div className="Checkout-item">

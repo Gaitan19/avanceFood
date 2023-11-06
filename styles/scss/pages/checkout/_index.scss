@@ -79,6 +79,15 @@
         &-orders {
             margin-top: 60px;
         }
+
+        &-success {
+            display: flex;
+            gap: 12px;
+        }
+
+        &-details {
+            margin: 0;
+        }
     }
 
     &-input {
@@ -131,6 +140,23 @@
         justify-content: space-between;
         padding-bottom: 6px;
         width: 100%;
+    }
+
+    &-information {
+        align-items: flex-start;
+        border-bottom: 1px solid $LightGrey;
+        display: flex;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+
+        &-text {
+            width: 40%;
+        }
+
+        &-value {
+            font-weight: 600;
+        }
     }
 
     @include media-breakpoint-down(lg) {

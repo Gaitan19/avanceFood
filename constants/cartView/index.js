@@ -38,3 +38,67 @@ export const paymentMethods = [
   'Payponeer',
   'Cash on delivery',
 ];
+
+export const orderDetails = {
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'yourmail@domain.com',
+};
+
+export const costumersInformation = [
+  {
+    text: 'First name',
+    value: orderDetails.name,
+  },
+  {
+    text: 'Last name',
+    value: orderDetails.lastName,
+  },
+
+  {
+    text: 'Email address',
+    value: orderDetails.email,
+  },
+
+  {
+    text: 'Address',
+    value: '1901 Thornridge Cir. Shiloh, Hawaii 81063',
+  },
+  {
+    text: 'City',
+    value: 'Thornridge',
+  },
+  {
+    text: 'State',
+    value: 'Hawaii',
+  },
+
+  {
+    text: 'Postal code',
+    value: '81063',
+  },
+
+  {
+    text: 'Country',
+    value: 'USA',
+  },
+];
+
+export const ordersInformation = [
+  {
+    text: 'Order ID',
+    value: '#MN3293KH',
+  },
+  {
+    text: 'Order date',
+    value: '10/06/2023',
+  },
+  {
+    text: 'Payment method',
+    value: 'Bank transfer',
+  },
+  {
+    text: 'Order status',
+    value: true,
+  },
+];
