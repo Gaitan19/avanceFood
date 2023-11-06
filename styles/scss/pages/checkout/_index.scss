@@ -30,6 +30,12 @@
             min-height: 1.5rem;
             padding-top: 10px;
         }
+
+        &-orders {
+            border-bottom: 1px solid $LightGrey;
+            margin-bottom: 15px;
+            width: 100%;
+        }
     }
 
     &-item {
@@ -63,6 +69,15 @@
 
         &-inputs {
             justify-content: space-between;
+        }
+
+        &-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        &-orders {
+            margin-top: 60px;
         }
     }
 
@@ -107,5 +122,14 @@
         &:hover {
             color: $black-color;
         }
+    }
+
+    &-orders {
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        justify-content: space-between;
+        padding-bottom: 6px;
+        width: 100%;
     }
 }
