@@ -17,7 +17,7 @@ const Faqs = () => {
   const renderItemsQuestions = (itemQuestions) =>
     itemQuestions.map((itemQuestion) => (
       <CAccordionItem
-        key={v4()}
+        key={itemQuestion.id}
         itemKey={itemQuestion.id}
         className="Faqs-accordion-item"
       >
@@ -61,7 +61,7 @@ const Faqs = () => {
                 />
 
                 <span className="Faqs-call-text">Contact us</span>
-                <Link className="Faqs-call-link" href="tel:00 123 456 789">
+                <Link className="Faqs-call-link" href={`tel:${phoneNumber}`}>
                   +{phoneNumber}
                 </Link>
               </div>

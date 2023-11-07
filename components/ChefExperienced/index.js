@@ -3,11 +3,11 @@ import Banner from '../Banner';
 import TextButton from '../Home/TextButton';
 import Layout from '../Layout';
 import ChefsCard from '../Home/ChefsCard';
-import { chefList } from '@/constants/chefsList';
+import { chefs } from '@/constants/chefsList';
 
 const ChefsExperienced = () => {
   const renderChefs = () =>
-    chefList.map((chef) => <ChefsCard chefInformation={chef} key={v4()} />);
+    chefs.map((chef) => <ChefsCard chefInformation={chef} key={v4()} />);
 
   return (
     <Layout headPageTitle="Chefs-Foodingly">
@@ -15,6 +15,7 @@ const ChefsExperienced = () => {
       <TextButton
         customClass="Reservation"
         text="Meet with our experienced chefs members"
+        title="Chefs"
       >
         <div className="Chefs">{renderChefs()}</div>
         <div className="Chefs">{renderChefs()}</div>

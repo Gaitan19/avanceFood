@@ -6,10 +6,10 @@ import routes from '@/constants/routes';
 import Button from '../Button';
 
 const ReservationOrder = () => {
-  const sectectOptions = ['Guest', '20+', '30+', '40+', '50+', '100+'];
+  const selectOptions = ['Guest', '20+', '30+', '40+', '50+', '100+'];
 
   const renderSelectOptions = () =>
-    sectectOptions.map((selectOption) => (
+    selectOptions.map((selectOption) => (
       <option key={v4()} value={selectOption}>
         {selectOption}
       </option>

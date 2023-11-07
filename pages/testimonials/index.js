@@ -15,13 +15,13 @@ export default function testimonialsPage() {
   return (
     <Layout headPageTitle="Testimonials-Foodingly">
       <Banner title="Testimonials" page="Testimonials" />
-      <TextButton customClass="Reservation" text="What our client say about us">
-        <div className="Review-container" customClass="Testimonials-carousel">
-          {renderTestimonials()}
-        </div>
-        <div className="Review-container" customClass="Testimonials-carousel">
-          {renderTestimonials()}
-        </div>
+      <TextButton
+        customClass="Reservation"
+        text="What our client say about us"
+        title="Testimonials"
+      >
+        <div className="Review-container">{renderTestimonials()}</div>
+        <div className="Review-container">{renderTestimonials()}</div>
       </TextButton>
     </Layout>
   );

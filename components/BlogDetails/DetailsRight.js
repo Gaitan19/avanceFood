@@ -13,12 +13,13 @@ const DetailsRight = (props) => {
 
 DetailsRight.propTypes = {
   title: PropTypes.string.isRequired,
-  customClass: PropTypes.string.isRequired,
+  customClass: PropTypes.string,
   children: PropTypes.node,
 };
 
 DetailsRight.defaultProps = {
   children: <></>,
+  customClass: '',
 };
 
 export default DetailsRight;

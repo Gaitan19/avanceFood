@@ -1,4 +1,4 @@
-export const chefList = [
+export const chefs = [
   {
     image: 'https://foodingly.netlify.app/assets/img/chefs/chefs-1.png',
     name: 'Jane Cooper',
