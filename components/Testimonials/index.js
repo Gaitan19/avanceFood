@@ -1,5 +1,4 @@
-import { v4 } from 'uuid';
-import { testimonialList } from '@/constants/testimonialList';
+import { testimonials } from '@/constants/testimonialList';
 import TestimonialCard from './TestimonialCard';
 import MultiCarousel from '../MultiCarousel';
 import { responsiveCarouselTestimonials } from '@/constants/responsiveCarousel';
@@ -7,8 +6,8 @@ import TextButton from '../Home/TextButton';
 
 const Testimonials = () => {
   const renderTestimonials = () =>
-    testimonialList.map((person) => (
-      <TestimonialCard person={person} key={v4()} />
+    testimonials.map((person) => (
+      <TestimonialCard person={person} key={person.id} />
     ));
 
   return (

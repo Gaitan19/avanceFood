@@ -1,4 +1,3 @@
-import { v4 } from 'uuid';
 import Pagination from '@mui/material/Pagination';
 import { authorsBlogs } from '@/constants/blogsList';
 import Banner from '../Banner';
@@ -9,7 +8,7 @@ const Blog = () => {
   const renderAuthorsBlogs = () => {
     return authorsBlogs.map((authorBlog) => (
       <AuthorCard
-        key={v4()}
+        key={authorBlog.id}
         image={authorBlog.image}
         title={authorBlog.title}
         text={authorBlog.date}

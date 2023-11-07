@@ -28,12 +28,12 @@ const TableView = () => {
     ));
 
   const renderTableBody = () =>
-    productsCart.map((cartProduct) => (
-      <tr key={v4()} className="View-table-rows">
+    productsCart.map((productCart) => (
+      <tr key={productCart.id} className="View-table-rows">
         <td className="View-table-item">
           <Button
             customClass="View-trash"
-            onClick={() => deleteProductCart(cartProduct)}
+            onClick={() => deleteProductCart(productCart)}
           >
             <FaRegTrashAlt />
           </Button>
@@ -44,25 +44,25 @@ const TableView = () => {
             className="View-image"
             width={92}
             height={92}
-            alt={cartProduct.name}
-            src={cartProduct.image}
+            alt={productCart.name}
+            src={productCart.image}
           />
         </td>
 
-        <td className="View-table-name">{cartProduct.name}</td>
-        <td className="View-table-price">{`$${cartProduct.price}`}</td>
+        <td className="View-table-name">{productCart.name}</td>
+        <td className="View-table-price">{`$${productCart.price}`}</td>
         <td className="View-table-quantity">
           Quantity
           <input
             className="View-input-quantity"
-            id={cartProduct.id}
+            id={productCart.id}
             type="number"
-            defaultValue={cartProduct.quantity}
+            defaultValue={productCart.quantity}
             min={1}
             onChange={handleOnchangeQuantity}
           />
         </td>
-        <td>${getTotalFood(cartProduct.quantity, cartProduct.price)}</td>
+        <td>${getTotalFood(productCart.quantity, productCart.price)}</td>
       </tr>
     ));
 

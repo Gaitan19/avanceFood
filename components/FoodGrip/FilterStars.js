@@ -20,7 +20,7 @@ const FilterStars = (props) => {
 
   const renderReviews = () =>
     filterTypes.map((filterType) => (
-      <div className="Food-container-stars" key={v4()}>
+      <div className="Food-container-stars" key={filterType.id}>
         <input type="checkbox" className="Food-checkbox" />
         {isByType ? (
           <div className="Food-types">

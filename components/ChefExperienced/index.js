@@ -1,4 +1,3 @@
-import { v4 } from 'uuid';
 import Banner from '../Banner';
 import TextButton from '../Home/TextButton';
 import Layout from '../Layout';
@@ -7,7 +6,7 @@ import { chefs } from '@/constants/chefsList';
 
 const ChefsExperienced = () => {
   const renderChefs = () =>
-    chefs.map((chef) => <ChefsCard chefInformation={chef} key={v4()} />);
+    chefs.map((chef) => <ChefsCard chefInformation={chef} key={chef.id} />);
 
   return (
     <Layout headPageTitle="Chefs-Foodingly">

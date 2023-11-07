@@ -5,13 +5,13 @@ import FilterPrice from './FilterPrice';
 import FilterStars from './FilterStars';
 import Product from '../Home/Product';
 import { foodinglyContext } from '../../context/FoodinglyContext';
-import { productList } from '@/constants/ProductList';
+import { products } from '@/constants/ProductList';
 
 const FoodFound = () => {
   const { productsCart } = useContext(foodinglyContext);
 
   const renderProducts = () => {
-    return productList.map((product) => {
+    return products.map((product) => {
       const isCartproduct =
         productsCart.some((productCart) => productCart.id === product.id) ||
         false;

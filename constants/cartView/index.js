@@ -1,3 +1,5 @@
+import { v4 } from 'uuid';
+
 export const tableHeaders = [
   'remove',
   'image',
@@ -47,15 +49,18 @@ export const orderDetails = {
 
 export const costumersInformation = [
   {
+    id: v4(),
     text: 'First name',
     value: orderDetails.firstName,
   },
   {
+    id: v4(),
     text: 'Last name',
     value: orderDetails.lastName,
   },
 
   {
+    id: v4(),
     text: 'Email address',
     value: orderDetails.email,
   },

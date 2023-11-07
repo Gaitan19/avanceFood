@@ -1,30 +1,32 @@
+import { v4 } from 'uuid';
+
 export const questionsList = [
   {
     text: 'General question',
     questions: [
       {
-        id: 1,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       },
       {
-        id: 2,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       },
       {
-        id: 3,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       },
       {
-        id: 4,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
@@ -36,28 +38,28 @@ export const questionsList = [
     text: 'Regular question',
     questions: [
       {
-        id: 5,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       },
       {
-        id: 6,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       },
       {
-        id: 7,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       },
       {
-        id: 8,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
@@ -69,28 +71,28 @@ export const questionsList = [
     text: 'Advance question',
     questions: [
       {
-        id: 9,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       },
       {
-        id: 10,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       },
       {
-        id: 11,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       },
       {
-        id: 12,
+        id: v4(),
         questionTitle:
           'It is a long stablished fact that a reader will be distracted by the readable content?',
         questionText:

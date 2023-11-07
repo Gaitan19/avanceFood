@@ -7,6 +7,7 @@ import {
 } from '@/constants/cartView';
 import routes from '@/constants/routes';
 import Button from '../Button';
+import Select from '../Select';
 
 const CheckoutForm = () => {
   const renderBillingsInformation = () =>
@@ -20,18 +21,13 @@ const CheckoutForm = () => {
       />
     ));
 
-  const renderCheckoutOptions = (options) =>
-    options.map((option) => (
-      <option key={v4()} value={option}>
-        {option}
-      </option>
-    ));
-
   const renderCheckoutSelectors = () =>
     checkoutSelectors.map((checkoutSelector) => (
-      <select key={v4()} className="Order-inputs Checkout-input">
-        {renderCheckoutOptions(checkoutSelector)}
-      </select>
+      <Select
+        key={v4()}
+        options={checkoutSelector}
+        customClass="Order-inputs Checkout-input"
+      />
     ));
 
   const renderPaymentMethods = () =>

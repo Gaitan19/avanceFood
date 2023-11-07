@@ -1,4 +1,3 @@
-import { v4 } from 'uuid';
 import Reservation from '../Reservation';
 import Hero from './Hero';
 import TextButton from './TextButton';
@@ -11,7 +10,7 @@ import Chefs from './Chefs';
 
 const Home = () => {
   const renderBlogs = () =>
-    blogs.map((blog) => <BlogCard key={v4()} blog={blog} />);
+    blogs.map((blog) => <BlogCard key={blog.id} blog={blog} />);
 
   return (
     <>

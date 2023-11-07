@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { v4 } from 'uuid';
 import Checkout from '@/components/Checkout';
 import { costumersInformation, orderDetails } from '@/constants/cartView';
 
@@ -8,7 +7,7 @@ export default function orderSuccessPage() {
 
   const renderCostumerInformation = () =>
     costumersInformation.map((costumerInformation) => (
-      <div key={v4()} className="Checkout-information">
+      <div key={costumerInformation.id} className="Checkout-information">
         <span className="Checkout-information-text">
           {costumerInformation.text}:
         </span>

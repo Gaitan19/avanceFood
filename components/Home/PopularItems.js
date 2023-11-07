@@ -2,24 +2,24 @@ import { useState, useContext, useEffect } from 'react';
 import { v4 } from 'uuid';
 import Button from '../Button';
 import Product from './Product';
-import { productList, productOptions } from '@/constants/ProductList';
+import { products, productOptions } from '@/constants/ProductList';
 import { foodinglyContext } from '../../context/FoodinglyContext';
 import TextButton from './TextButton';
 
 const PopularItems = () => {
   const [selectedCategory, setSelectedCategory] = useState(productOptions[0]);
-  const [products, setProducts] = useState(productList);
+  const [productsFavorites, setProductsFavorites] = useState(products);
   const { productsCart } = useContext(foodinglyContext);
 
   useEffect(() => {
     const filteredProducts =
       selectedCategory === productOptions[0]
-        ? productList
-        : productList.filter(
+        ? productsFavorites
+        : productsFavorites.filter(
             (product) => product.category === selectedCategory,
           );
 
-    setProducts(filteredProducts);
+    setProductsFavorites(filteredProducts);
   }, [selectedCategory]);
 
   const renderProductOptions = () =>

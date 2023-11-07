@@ -1,11 +1,10 @@
-import { v4 } from 'uuid';
-import { servicesList } from '@/constants/servicesList';
+import { services } from '@/constants/servicesList';
 import ServicesCard from './ServicesCard';
 
 const ServicesOffer = () => {
   const renderServices = () =>
-    servicesList.map((serviceoffer) => (
-      <ServicesCard key={v4()} service={serviceoffer} />
+    services.map((serviceoffer) => (
+      <ServicesCard key={serviceoffer.id} service={serviceoffer} />
     ));
 
   return (

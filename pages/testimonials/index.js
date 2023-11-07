@@ -1,15 +1,14 @@
-import { v4 } from 'uuid';
 import Banner from '@/components/Banner';
 import TextButton from '@/components/Home/TextButton';
 import Layout from '@/components/Layout';
 import TestimonialCard from '@/components/Testimonials/TestimonialCard';
-import { testimonialList } from '@/constants/testimonialList';
+import { testimonials } from '@/constants/testimonialList';
 
 export default function testimonialsPage() {
   const renderTestimonials = () =>
-    testimonialList.map(
+    testimonials.map(
       (person, index) =>
-        index < 3 && <TestimonialCard person={person} key={v4()} />,
+        index < 3 && <TestimonialCard person={person} key={person.id} />,
     );
 
   return (

@@ -1,12 +1,11 @@
 import React from 'react';
-import { v4 } from 'uuid';
 import TextButton from './TextButton';
 import ChefsCard from './ChefsCard';
 import { chefs } from '@/constants/chefsList';
 
 const Chefs = () => {
   const renderChefs = () =>
-    chefs.map((chef) => <ChefsCard chefInformation={chef} key={v4()} />);
+    chefs.map((chef) => <ChefsCard chefInformation={chef} key={chef.id} />);
 
   return (
     <TextButton

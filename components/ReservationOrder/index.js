@@ -1,19 +1,12 @@
 import Link from 'next/link';
-import { v4 } from 'uuid';
 import Banner from '../Banner';
 import Layout from '../Layout';
 import routes from '@/constants/routes';
 import Button from '../Button';
+import Select from '../Select';
 
 const ReservationOrder = () => {
   const selectOptions = ['Guest', '20+', '30+', '40+', '50+', '100+'];
-
-  const renderSelectOptions = () =>
-    selectOptions.map((selectOption) => (
-      <option key={v4()} value={selectOption}>
-        {selectOption}
-      </option>
-    ));
 
   return (
     <Layout headPageTitle="Food reservation">
@@ -52,9 +45,8 @@ const ReservationOrder = () => {
                   type="tel"
                   required
                 />
-                <select className="Order-inputs">
-                  {renderSelectOptions()}
-                </select>
+
+                <Select options={selectOptions} />
                 <input className="Order-inputs" type="date" required />
                 <input className="Order-inputs" type="time" required />
                 <input className="Order-inputs" placeholder="Aditional Notes" />

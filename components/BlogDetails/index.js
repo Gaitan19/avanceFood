@@ -29,14 +29,14 @@ const BlogDetails = () => {
         image={comment.image}
         name={comment.name}
         text={comment.text}
-        key={v4()}
+        key={comment.id}
       />
     ));
 
   const renderRecentBlogs = () =>
     recentBlogs.map((recentBlog) => (
       <RecentBlog
-        key={v4()}
+        key={recentBlog.id}
         image={recentBlog.image}
         text={recentBlog.text}
         date={recentBlog.date}

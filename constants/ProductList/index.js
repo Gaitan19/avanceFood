@@ -1,3 +1,5 @@
+import { v4 } from 'uuid';
+
 export const productOptions = [
   'All Categories',
   'Noodles',
@@ -7,9 +9,9 @@ export const productOptions = [
   'Drinks',
 ];
 
-export const productList = [
+export const products = [
   {
-    id: 1,
+    id: v4(),
     name: 'Full Chicken Grill',
     image: '/item7.png',
     discount: 0,
@@ -19,7 +21,7 @@ export const productList = [
     reviews: 1214,
   },
   {
-    id: 2,
+    id: v4(),
     name: 'Double Cheese Burger',
     image: '/item1.png',
     discount: 50,
@@ -30,7 +32,7 @@ export const productList = [
   },
 
   {
-    id: 3,
+    id: v4(),
     name: 'Chicken Cutlet',
     image: '/item5.png',
     discount: 0,
@@ -41,7 +43,7 @@ export const productList = [
   },
 
   {
-    id: 4,
+    id: v4(),
     name: 'Noodles With Cheese',
     image: '/item4.png',
     discount: 30,
@@ -52,7 +54,7 @@ export const productList = [
   },
 
   {
-    id: 5,
+    id: v4(),
     name: 'New Arrival Ice cream',
     image: '/item9.png',
     discount: 0,
@@ -63,7 +65,7 @@ export const productList = [
   },
 
   {
-    id: 6,
+    id: v4(),
     name: 'Glass of cola with ice',
     image: '/item10.png',
     discount: 0,
@@ -74,7 +76,7 @@ export const productList = [
   },
 
   {
-    id: 7,
+    id: v4(),
     name: 'Seafood pizza',
     image: '/item11.png',
     discount: 0,
@@ -85,7 +87,7 @@ export const productList = [
   },
 
   {
-    id: 8,
+    id: v4(),
     name: 'Homemade Sandwich',
     image: '/item12.png',
     discount: 60,

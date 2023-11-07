@@ -1,13 +1,11 @@
-import { v4 } from 'uuid';
-import { testimonialList } from '@/constants/testimonialList';
+import { testimonials } from '@/constants/testimonialList';
 import TestimonialCard from '../Testimonials/TestimonialCard';
-import { responsiveCarouselTestimonials } from '@/constants/responsiveCarousel';
 
 const FoodReview = () => {
   const renderTestimonials = () =>
-    testimonialList.map(
+    testimonials.map(
       (person, index) =>
-        index < 3 && <TestimonialCard person={person} key={v4()} />,
+        index < 3 && <TestimonialCard person={person} key={person.id} />,
     );
 
   return (

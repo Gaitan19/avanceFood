@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { productList } from '@/constants/ProductList';
+import { products } from '@/constants/ProductList';
 import { foodinglyContext } from '@/context/FoodinglyContext';
 import Product from '../Home/Product';
 import MultiCarousel from '../MultiCarousel';
@@ -9,7 +9,7 @@ const FoodLike = () => {
   const { productsCart } = useContext(foodinglyContext);
 
   const renderProducts = () => {
-    return productList.map((product) => {
+    return products.map((product) => {
       const isCartproduct =
         productsCart.some((productCart) => productCart.id === product.id) ||
         false;

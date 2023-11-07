@@ -1,21 +1,23 @@
 import PropTypes from 'prop-types';
-import { v4 } from 'uuid';
 import Banner from '../Banner';
 import Layout from '../Layout';
-import { termsList } from '@/constants/terms';
+import { terms } from '@/constants/terms';
 
 const PolicyTerms = (props) => {
   const { headPage, title, page } = props;
 
+  const renderTermsText = (texts, id) =>
+    texts.map((text) => (
+      <p className="Terms-text" key={id}>
+        {text}
+      </p>
+    ));
+
   const renderTerms = () =>
-    termsList.map((term) => (
-      <div className="Terms-item" key={v4()}>
+    terms.map((term) => (
+      <div className="Terms-item" key={term.id}>
         <h4 className="Terms-titles">{term.title}</h4>
-        {term.texts.map((text) => (
-          <p className="Terms-text" key={v4()}>
-            {text}
-          </p>
-        ))}
+        {renderTermsText(term.texts, term.id)}
       </div>
     ));
 
