@@ -1,6 +1,6 @@
 import { v4 } from 'uuid';
 
-export const questionsList = [
+export const questions = [
   {
     text: 'General question',
     questions: [

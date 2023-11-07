@@ -3,8 +3,8 @@ import ServicesCard from './ServicesCard';
 
 const ServicesOffer = () => {
   const renderServices = () =>
-    services.map((serviceoffer) => (
-      <ServicesCard key={serviceoffer.id} service={serviceoffer} />
+    services.map((service) => (
+      <ServicesCard key={service.id} service={service} />
     ));
 
   return (

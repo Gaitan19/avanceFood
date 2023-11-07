@@ -4,8 +4,10 @@ import TestimonialCard from '../Testimonials/TestimonialCard';
 const FoodReview = () => {
   const renderTestimonials = () =>
     testimonials.map(
-      (person, index) =>
-        index < 3 && <TestimonialCard person={person} key={person.id} />,
+      (testimonial, index) =>
+        index < 3 && (
+          <TestimonialCard person={testimonial} key={testimonial.id} />
+        ),
     );
 
   return (
@@ -13,9 +15,7 @@ const FoodReview = () => {
       <div className="Food-details-content Review-content">
         <h3 className="Food-details-item-title">All review</h3>
 
-        <div className="Review-container" customClass="Testimonials-carousel">
-          {renderTestimonials()}
-        </div>
+        <div className="Review-container">{renderTestimonials()}</div>
       </div>
     </div>
   );

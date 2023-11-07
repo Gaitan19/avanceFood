@@ -6,8 +6,8 @@ import TextButton from '../Home/TextButton';
 
 const Testimonials = () => {
   const renderTestimonials = () =>
-    testimonials.map((person) => (
-      <TestimonialCard person={person} key={person.id} />
+    testimonials.map((testimonial) => (
+      <TestimonialCard person={testimonial} key={testimonial.id} />
     ));
 
   return (

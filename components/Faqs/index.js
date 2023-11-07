@@ -9,7 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Banner from '../Banner';
 import Layout from '../Layout';
-import { questionsList } from '@/constants/faqs';
+import { questions } from '@/constants/faqs';
 
 const Faqs = () => {
   const phoneNumber = '00 123 456 789';
@@ -31,12 +31,12 @@ const Faqs = () => {
     ));
 
   const renderQuestions = () =>
-    questionsList.map((questionsItem) => (
+    questions.map((question) => (
       <div className="Faqs-item" key={v4()}>
-        <h3 className="Faqs-item-title">{questionsItem.text}</h3>
+        <h3 className="Faqs-item-title">{question.text}</h3>
 
         <CAccordion flush className="Faqs-accordion">
-          {renderItemsQuestions(questionsItem.questions)}
+          {renderItemsQuestions(question.questions)}
         </CAccordion>
       </div>
     ));
