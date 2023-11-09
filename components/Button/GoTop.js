@@ -23,11 +23,9 @@ const GoTop = () => {
   }, []);
 
   return (
-    <>
-      <Link href="#Top-bar" className={`Button-top ${isVisible && 'visible'}`}>
-        <FaChevronUp className="Button-top-icon" />
-      </Link>
-    </>
+    <Link href="#Top-bar" className={`Button-top ${isVisible && 'visible'}`}>
+      <FaChevronUp className="Button-top-icon" />
+    </Link>
   );
 };
 
