@@ -14,7 +14,7 @@ const Layout = (props) => {
   return (
     <>
       <HeadPage title={headPageTitle} description="Foodingly" />
-      <section>
+      <section id="Top-bar">
         <Header />
 
         {children}
