@@ -8,7 +8,7 @@ const GoTop = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY;
-      if (scrolled > 500) {
+      if (scrolled > 750) {
         setIsVisible(() => true);
       } else {
         setIsVisible(() => false);
