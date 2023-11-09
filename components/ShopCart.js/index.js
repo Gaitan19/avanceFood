@@ -14,7 +14,8 @@ import { foodinglyContext } from '../../context/FoodinglyContext';
 
 const ShopCart = (props) => {
   const { visible, setVisible } = props;
-  const { productsCart, deleteProductCart } = useContext(foodinglyContext);
+  const { productsCart, deleteProductCart, getTotalPrice } =
+    useContext(foodinglyContext);
 
   const renderCartProducts = () => {
     return productsCart.map((cartProduct) => {
@@ -42,12 +43,6 @@ const ShopCart = (props) => {
       );
     });
   };
-
-  const getTotalPrice = () =>
-    productsCart.reduce(
-      (total, product) => total + product.price * product.quantity,
-      0,
-    );
 
   return (
     <COffcanvas

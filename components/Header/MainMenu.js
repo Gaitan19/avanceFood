@@ -44,7 +44,11 @@ const MainMenu = () => {
 
   return (
     <>
-      <CNavbar expand="xl" colorScheme="light" className="bg-light Navbar">
+      <CNavbar
+        expand="xl"
+        colorScheme="light"
+        className="bg-light Navbar Navbar-sticky"
+      >
         <div className="Navbar-content">
           <CNavbarBrand href={routes.home} className="Navbar-brand">
             <div className="Menu-image" />

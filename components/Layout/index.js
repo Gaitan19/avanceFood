@@ -15,6 +15,7 @@ const Layout = (props) => {
       <HeadPage title={headPageTitle} description="Foodingly" />
       <section>
         <Header />
+
         {children}
         <ShopCart visible={visibleCart} setVisible={setVisibleCart} />
         <Footer />

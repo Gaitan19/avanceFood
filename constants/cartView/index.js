@@ -11,18 +11,22 @@ export const tableHeaders = [
 
 export const billingsInformation = [
   {
+    id: v4(),
     text: 'First name*',
     type: 'text',
   },
   {
+    id: v4(),
     text: 'Last name*',
     type: 'text',
   },
   {
+    id: v4(),
     text: 'Email address',
     type: 'email',
   },
   {
+    id: v4(),
     text: 'Mobile number',
     type: 'tel',
   },
@@ -66,24 +70,29 @@ export const costumersInformation = [
   },
 
   {
+    id: v4(),
     text: 'Address',
     value: '1901 Thornridge Cir. Shiloh, Hawaii 81063',
   },
   {
+    id: v4(),
     text: 'City',
     value: 'Thornridge',
   },
   {
+    id: v4(),
     text: 'State',
     value: 'Hawaii',
   },
 
   {
+    id: v4(),
     text: 'Postal code',
     value: '81063',
   },
 
   {
+    id: v4(),
     text: 'Country',
     value: 'USA',
   },
@@ -91,18 +100,22 @@ export const costumersInformation = [
 
 export const ordersInformation = [
   {
+    id: v4(),
     text: 'Order ID',
     value: '#MN3293KH',
   },
   {
+    id: v4(),
     text: 'Order date',
     value: '10/06/2023',
   },
   {
+    id: v4(),
     text: 'Payment method',
     value: 'Bank transfer',
   },
   {
+    id: v4(),
     text: 'Order status',
     value: true,
   },

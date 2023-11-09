@@ -13,7 +13,7 @@ const CheckoutForm = () => {
   const renderBillingsInformation = () =>
     billingsInformation.map((billingInformation) => (
       <input
-        key={v4()}
+        key={billingInformation.id}
         className="Order-inputs Checkout-input"
         placeholder={billingInformation.text}
         name={billingInformation.text}

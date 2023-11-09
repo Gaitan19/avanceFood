@@ -25,9 +25,7 @@ const FoodinglyContext = (props) => {
 
   const handleProductQuantity = (id, value) => {
     const tempProducts = [...productsCart];
-    const productIndex = tempProducts.findIndex(
-      (product) => product.id === parseInt(id),
-    );
+    const productIndex = tempProducts.findIndex((product) => product.id === id);
 
     if (productIndex !== -1) {
       tempProducts[productIndex].quantity = value;

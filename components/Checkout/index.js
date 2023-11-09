@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { v4 } from 'uuid';
 import Layout from '../Layout';
 import Banner from '../Banner';
 import CheckoutOrder from './CheckoutOrder';
@@ -11,7 +10,7 @@ const Checkout = (props) => {
 
   const renderOrdersInformation = () =>
     ordersInformation.map((orderInformation) => (
-      <div key={v4()} className="Checkout-orders">
+      <div key={orderInformation.id} className="Checkout-orders">
         <span>{orderInformation.text}</span>
         <span>{orderInformation.value}</span>
       </div>
