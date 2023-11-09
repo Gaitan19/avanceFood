@@ -171,4 +171,27 @@
             font-size: 14px;
         }
     }
+
+    &-top {
+        align-items: center;
+        background: $LawnGreen;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        left: 97%;
+        position: fixed;
+        top: 94%;
+        transition: $transition;
+        width: 40px;
+
+        &:hover {
+            background: $black-color;
+        }
+
+        &-icon {
+            color: $white;
+        }
+    }
 }
