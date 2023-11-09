@@ -1,11 +1,33 @@
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { FaChevronUp } from 'react-icons/fa';
-import Button from '.';
 
 const GoTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY;
+      if (scrolled > 500) {
+        setIsVisible(() => true);
+      } else {
+        setIsVisible(() => false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Button customClass="Button-top">
-      <FaChevronUp className="Button-top-icon" />
-    </Button>
+    <>
+      <Link href="#Top-bar" className={`Button-top ${isVisible && 'visible'}`}>
+        <FaChevronUp className="Button-top-icon" />
+      </Link>
+    </>
   );
 };
 

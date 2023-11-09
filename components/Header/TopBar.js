@@ -32,7 +32,7 @@ const TopBar = () => {
 
   return (
     <Navbar customClass="Navbar-top">
-      <div className="row align-items-center">
+      <div className="row align-items-center" id="Top-bar">
         <div className="col-lg-6 col-md-6">
           <ul className="Navbar-list">
             {renderIconList()}

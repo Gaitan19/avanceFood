@@ -11918,10 +11918,18 @@ h1, .h1, h2, .h2, h3, .h3 {
     height: 40px;
     justify-content: center;
     left: 97%;
+    opacity: 0;
     position: fixed;
-    top: 94%;
-    transition: all 0.3s ease-in-out 0.1s;
+    top: -40px;
+    transform: translateY(-100%);
+    transition: all 0.9s ease 0s;
+    visibility: hidden;
     width: 40px; }
+    .Button-top.visible {
+      opacity: 1;
+      top: 94%;
+      transform: translateY(0);
+      visibility: visible; }
     .Button-top:hover {
       background: #2b2540; }
     .Button-top-icon {
