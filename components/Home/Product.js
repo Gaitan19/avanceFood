@@ -47,7 +47,7 @@ const Product = (props) => {
       <div className="Products-card-add">
         <span className="Products-card-price">${price}</span>
         <Button customClass="Button-fill Button-add" onClick={handleAdd}>
-          <span>Add To Cart</span>
+          <span>{isCartProduct ? 'Delete From Cart' : 'Add To Cart'}</span>
         </Button>
       </div>
     </article>
