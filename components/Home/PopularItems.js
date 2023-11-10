@@ -14,12 +14,10 @@ const PopularItems = () => {
   useEffect(() => {
     const filteredProducts =
       selectedCategory === productOptions[0]
-        ? productsFavorites
-        : productsFavorites.filter(
-            (product) => product.category === selectedCategory,
-          );
+        ? products
+        : products.filter((product) => product.category === selectedCategory);
 
-    setProductsFavorites(filteredProducts);
+    setProductsFavorites(() => filteredProducts);
   }, [selectedCategory]);
 
   const renderProductOptions = () =>
@@ -29,13 +27,13 @@ const PopularItems = () => {
         customClass={`Button-products ${
           selectedCategory === productOption ? 'Button-products-active' : ''
         }`}
-        onClick={() => setSelectedCategory(productOption)}
+        onClick={() => setSelectedCategory(() => productOption)}
         buttonText={productOption}
       />
     ));
 
   const renderProducts = () => {
-    return products.map((product) => {
+    return productsFavorites.map((product) => {
       const isCartproduct =
         productsCart.some((productCart) => productCart.id === product.id) ||
         false;
