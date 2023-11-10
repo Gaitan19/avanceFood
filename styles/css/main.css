@@ -11920,7 +11920,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     opacity: 0;
     position: fixed;
     right: 15px;
-    top: -40px;
+    top: 0;
     transform: translateY(-100%);
     transition: all 0.9s ease 0s;
     visibility: hidden;
